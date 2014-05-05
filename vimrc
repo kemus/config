@@ -1,19 +1,20 @@
 "{{{ Misc Settings
-    set nocompatible      " We're using vim instead of vi for a reason!
-    let mapleader=","
-    set showmode                  " Show mode in status line
-    set showcmd                   " Show (partial) command in status line.
+    set nocompatible              " We're using vim instead of vi for a reason!
+    let mapleader=","             " , is easy and convenient
     set showmatch                 " Show matching brackets.
     set foldmethod=marker         " Folding
-    let g:clipbrdDefaultReg = '+'
-    set ruler
-    set termencoding=ascii
+    let g:clipbrdDefaultReg = '+' " Copy-paste
+    set ruler                     " I like knowing where I'm at
+    set encoding=utf-8            " Yay, unicode!!!
+    set termencoding=utf-8        " Yay, unicode!!
+    scriptencoding utf-8          " Yay, unicode!
+    set fileencoding=utf-8        " Yay, unicode...
     set wrap
     set linebreak
     set nolist
     set number
     set autowrite                 " Automatically save before commands like :next and :make
-    set more                      " User more prompt
+    set more                      " Use more prompt
     set autoread                  " Watch for file changes
     set lazyredraw                " don't redraw if unnecessary
     set scrolloff=5               " keep at least 5 lines above/below
@@ -26,7 +27,7 @@
     set noerrorbells              " No error bells please
     set visualbell
     set t_vb=
-    set shell=bash
+    set shell=zsh                 " I like zsh
     set fileformats=unix
     set wildmode=longest:full
     set wildmenu                  " menu has tab completion
@@ -81,11 +82,10 @@
         set diffopt=filler,iwhite     " ignore all whitespace and sync
     "}}} endSearching
 "}}} endMisc
-set termencoding=utf-8
-scriptencoding utf-8
-set fileencoding=utf-8
-set encoding=utf-8
 "{{{"Statusline
+    set showmode                  " Show mode in status line
+    set showcmd                   " Show (partial) command in status line.
+
     " set laststatus=2
     " set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
     "{{{ StatuslineCurrentHighlight
@@ -211,7 +211,6 @@ set encoding=utf-8
 "{{{Auto Commands
     set autochdir
     "recalculate the long line warning when idle and after saving
-
     autocmd cursorhold,bufwritepost * unlet! b:statusline_long_line_warning
 
     " No trailing whitespace
@@ -223,21 +222,6 @@ set encoding=utf-8
     " Scons is python syntax
     autocmd BufReadPre,BufNewFile SConstruct set filetype=python
     autocmd BufReadPre,BufNewFile SConscript set filetype=python
-
-
-
-
-
-
-
-
-
-
-    """ screen.vim REPL: http://github.com/ervandew/vimfiles
-    " send paragraph to parallel process
-    vmap <C-c><C-c> :ScreenSend<CR>
-    nmap <C-c><C-c> mCvip<C-c><C-c>
-    imap <C-c><C-c> <Esc><C-c><C-c><Right>
 
     " set shell region height
     let g:ScreenShellHeight = 12
@@ -286,23 +270,25 @@ set encoding=utf-8
         function! Browser ()
             let line = getline (".")
             let line = matchstr (line, "http\S*")
-            exec "!firefox ".line
+            exec "!chromium ".line
         endfunction
         " Open Url on this line with the browser \w
         map <Leader>w :call Browser ()<CR>
     "}}} end open url in browser
-    "{{{ cpuinfo
+    "{{{ make with all cores
         if filereadable('/proc/cpuinfo')
             let &makeprg = 'make -j'.(system('grep -c ^processor /proc/cpuinfo')+1)
         endif
-    "}}} end cpuinfo
+    "}}} end make with all cores
 
     "{{{ Paste mode
         " Paste Mode!  Dang! <F10>
         nnoremap <silent> <F10> :set invpaste<CR>
         set pastetoggle=<F10>
     "}}} end Paste mode
-    "{{{ Edit vimrc, gvimrc, etc
+
+
+   "{{{ Edit vimrc, gvimrc, etc
         " Edit vimrc \ev
         nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
         " Edit gvimrc \gv
@@ -320,32 +306,17 @@ set encoding=utf-8
         vnoremap <silent> j gj
         nnoremap <silent> k gk
         nnoremap <silent> j gj
-        "    inoremap  <Down> <C-o>gj
-       " inoremap <Up> <C-o>gk
-
-        " Fix my ctrl + arrows ??
 
         " Home and End keys work
         nnoremap <silent> <Home> ^i
         nnoremap <silent> <End> A
     "}}} end movement
     "{{{ Toggle folds
-        " Space, <CR> will toggle folds: Shift + space shift+cr will close them
-    "  set t_ku=OA
-     "   set t_kd=OB
-
-      "  set t_kl=OD
-       " set t_kr=OC
-       " set <xDown>=Ob
-       " set <xLeft>=Od
-       " set <xRight>=Oc
-       " set <xUp>=Oa
-
-
-        vnoremap <space> zo<space>
-        nnoremap <space> zo<space>
-        nnoremap <CR> zo<CR>
-        vnoremap <CR> zo<CR>
+        " Space, <CR> will toggle folds
+        vnoremap <space> za<space>
+        nnoremap <space> za<space>
+        nnoremap <CR> za<CR>
+        vnoremap <CR> za<CR>
     "}}} End toggle folds
     "{{{ Searching centers you on line
         " Search mappings: These will make it so that going to the next one in a
@@ -353,17 +324,6 @@ set encoding=utf-8
         map N Nzz
         map n nzz
     "}}} end searching
-    "{{{
-         "pumvisible() ???
-        "inoremap <expr> <cr> pumvisible() ? "\<c-y>" :"\<c-g>u\<cr>"
-        "inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" :"\<lt>c-n>\<lt>c-r>=
-        "\pumvisible() ?"\\<lt>down>\" : \"\"\<lt>cr>"
-        "this monster should be all in one line
-
-        "inoremap <expr> <m-;> pumvisible() ? \"\<lt>c-n>":"\<lt>c-x>\<lt>c-o>\<lt>c-n>
-        "\<lt>c-p>\<lt>c-r>=pumvisible() \? \"\\<lt>down>\": \"\"\<lt>cr>"
-        "this monster should be all in one line
-    "}}}
     "{{{
     "Swap ; and :  Convenient.
         nnoremap ; :
