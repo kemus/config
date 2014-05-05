@@ -5617,3 +5617,31 @@ sudo modprobe broadcom-wl-ck
 : 1399260248:0;git init
 : 1399260249:0;ls
 : 1399260262:0;git add .
+: 1399260283:0;git commit -m 'initial commit'
+: 1399260306:0;git remote add origin https://github.com/kemus/config.git
+: 1399260309:0;git push
+: 1399260345:0;git config --global push.default simple
+: 1399260346:0;git push
+: 1399260361:0;git push --set-upstream origin master
+: 1399260397:0;git pull
+: 1399260414:0;git branch --set-upstream-to=origin master
+: 1399260418:0;ls
+: 1399260426:0;git pull master origin
+: 1399260432:0;git pull origin master
+: 1399260451:0;git push --set-upstream origin master
+: 1399260498:0;ls
+: 1399260510:0;cd ..
+: 1399260511:0;la
+: 1399260525:0;mv .yaourtrc .dotfiles/yaourtrc
+: 1399260537:0;ln -s .dotfiles/yaourtrc .yaourtrc
+: 1399260538:0;la
+: 1399260550:0;mv .xprofile .dotfiles/xprofile
+: 1399260563:0;ln -s .dotfiles/xprofile .xprofile
+: 1399260566:0;la
+: 1399260613:0;ls .config
+: 1399260639:0;mv bin .dotfiles
+: 1399260648:0;ln -s .dotfiles/bin bin
+: 1399260649:0;ls
+: 1399260651:0;la
+: 1399260672:0;cd .dotfiles
+: 1399260675:0;git add .

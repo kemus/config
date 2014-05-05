@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo wifi-menu;
+sudo killall dhcpcd;
+sudo dhcpcd;

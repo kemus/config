@@ -1,0 +1,2 @@
+#!/bin/bash
+for id in `lsof | grep snd | awk  '{print $2}' | sort | uniq`; do kill $id;done
