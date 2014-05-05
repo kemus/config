@@ -1,0 +1,12 @@
+#!/usr/bin/ruby
+
+if ARGV.length == 0
+    ARGV[0]='.'
+end
+
+ARGV.each do |argument|
+    puts Dir.entries(argument)
+end
+
+#puts Dir.entries("/home/kemus")
+

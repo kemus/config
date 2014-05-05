@@ -1,0 +1,3 @@
+s = "ac_01.xbm ac.xbm arch_10x10.xbm arch.xbm bat_empty_01.xbm bat_empty_02.xbm bat_full_01.xbm bat_full_02.xbm bat_low_01.xbm bat_low_02.xbm bluetooth.xbm bug_01.xbm bug_02.xbm cat.xbm clock.xbm cpu.xbm dish.xbm diskette.xbm empty.xbm eye_l.xbm eye_r.xbm fox.xbm fs_01.xbm fs_02.xbm full.xbm fwd.xbm half.xbm info_01.xbm info_02.xbm info_03.xbm mail.xbm mem.xbm mouse_01.xbm net_down_01.xbm net_down_02.xbm net_down_03.xbm net_up_01.xbm net_up_02.xbm net_up_03.xbm net_wired.xbm next.xbm note.xbm pacman.xbm pause.xbm phones.xbm play.xbm plug.xbm prev.xbm README rwd.xbm scorpio.xbm shroom.xbm spkr_01.xbm spkr_02.xbm spkr_03.xbm stop.xbm temp.xbm test.xbm usb_02.xbm usb.xbm wifi_01.xbm wifi_02.xbm"
+for i in s.split():
+    print "^i(/home/kemus/.i3/dzen-icons/%s)"%i,

@@ -1,0 +1,123 @@
+# Conky, a system monitor, based on torsmo
+#
+# Any original torsmo code is licensed under the BSD license
+#
+# All code written since the fork of torsmo is licensed under the GPL
+#
+# Please see COPYING for details
+#
+# Copyright (c) 2004, Hannu Saransaari and Lauri Hakkarainen
+# Copyright (c) 2005-2010 Brenden Matthews, Philip Kovacs, et. al. (see AUTHORS)
+# All rights reserved.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+out_to_x no
+out_to_ncurses no
+out_to_console yes
+out_to_stderr no
+background no
+format_human_readable yes
+cpu_avg_samples 2
+net_avg_samples 2
+no_buffers yes
+update_interval 5.0
+uppercase no
+if_up_strictness address
+short_units yes
+use_spacer none
+TEXT
+${if_up enp3s0}\
+^i(/home/kemus/.i3/dzen-icons/net_wired.xbm) \
+${addr enp3s0} | \
+$else \
+${if_up wlan0}\
+^i(/home/kemus/.i3/dzen-icons/wifi_01.xbm) \
+${addr wlan0} | \
+$else\
+^fg(red)\
+No IP \
+^fg()\
+$endif\
+$endif\
+${if_match ${cpu 0} > 90}\
+^fg(red)\
+$else\
+${if_match ${cpu 0} > 75}\
+^fg(yellow)\
+$endif\
+$endif\
+^i(/home/kemus/.i3/dzen-icons/cpu.xbm) \
+${cpu 0}% \
+^fg()\
+${if_match ${memperc} > 90}\
+^fg(red)\
+$else\
+${if_match ${memperc} > 75}\
+^fg(yellow)\
+$endif\
+$endif\
+^i(/home/kemus/.i3/dzen-icons/mem.xbm) \
+$memperc% | \
+^fg()\
+${if_match ${fs_used_perc /} > 90}\
+^fg(red)\
+$else\
+${if_match ${fs_used_perc /} > 75}\
+^fg(yellow)\
+$endif\
+$endif\
+/ ${fs_free /} \
+^fg()\
+${if_match ${fs_used_perc /home} > 90}\
+^fg(red)\
+$else\
+${if_match ${fs_used_perc /home} > 75}\
+^fg(yellow)\
+$endif\
+$endif\
+/home ${fs_free /home} \
+^fg()\
+${if_match ${fs_used_perc /share} > 90}\
+^fg(red)\
+$else\
+${if_match ${fs_used_perc /share} > 75}\
+^fg(yellow)\
+$endif\
+$endif\
+/share ${fs_free /share} | \
+^fg()\
+${if_match ${exec /home/kemus/bin/getvol.sh} == 0}\
+^i(/home/kemus/.i3/dzen-icons/spkr_02.xbm) \
+$else\
+^i(/home/kemus/.i3/dzen-icons/spkr_01.xbm) \
+$endif\
+${exec /home/kemus/bin/getvol.sh}% \
+${if_match "${acpiacadapter ACAD}" == "on-line"}\
+^i(/home/kemus/.i3/dzen-icons/ac_01.xbm) \
+${else}\
+${if_match ${battery_percent BAT1} >= 75}\
+^i(/home/kemus/.i3/dzen-icons/bat_full_02.xbm) \
+${else}\
+${if_match ${battery_percent BAT1} >= 25}\
+^fg(yellow)\
+^i(/home/kemus/.i3/dzen-icons/bat_low_02.xbm) \
+${else}\
+^fg(red)\
+^i(/home/kemus/.i3/dzen-icons/bat_empty_02.xbm) \
+${endif}\
+${endif}\
+${endif}\
+${battery_percent BAT1}% \
+^fg()\
+${time %H:%M:%S}

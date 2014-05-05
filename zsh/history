@@ -1,0 +1,5619 @@
+: 1392865965:0;cd ../Cache
+: 1392865981:0;rm -rf *
+: 1392866018:0;cd share
+: 1392866028:0;cd Steam
+: 1392866036:0;rm -r Steam
+: 1392866044:0;yaourt -R steam
+: 1392866056:0;yaourt -R lib32-mesa-libgl
+: 1392866059:0;yaourt -R lib32-mesa
+: 1392866068:0;yaourt -R lib32-elfutils lib32-libdrm lib32-libxdamage lib32-libxxf86vm lib32-llvm-libs lib32-systemd
+: 1392866079:0;yaourt -R lib32-bzip2 lib32-glib2 lib32-libgcrypt lib32-libpciaccess lib32-libxext lib32-libxfixes lib32-xz
+: 1392866085:0;yaourt -R lib32-bzip2 lib32-glib2 lib32-libgcrypt lib32-libpciaccess lib32-libxext lib32-libxfixes lib32-xz lib32-libdbus lib32-libffi lib32-libgpg-error lib32-libx11 lib32-pcre lib32-zlib
+: 1392866097:0;yaourt -R  lib32-libdbus lib32-libffi lib32-libgpg-error lib32-libx11 lib32-pcre lib32-zlib
+: 1392866104:0;yaourt -R lib32-expat lib32-gcc-libs lib32-libxcb
+: 1392866111:0;yaourt -R lib32-libxau lib32-libxdmcp
+: 1392866144:0;cd .config
+: 1392866151:0;rm *crashrecov*
+: 1392866153:0;rm *crashrecov* -r
+: 1392866169:0;du -h kevin
+: 1392866191:0;vim ~/.dotfiles/i3/config
+: 1392866208:0;find i3status
+: 1392866212:0;find -r i3status
+: 1392866215:0;find 
+: 1392866223:0;find  | grep i3status
+: 1392866229:0;find kevin | grep i3status
+: 1392866232:0;find kevin
+: 1392866245:0;cd kevin/.cache/thumbnails
+: 1392866272:0;rm .tor-browser-en -r
+: 1392866372:0;rm fight_club_-_chuck_palahniuk.pdf hunter\ s\ thompson\ -\ fear\ and\ loathing\ in\ las\ vegas.pdf
+: 1392866378:0;du -h -d1 | grep -v K
+: 1392866461:0;yaourt -S calibre
+: 1392866499:0;ebook-convert
+: 1392866510:0;ebook-convert Strang.pdf Strang.epub
+: 1392866606:0;yaourt -S coolreader-git
+: 1392866633:0;yaourt -S coolreader
+: 1392866682:0;ebook-convert Principle_Of_Computer_System_Design_An_Introduction.pdf Principle_Of_Computer_System_Design_An_Introduction.epub
+: 1392866725:0;coolreader ebooks/Strang.epub
+: 1392866730:0;coolreader
+: 1392866740:0;yaourt -R coolreader
+: 1392866860:0;vim /tmp/yaourt-tmp-kevin/aur-ppub/PKGBUILD
+: 1392866879:0;cd /tmp/yaourt-tmp-kevin/aur-ppub/PKGBUILD
+: 1392866881:0;cd /tmp/yaourt-tmp-kevin/aur-ppub/
+: 1392866898:0;cd ~
+: 1392866902:0;yaourt -Ss epub
+: 1392866989:0;yaourt -S python2-epub-git
+: 1392867029:0;man python2-epub
+: 1392867031:0;man python2-epub-git
+: 1392867033:0;man python2
+: 1392867072:0;cd /tmp/yaourt-tmp-kevin/aur-ppub/src/
+: 1392867082:0;mv sakisds-pPub-90c9168 sakisds-pPub-4fe72b7
+: 1392867085:0;yaourt -S ppub
+: 1392867109:0;vim PKGBUILD
+: 1392867128:0;makepkg
+: 1392867174:0;pacman -Qi ppub
+: 1392867178:0;pacman -Q
+: 1392867180:0;pacman -Qi
+: 1392867184:0;pacman -Qi | grep ppub
+: 1392867217:0;makepkg -i
+: 1392867224:0;ppub
+: 1392867236:0;ppub ~/ebooks/Strang.epub
+: 1392867251:0;yaourt -S gsteamer
+: 1392867253:0;yaourt -S gstreamer
+: 1392867261:0;sudo ppub ~/ebooks/Strang.epub
+: 1392867276:0;rm *.epub
+: 1392867321:0;yaourt -
+: 1392867326:0;yaourt -S pdfopt
+: 1392867343:0;yaourt -R calibre
+: 1392867352:0;yaourt -R chmlib libunrar podofo python2-apsw python2-cherrypy python2-cssselect python2-cssutils python2-dateutil 
+: 1392867373:0;yaourt -R python2-dnspython python2-lxml python2-mechanize python2-netifaces python2-psutil python2-pyqt4 lua51 python2-six
+: 1392867382:0;yaourt -R  pyqt4-common python2-sip
+: 1392867386:0;yaourt -R sip
+: 1392867396:0;rm *
+: 1392867406:0;rm * -r
+: 1392867422:0;yaourt -Ss djvu
+: 1392867435:0;yaourt -S pdf2djvu
+: 1392867448:0;pdf2djvu -h
+: 1392867453:0;pdf2djvu Strang.pdf
+: 1392867460:0;pdf2djvu Strang.pdf Strang.djvu
+: 1392867465:0;pdf2djvu Strang.pdf -o Strang.djvu
+: 1392867573:0;cd ~/ebooks
+: 1392867616:0;mupdf Strang.pdf
+: 1392867716:0;pdf2djvu ebooks/ugh.pdf -o ebooks/ugh.djvu
+: 1392867751:0;mupdf ebooks/ugh.pdf
+: 1392867756:0;mupdf ebooks/Principle_Of_Computer_System_Design_An_Introduction.
+: 1392867757:0;mupdf ebooks/Principle_Of_Computer_System_Design_An_Introduction.pdf
+: 1392867876:0;ls -lah
+: 1392867897:0;mupdf ugh.djvu
+: 1392867906:0;evince ugh.djvu
+: 1392867922:0;rm ugh.pdf
+: 1392867962:0;rm translate_game.*
+: 1392867970:0;rm *memo*
+: 1392867978:0;rm final_fantasy_tactics_advance.zip freeroms.htm jquery -r
+: 1392867981:0;cat readme.html
+: 1392867983:0; pyqt4-common python2-sip
+: 1392867990:0;rm readme.html
+: 1392867997:0;rm ps1.zip submit-0.pdf
+: 1392868001:0;rm THE\ NAMES\ OF\ THE\ DAYS\ OF\ THE\ REPUBLICAN\ CALENDAR.pdf
+: 1392868018:0;rm pokemon_trading_card_game.zip dicts.json Pokemon\ FireRed.* 1194\ -\ Final\ Fantasy\ Tactics\ Advance\ \(E\)\ \(M5\).gba
+: 1392868023:0;evince L1.pdf
+: 1392868037:0;rm L1.pdf L2.pdf L4.pdf rm OL1\(1\).pdf OL1.pdf 
+: 1392868040:0;cat MNC-PTCG\ \[C\]\ .gbc
+: 1392868054:0;1;2c
+: 1392868061:0;rm MNC-PTCG\ \[C\]\ .gbc
+: 1392868106:0;zip ebooks Principle_Of_Computer_System_Design_An_Introduction.pdf
+: 1392868118:0;zip ebooks.zip ugh.djvu
+: 1392868128:0;rm ebooks.zip
+: 1392868139:0;evince Strang.pdf
+: 1392868150:0;pdf2djvu
+: 1392868166:0;pdf2djvu -v Strang.pdf
+: 1392868171:0;pdf2djvu -v Strang.pdf -o Strang2.djvu
+: 1392868184:0;cd /tmp
+: 1392868195:0;cd pdf2djvu.0BYXEE
+: 1392868205:0;evince p0001.djvu
+: 1392868242:0;cd 6.813
+: 1392868248:0;rm ps1.zip
+: 1392868257:0;rm l ps1.zip
+: 1392868259:0;rm l ps1.zip -r
+: 1392868262:0;rm l  -r
+: 1392868613:0;cd ps1-translate_game
+: 1392868616:0;cd contents
+: 1392868735:0;rm .adobe -rf
+: 1392868736:0;s
+: 1392868738:0;du -h | grep M
+: 1392868835:0;rm .config/chromium-backup -rf
+: 1392868855:0;rm .mozilla/firefox/6iv2j56v.default-backup -rf
+: 1392868881:0;rm .cache/ -rf
+: 1392868902:0;rm .local/share/Dredmor
+: 1392868904:0;rm .local/share/Dredmor -rf
+: 1392868906:0;du -h | grep -v K
+: 1392868914:0;cd .dotfiles/vim/tmp
+: 1392869004:0;rm .*
+: 1392869021:0;cd writing
+: 1392869028:0;rm .git -r
+: 1392869038:0;sudo rm .git -rf
+: 1392869043:0;cd nootropics
+: 1392869047:0;cat noot
+: 1392869055:0;rm nootropics -rf
+: 1392869059:0;cat empty
+: 1392869062:0;rm empty
+: 1392869065:0;cat epic
+: 1392869068:0;rm epic
+: 1392869070:0;cat people
+: 1392869073:0;rm people
+: 1392869076:0;cat books
+: 1392869093:0;rm books
+: 1392869108:0;cd writing2
+: 1392869114:0;cd curated
+: 1392869117:0;cd ../writing2
+: 1392869123:0;cat things-to-configure
+: 1392869522:0;rm Strang2.djvu
+: 1392869530:0;evince Strang.djvu
+: 1392869558:0;rm Strang.pdf
+: 1392869588:0;pdf2djvu Principle_Of_Computer_System_Design_An_Introduction.pdf -o Principle_Of_Computer_System_Design_An_Introduction.djvu
+: 1392869997:0;rm Principle_Of_Computer_System_Design_An_Introduction.djvu
+: 1392870265:0;ls -la
+: 1392870279:0;rm .subversion -rf
+: 1392870298:0;cd MediaBitch
+: 1392870309:0;rm .git -rf
+: 1392870325:0;find
+: 1392870329:0;find | grep .git
+: 1392870341:0;rm bin/MediaBitch/.gitignore writing/writing2/.gitignore
+: 1392870380:0;rm .gimp-2.8 .uplink -rf
+: 1392870388:0;du -h -d1 | grep M
+: 1392870397:0;cd .local
+: 1392870404:0;cd .local/share
+: 1392870415:0;du -hd1 |grep M
+: 1392870417:0;du -hd1 
+: 1392870450:0;rm BardTale -rf
+: 1392870464:0;rm wesnoth -rf
+: 1392870484:0;rm .java -rf
+: 1392870496:0;rm .icedtea -rf
+: 1392870499:0;cd .pki
+: 1392870501:0;cd nssdb
+: 1392870507:0;cd ../..
+: 1392870510:0;du -h -d1
+: 1392870533:0;rm .steam* -rf
+: 1392870558:0;rm .macromedia .magick -rf
+: 1392870694:0;du -hd1 | grep M
+: 1392870892:0;vim bin/shrinkpdf
+: 1392870935:0;chmod a+x bin/shrinkpdf
+: 1392870948:0;PATH
+: 1392870961:0;shrinkpdf
+: 1392870981:0;shrinkpdf ebooks/Principle_Of_Computer_System_Design_An_Introduction.pdf ebooks/Principle_Of_Computer_System_Design_An_Introduction2.pdf
+: 1392871127:0;gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=Principle_Of_Computer_System_Design_An_Introduction2.pdf Principle_Of_Computer_System_Design_An_Introduction.pdf
+: 1392871184:0;pdf2ps Principle_Of_Computer_System_Design_An_Introduction.pdf Principle_Of_Computer_System_Design_An_Introduction.ps
+: 1392871291:0;cd ebooks
+: 1392871495:0;ps2pdf Principle_Of_Computer_System_Design_An_Introduction.ps Principle_Of_Computer_System_Design_An_Introduction2.pdf
+: 1392871599:0;wicd-curses
+: 1392871679:0;blockdev --getalignoff /dev/sda
+: 1392871684:0;sudo blockdev --getalignoff /dev/sda
+: 1392871687:0;sudo blockdev --getalignoff /dev/sda2
+: 1392871689:0;sudo blockdev --getalignoff /dev/sda3
+: 1392871690:0;sudo blockdev --getalignoff /dev/sda4
+: 1392871693:0;sudo blockdev --getalignoff /dev/sda*
+: 1392871698:0;sudo blockdev --getalignoff /dev/*
+: 1392871704:0;sudo blockdev --getalignoff /dev/s*
+: 1392871707:0;sudo blockdev --getalignoff /dev/sd*
+: 1392872268:0;r m Principle_Of_Computer_System_Design_An_Introduction.ps
+: 1392872273:0;rm Principle_Of_Computer_System_Design_An_Introduction.ps
+: 1392872277:0;rm Principle_Of_Computer_System_Design_An_Introduction2.pdf
+: 1392872289:0;zip Strang.djvu
+: 1392872292:0;zip a Strang.djvu
+: 1392872296:0;.s
+: 1392872301:0;rm a.zip
+: 1392872553:0;vim lnf
+: 1392873853:0;rm -r .cache
+: 1392873887:0;cd .config  
+: 1392873905:0;rm libreoffice -r
+: 1392873915:0;rm chromium-backup/ -r
+: 1392873925:0;rm .mozilla
+: 1392873927:0;rm .mozilla -rf
+: 1392873931:0;du -hd1
+: 1392874117:0;tar cjvf 
+: 1392874149:0;tar cjvf /home/backup.tar.gz /home/kevin
+: 1392874165:0;sudo tar cjvf /home/backup.tar.gz /home/kevin
+: 1393099279:0;vim ~/.zshrc
+: 1393099279:0;vim ~/.zsh
+: 1393099279:0;source ~/.zshrc
+: 1393095569:0;cat ~/.Xdefaults
+: 1393095692:0;cat qqe
+: 1393095697:0;cat qqe |grep urxv
+: 1393095743:0;aurvote --configure
+: 1393095751:0;yaourt -S urxvt-font-size-git urxvt-perls-git
+: 1393095774:0;Desktop/  backup/  bin/  classes/  downloads/  ebooks/  leanandsmall  proj/  todo.txt  torrents/  writing/
+: 1393095774:0;kemus@devarc>|                                                                                                  ~
+: 1393095780:0;cd b
+: 1393095787:0;yaourt -Qqe
+: 1393095821:0;yaourt -Ss abiword-devel
+: 1393095840:0;yaourt -Sys abiword-devel
+: 1393095857:0;yaourt -Ss ack2-git
+: 1393095872:0;yaourt -S ack2-git
+: 1393096357:0;yaourt -Ss acpi
+: 1393096408:0;yaourt -S acpi acpid alsa-oss alsa-plugins alsa-tools alsa-utils arch-wiki-docs arch-wiki-markdown-git artwiz-fonts-wl-hg autoconf automake
+: 1393096509:0;yaourt -Ss baobab
+: 1393096552:0;yaourt -S yelp-tools
+: 1393096579:0;yaourt -S vala
+: 1393096598:0;yaourt -Ss valac
+: 1393096601:0;yaourt -Ss vala
+: 1393096631:0;yaourt -S baobab-git
+: 1393096674:0;yaourt -S vala-git
+: 1393096717:0;yaourt -S baobab
+: 1393096736:0;yaourt -S bash-completion-git bc bdf-unifont binutils
+: 1393096767:0;yaourt -S bash-completion
+: 1393096778:0;yaourt -S bison bison++
+: 1393096798:0;yaourt -Ss btpd
+: 1393096811:0;yaourt -S bzr
+: 1393096823:0;yaourt -S python2-paramiko
+: 1393096831:0;yaourt -Ss calise-git
+: 1393096843:0;yaourt -Ss cddb-py
+: 1393096861:0;yaourt -Ss cmus command-not-found
+: 1393096865:0;yaourt -Ss cmus
+: 1393096879:0;yaourt -S cmus-git-lastfm
+: 1393096888:0;yaourt -S cmus-git
+: 1393096924:0;yaourt -S command-not-found
+: 1393097015:0;yaourt -S conky-git conky-wiki-docs cplay cpupower customizepkg 
+: 1393097073:0;yaourt -Ss freetype
+: 1393097106:0;yaourt -Ss conky\
+
+: 1393097121:0;yaourt -S conky-cli
+: 1393097146:0;yaourt -S conky-wiki-docs
+: 1393097159:0;yaourt -Ss diffuse
+: 1393097164:0;yaourt -S diffuse
+: 1393097190:0;yaourt -S dina-font dmenu-git dump dzen2-git evince
+: 1393097262:0;yaourt -Ss empathy
+: 1393097267:0;yaourt -Ss eog
+: 1393097280:0;yaourt -Ss epiphany
+: 1393097287:0;yaourt -Ss fatrat
+: 1393097295:0;yaourt -Ss fbida
+: 1393097303:0;yaourt -S fbida
+: 1393097314:0;yaourt -S feh festival
+: 1393097327:0;yaourt -S imagemagick
+: 1393097336:0;yaourt -Ss flake
+: 1393097344:0;yaourt -S flake
+: 1393097359:0;yaourt -S flashplugin-beta
+: 1393097370:0;yaourt -Ss flash
+: 1393097410:0;yaourt -Ss flex
+: 1393097425:0;yaourt -S flex
+: 1393097432:0;yaourt -Ss fluidsynth
+: 1393097438:0;yaourt -S fluidsynth
+: 1393097477:0;yaourt -S font-bh-ttf font-bitstream-speedo font-mathematica font-misc-meltho fonteditfs fontforge foremost freetype2-ubuntu
+: 1393097545:0;yaourt -S conky-git
+: 1393097575:0;yaourt -S freetype
+: 1393097590:0;yaourt -Ss ftgl
+: 1393097594:0;yaourt -S ftgl
+: 1393097608:0;yaourt -Ss gdm
+: 1393097628:0;yaourt -Ss gnome gedit gimp git gksu
+: 1393097632:0;yaourt -S gnome gedit gimp git gksu
+: 1393097799:0;rm qqenow
+: 1393097818:0;yaourt -Qqe >>| qqenoq
+: 1393097823:0;yaourt -Qqe >| qqenoq
+: 1393097830:0;diff qqenoq qqe
+: 1393097852:0;diff qqe qqenoq
+: 1393097870:0;yaourt -S binutils
+: 1393097875:0;yaourt -S binutils]
+: 1393097882:0;yaourt -Se binutils
+: 1393097889:0;yaourt -Qqe >| qqenow
+: 1393097894:0;diff qqe qqenow
+: 1393097921:0;yaourt -Ss gentoo-bashrc
+: 1393097941:0;yaourt -S gnome-clocks
+: 1393097948:0;yaourt -Ss granola
+: 1393097956:0;yaourt -Ss gsfonts
+: 1393098081:0;yaourt -S gtk2fontsel html2text-with-utf8 htop hunspell-en hwd i3-git i3lock-git icedtea-web-java7 inkscape java-gson jdk7-docs jdk7-openjdk jtmpfs-git jre7-openjdk json-simple less-mouse libreoffice libtool markdown mercurial
+: 1393098131:0;yaourt -S gtk2fontsel html2text-with-utf8 htop hunspell-en hwd i3-git i3lock-git icedtea-web-java7 inkscape java-gson jdk7-docs jdk7-openjdk jre7-openjdk json-simple less-mouse libreoffice libtool markdown mercurial
+: 1393098415:0;yaourt -Ss moc-svn
+: 1393098455:0;yaourt -S moc-svn most-git mpg321 mplayer2-git msmtp-mta mtpfs mupdf mutt-hg 
+: 1393098554:0;yaourt -S  msmtp-mta mtpfs mupdf mutt-hg
+: 1393098575:0;yaourt -S  msmtp-mta mtpfs mupdf mutt
+: 1393098586:0;yaourt -S smtp-forwarder
+: 1393098598:0;yaourt -Ss mythes-en
+: 1393098602:0;yaourt -S mythes-en
+: 1393098609:0;yaourt -S mythes-en-base
+: 1393098638:0;yaourt -Ss ncdu
+: 1393098641:0;yaourt -S ncdu
+: 1393098661:0;yaourt -S newsbeuter-git nmap-svn ntop htop
+: 1393098881:0;yaourt -S yaourt-git rxvt-unicode-patched zsh-completions-git zsh-git zsh-syntax-highlighting-git
+: 1393099322:0;yaourt -R flashplugin
+: 1393099569:0;lscpi -nn
+: 1393099575:0;yaourt -S lspci
+: 1393099580:0;lspci -nn
+: 1393099636:0;amixer sset Master unmute
+: 1393099646:0;speaker-test -c 2
+: 1393099716:0;sudo vim /etc/modprobe.d/alsamase.conf
+: 1393099777:0;lsmod | grep "^snd" |column -t
+: 1393099932:0;q\
+
+: 1393099937:0;cat /proc/asound/modules
+: 1393100104:0;yaourt -S switch-sound
+: 1393100116:0;switch-sound
+: 1393100151:0;man switch-sound
+: 1393100208:0;options
+: 1393100226:0;aplay -l
+: 1393100305:0;alsaplayer
+: 1393100309:0;yaourt -S alsaplayer
+: 1393100324:0;alsaplayer -o alsa -d hw:0,0 sample.ogg
+: 1393100406:0;sudo alsaplayer -o alsa -d hw:0,0 sample.ogg
+: 1393100425:0;aplay -c 1 sample.ogg
+: 1393100466:0;aplay -D hw:1,1 -c 1 sample.ogg
+: 1393100470:0;aplay -D hw:0,1 -c 1 sample.ogg
+: 1393100475:0;aplay -D hw:1,0 -c 1 sample.ogg
+: 1393100487:0;cat /dev/urandom aplay -D hw:1,0
+: 1393100492:0;cat /dev/urandom | aplay -D hw:1,0
+: 1393100504:0;man aplay
+: 1393100522:0;cat /dev/urandom | aplay -D hw:1,0 -F S16_LE
+: 1393100534:0;cat /dev/urandom | aplay -D hw:1,0 -f S16_LE
+: 1393100556:0;cat /dev/urandom | aplay -D hw:1,0 -c 2
+: 1393100562:0;cat /dev/urandom | aplay -D hw:1,0 -c 2 -f S16_LE
+: 1393100615:0;vim ~/.asoundrc
+: 1393100730:0;cat /dev/urandom | aplay -c2
+: 1393100760:0;cat /dev/urandom | aplay -D default
+: 1393100766:0;cat /dev/urandom | aplay -D default -fS16_LE
+: 1393100770:0;cat /dev/urandom | aplay -D default -fS16_LE -c2
+: 1393100857:0;dhcpcd
+: 1393100906:0;speaker-test -D 
+: 1393100911:0;speaker-test -D hw:1,0
+: 1393100918:0;man speaker-test 
+: 1393100925:0;aplay -L
+: 1393100944:0;speaker-test 
+: 1393100969:0;yaourt -S flashplugin
+: 1393100979:0;firefox&
+: 1393100992:0;aplay -c1 sample.ogg
+: 1393100998:0;sudo aplay -c1 sample.ogg
+: 1393101077:0;yaourt -S wine
+: 1393101081:0;yaourt -Ss wine
+: 1393101125:0;sudo vim /etc/pacman.conf
+: 1393101151:0;yaourt -Sy wine
+: 1393101203:0;sudo cp /usr/lib/mozilla/plugins/libflashplayer.so /usr/lib/mozilla/plugins/libflashplayer.so.backup
+: 1393101212:0; cp /usr/lib/mozilla/plugins/libflashplayer.so ~
+: 1393101235:0;yaourt -S wget
+: 1393101367:0;lsmod | grep snd_pcm_oss
+: 1393101441:0;cat leanandsmall
+: 1393101478:0;yaourt -S conky
+: 1393101609:0;wifi-menu 
+: 1393101731:0;yaourt -S chrony
+: 1393101743:0;cat /etc/chrony.conf
+: 1393101751:0;sudo vim /etc/chrony.conf
+: 1393101839:0;yaourt -R chront
+: 1393101840:0;yaourt -R chrony
+: 1393101901:0;yaourt -S cpupower
+: 1393101948:0;sudo systemctl start cpupower
+: 1393101952:0;sudo systemctl enable cpupower
+: 1393101964:0;yaourt -S granola
+: 1393102323:0;cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
+: 1393102354:0;cpupower frequency-info
+: 1393102394:0;cpupower frequency-set -g powersave
+: 1393102396:0;sudo !
+: 1393102397:0;sudo sudo !
+: 1393102403:0;sudo cpupower frequency-set -g powersave
+: 1393102414:0;htop
+: 1393102465:0;sudo cat /sys/devices/system/cpu/cpufreq
+: 1393102500:0;sudo cat /sys/devices/system/cpu/cpu*/cpufreq/
+: 1393102505:0;sudo ls /sys/devices/system/cpu/cpu*/cpufreq/
+: 1393102517:0;sudo ls /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+: 1393102522:0;sudo cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+: 1393102539:0;sudo cat /sys/devices/system/cpu/cpu*/cpufreq/powersave/up_threshold
+: 1393102549:0;sudo cat /sys/devices/system/cpu/cpufreq/powersave/up_threshold
+: 1393102581:0;sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq
+: 1393102585:0;sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
+: 1393102600:0;sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_transition_latency
+: 1393102637:0;watch grep \"cpu MHz\" /proc/cpuinfo
+: 1393102725:0;cat /sys/class/backlight/acpi_video0/max_brightness
+: 1393102731:0;cat /sys/class/backlight/acpi_video0/brightness
+: 1393102739:0;sudo echo 50 >| /sys/class/backlight/acpi_video0/brightness
+: 1393102746:0;sudo vim /sys/class/backlight/acpi_video0/brightness
+: 1393102782:0;yaourt -S xorg-xbacklight
+: 1393102788:0;xbacklight -dec 40
+: 1393102797:0;xbacklight -inc 40
+: 1393102911:0;vim /etc/conky/conky.conf
+: 1393102918:0;vim /etc/conky/conky_no_x11.conf
+: 1393102930:0;cp /etc/conky/conky_no_x11.conf ~/.conkyrc
+: 1393103042:0;xset -b
+: 1393103053:0;vim ~/.xprofile
+: 1393103142:0;vim ~/.inputrc
+: 1393103835:0;sudo killall dhcp
+: 1393103990:0;sudo wifi-menu 
+: 1393111834:0;mkdir bin
+: 1393111843:0;vim bin/wifi
+: 1393111886:0;chmod a+x bin/wifi
+: 1393111891:0;$PATH
+: 1393111973:0;timedatectl status
+: 1393111994:0;yaourt -S ntp
+: 1393112005:0;vim /etc/ntp.conf
+: 1393112021:0;ntpd -q
+: 1393112026:0;sudo ntpd -q
+: 1393112073:0;timedatectl set-ntp 1
+: 1393112079:0;ntpq -np
+: 1393112083:0;ntpq -gq
+: 1393112086:0;ntpq -q
+: 1393112088:0;ntpq 
+: 1393112152:0;sudo hwclock --debug
+: 1393112220:0;sudo ntpd -qg
+: 1393112289:0;timedatectl set-local-rtc 1
+: 1393112304:0;timedatectl set-local-rtc 0
+: 1393112319:0;sudo vim /etc/localtime
+: 1393112365:0;sudo ln -sf /usr/share/zoneinfo/UTC /etc/localtime
+: 1393135993:0;cd proj
+: 1393135997:0;vim e.py
+: 1393136002:0;python2 e.py
+: 1393136017:0;sudo pip2 install pyaudio
+: 1393136122:0;unzip roms.zip
+: 1393136139:0;-=-=-=-=-=
+: 1393136147:0;vim dont.py
+: 1393136172:0;python2 dont.py
+: 1393136647:0;file /etc/localtime
+: 1393136667:0;sudo cp /usr/share/zoneinfo/EST /etc/localtime
+: 1393136676:0;sudo reboot
+: 1393118776:0;timedatectl
+: 1393118809:0;echo
+: 1393118906:0;yaourt -Ss gba
+: 1393118920:0;yaourt -Ss gameboy
+: 1393118931:0;yaourt -S vbam-gtk
+: 1393118947:0;gvbam firered.gba
+: 1393139585:0;unzip 2673\ -\ Pokemon\ Fire\ Red\ \(J\)\(2CH\).zip
+: 1393139595:0;gvbam 2673\ -\ Pokemon\ Fire\ Red\ \(J\)\(2CH\).gba
+: 1393151537:0;xbacklight -set 10
+: 1393154527:0;q\
+q\
+r\
+r\
+q\
+
+: 1393157946:0;yaourt -S rar
+: 1393157966:0;cd downloads
+: 1393157969:0;cd ../Downloads
+: 1393157986:0;yaourt -S unrar
+: 1393157988:0;unrar e Pokemon\ Dark\ Rising.rar
+: 1393157994:0;ld
+: 1393157998:0;file Pokemon\ Dark\ Rising.rar
+: 1393158002:0;unzip Pokemon\ Dark\ Rising.rar
+: 1393158030:0;cp ~/backup/Pokemon\ FireRed.zip ~
+: 1393158035:0;mv ~/Pokemon\ FireRed.zip .
+: 1393158095:0;cp ~/backup/ipspi.py ~/backup/ipspi ~/backup/py_libips.py .
+: 1393158141:0;mv DarkRising1CompleteFinalVersionUpdate.ips darkrising.ips
+: 1393158147:0;python2 ipspi.py
+: 1393158177:0;mv ~/backup/ips.pl .
+: 1393158182:0;yaourt -S perl
+: 1393158190:0;perl ips.pl
+: 1393158231:0;unzip Pokemon\ FireRed.zip
+: 1393158242:0;mv Pokemon\ FireRed.gba darkrising.gba
+: 1393158245:0;perl ips.pl darkrising.gba darkrising.ips
+: 1393158250:0;gvbam darkrising.gba
+: 1393158286:0;cd Pokemon\ Dark\ Rising
+: 1393158292:0;vim Walkthrough.rtf
+: 1393158323:0;libreoffice Downloads/Pokemon\ Dark\ Rising/Walkthrough.rtf
+: 1393158375:0;vim Downloads/Pokemon\ Dark\ Rising/EvolutionList.txt
+: 1393158389:0;vim Downloads/Pokemon\ Dark\ Rising/WildPokemonList\(Updated\).txt
+: 1393166084:0;killall dhcp
+: 1393180337:0;\
+yaourt -Syu --devel
+: 1393180553:0;yaourt -Sy --devel
+: 1393180559:0;yaourt -Syyu
+: 1393180585:0;yaourt -S sidplay2-libs
+: 1393217514:0;cd Downloads/
+: 1393217529:0;unzip ps1_submissions.zip
+: 1393217696:0;evince aradhana.pdf
+: 1393217699:0;evince aradhana.pdf&
+: 1393217899:0;evince epopova.pdf
+: 1393222294:0;evince ycoroneo.pdf
+: 1393364592:0;sudo killall wifi-menu
+: 1393373863:0;tracety
+: 1393373870:0;yaourt -S tracert
+: 1393373878:0;yaourt -Ss tracert
+: 1393373889:0;yaourt -S traceroute
+: 1393373894:0;tracert
+: 1393373897:0;traceroute
+: 1393373899:0;traceroute 18.9.25.15
+: 1393390745:0;ssh kemus@dialup.athena
+: 1393390756:0;\
+ssh kemus@athena.dialup
+: 1393390855:0;cd classes
+: 1393390860:0;cd 6.033
+: 1393390864:0;cat valgrind.txt
+: 1393390911:0;yaourt -S chromium
+: 1393391699:0;evince Downloads/pset1_sol.pdf Downloads/sample.pdf Downloads/rubric.pdf
+: 1393392155:0;evince kaix.pdf
+: 1393394805:0;xbacklight -set 5\
+
+: 1393395422:0;evince karlas10.pdf
+: 1393395819:0;evince kashkar.pdf
+: 1393396183:0;evince kateyu.pdf
+: 1393396269:0;evince kefah.pdf 
+: 1393396504:0;evince kellyliu.pdf 
+: 1393396749:0;evince kevchang.pdf
+: 1393396869:0;evince kiele.pdf
+: 1393397046:0;evince kmahar.pdf 
+: 1393397224:0;evince kmarume.pdf 
+: 1393397404:0;evince knzhou.pdf 
+: 1393397534:0;evince korlando.pdf 
+: 1393397680:0;evince kphil61.pdf 
+: 1393397837:0;evince ksho.pdf 
+: 1393398100:0;evince ktjolsen.pdf 
+: 1393398178:0;evince kulpreet.pdf 
+: 1393398349:0;evince kwbartel.pdf
+: 1393398503:0;evince kwbartel2.pdf
+: 1393398510:0;evince kwbartel_2.pdf
+: 1393401919:0;killall firefox
+: 1393437440:0;wifi-menus
+: 1393441958:0;wifi
+: 1393442581:0;cd Downloads/ps1_submissions
+: 1393442594:0;vim
+: 1393442610:0;cd ~/.vim
+: 1393442616:0;cd backup
+: 1393442627:0;vim rubric
+: 1393442657:0;evince Downloads/pset1_sol.pdf Downloads/rubric.pdf Downloads/sample.pdf&
+: 1393443679:0;cd ps1_submissions
+: 1393443690:0;evince labdalla.pdf
+: 1393445394:0;evince lauracle.pdf
+: 1393445484:0;evince leclark.pdf
+: 1393445661:0;evince leiding.pdf
+: 1393445778:0;evince lhiexs21.pdf
+: 1393446151:0;evince liangjy.pdf
+: 1393446760:0;evince lilychen.pdf
+: 1393452570:0;yaourt -S powertop
+: 1393452578:0;powertop
+: 1393452583:0;sudo powertop
+: 1393453694:0;yaourt -S pdflatex
+: 1393453704:0;yaourt -S pdftex
+: 1393453707:0;yaourt -Ss pdftex
+: 1393453711:0;yaourt -Ss pdflatex
+: 1393453721:0;yaourt -Ss latex
+: 1393453857:0;yaourt -S texlive-all
+: 1393453862:0;yaourt -S texlive
+: 1393453870:0;yaourt -S texlive-most
+: 1393454179:0;yaourt -S texlive-lang
+: 1393454200:0;pdflatex
+: 1393454347:0;vim Downloads/proposal.tex
+: 1393454363:0;cd Downloads
+: 1393457367:0;vim 6004-quiz-1
+: 1393457452:0;vim proposal.
+: 1393457455:0;vim proposal.tex
+: 1393457519:0;pdflatex proposal.tex
+: 1393462990:0;'\
+'
+: 1393463077:0;a\
+
+: 1393463120:0;killall dhcpcd
+: 1393463332:0;pdflatex proposal.tex && mupdf proposal.pdf
+: 1393466399:0;man conkyrc
+: 1393466569:0;cat /sys/class/power_supply/BAT1/status
+: 1393466579:0;cat /sys/class/power_supply/BAT1/voltage_now
+: 1393466585:0;cat /sys/class/power_supply/BAT1/power_now
+: 1393466629:0;man .conkyrc
+: 1393466906:0;cat /sys/class/power_supply/BAT1/energy_full_desi
+: 1393467320:0;yaourt -S audacious
+: 1393467564:0;q\
+conky
+: 1393467712:0;head /proc/cpuinfo 1
+: 1393467716:0;head /proc/cpuinfo 2
+: 1393467721:0;head /proc/cpuinfo 
+: 1393467730:0;cat /proc/cpuinfo
+: 1393467775:0;/proc/cpuinfo 
+: 1393467828:0;echo 
+: 1393468783:0;acpi
+: 1393468819:0;curl google.com
+: 1393468836:0;\
+curl http://google.com
+: 1393468842:0;\
+curl http://www.google.com
+: 1393468918:0;cat /dev/random
+: 1393469288:0;\
+
+: 1393469846:0;yaourt -S mpd
+: 1393469852:0;mpd
+: 1393469990:0;yaourt -S xmms2
+: 1393470118:0;yaourt -S laptop-mode-tools
+: 1393470142:0;yaourt -S hdparm sdparm ethtool
+: 1393470160:0;sudo systemctl enable laptop-mode.service
+: 1393470165:0;sudo systemctl start laptop-mode.service
+: 1393470205:0;sudo vim /etc/laptop-mode/laptop-mode.conf
+: 1393470422:0;sudo vim /etc/laptop-mode/conf.d/cpufreq.conf
+: 1393470458:0;cat /proc/sys/vm/laptop_mode
+: 1393470732:0;yaourt -S moc
+: 1393470737:0;moc
+: 1393470739:0;moc-qt4
+: 1393470818:0;hostname -s
+: 1393470820:0;hostname 
+: 1393471706:0;i
+: 1393471779:0;yaourt -S terminus
+: 1393471787:0;yaourt -Ss terminus
+: 1393471794:0;yaourt -S terminus-font
+: 1393471873:0;cat /usr/share/fonts/misc/fonts.alias
+: 1393471916:0;vim ~/.Xresources
+: 1393472043:0;sudo vim /etc/locale.gen
+: 1393472070:0;locale -a
+: 1393472135:0;localectl set-locale LANG="en_US.UTF-8"
+: 1393472164:0;sudo locale >| /etc/locale.conf
+: 1393472180:0;su
+: 1393472188:0;sudo su
+: 1393472212:0;sudo vim /etc/locale.conf
+: 1393472266:0;locale-gen
+: 1393472271:0;sudo locale-gen
+: 1393472305:0;locale
+: 1393472335:0;Â°
+: 1393472497:0;$LANG
+: 1393472650:0;wget winetricks.org/winetricks
+: 1393472654:0;vim winetricks
+: 1393472888:0;vim ~/.vimrc
+: 1393472925:0;vim ~/winetricks
+: 1393474192:0;format
+: 1393474194:0;man format
+: 1393474196:0;man time
+: 1393474482:0;which python2
+: 1393474894:0;conky | python2 con.py
+: 1393475166:0;vim con.py
+: 1393475494:0;sudo killall wpa_supplicant
+: 1393476418:0;wifi-menu
+: 1393476559:0;yaourt -S wpa_supplicant
+: 1393476564:0;sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
+: 1393476599:0;python2 con.py
+: 1393476608:0;chmod a+x con.py
+: 1393476612:0;mv con.py bin
+: 1393476617:0;dzen2
+: 1393476628:0;con.py | dzen2
+: 1393476639:0;yaourt -S dzen2
+: 1393476654:0;yaourt -S dzen2-git
+: 1393476695:0;yaourt -Sy
+: 1393476707:0;yaourt -Sy dzen2-git
+: 1393476830:0;con.py | dzen2 -e - -h '16' -w '600' -ta r -fg '#ffffff' -bg '#000000' -fn '-*-terminus-*-r-normal-*-*-120-*-*-*-*-iso8859-*'
+: 1393476843:0;con.py | dzen2 -e - -h '16' -w '600' -ta r -fg '#ffffff' -bg '#000000' 
+: 1393476886:0;con.py | dzen2 -e 
+: 1393476891:0;con.py | dzen2 
+: 1393476896:0;man dzen2
+: 1393476964:0;con.py | dzen2 -bg black -fg white -w 570 -x 740 -ta r -fn -*-terminus-*-*-*-*-14-*-*-*-*-*-*-* -h 16
+: 1393476972:0;con.py | dzen2 -bg black -fg white -w 570 -x 740 -ta r 
+: 1393476999:0;con.py
+: 1393477163:0;conky | dzen2 -bg black -fg white -w 570 -x 740 -ta r 
+: 1393477185:0;conky | dzen2 -bg black -fg white -w 570 -x 840 -ta r 
+: 1393477188:0;conky | dzen2 -bg black -fg white -w 570 -x 8940 -ta r 
+: 1393477193:0;conky | dzen2 -bg black -fg white -w 570 -x 800 -ta r 
+: 1393477198:0;conky | dzen2 -bg black -fg white -w 500 -x 800 -ta r 
+: 1393477206:0;conky | dzen2 -bg black -fg white -w 500 -x 900 -ta r 
+: 1393477212:0;conky | dzen2 -bg black -fg white -w 500 -x 850 -ta r 
+: 1393477269:0;conky | dzen2 -bg black -fg white -w 550 -x 850 -ta r 
+: 1393477283:0;conky | dzen2 -bg black -fg white -w 750 -x 850 -ta r 
+: 1393477287:0;conky | dzen2 -bg black -fg white -w 750 -x 550 -ta r 
+: 1393477311:0;conky | dzen2 -bg black -fg white -w 750 -x 550 -ta r -h 12
+: 1393477314:0;conky | dzen2 -bg black -fg white -w 750 -x 550 -ta r -h 16
+: 1393478383:0;conky | dzen2 -bg black -fg white -w 750 -x 550 -ta r -h 16 -y 900
+: 1393478395:0;conky | dzen2 -bg black -fg white -w 800 -x 500 -ta r -h 16 -y 900
+: 1393478404:0;conky | dzen2 -bg black -fg white -w 900 -x 500 -ta r -h 16 -y 900
+: 1393478433:0;man strftime
+: 1393478486:0;conky | dzen2 -bg black -fg white -w 1200 -x 300 -ta r -h 16 -y 900
+: 1393478502:0;conky | dzen2 -bg black -fg white -w 1200 -x 300 -ta r -h 16 -y 900 -fn terminus
+: 1393478550:0;conky | dzen2 -e - -bg black -fg white -w 1200 -x 300 -ta r -h 16 -y 900 -fn terminus 
+: 1393478556:0;conky | dzen2 -e - -bg black -fg white -w 1200 -x 200 -ta r -h 16 -y 900 -fn terminus 
+: 1393478562:0;conky | dzen2 -e - -bg black -fg white -w 1200 -x 100 -ta r -h 16 -y 900 -fn terminus 
+: 1393478569:0;conky | dzen2 -e - -bg black -fg white -w 1200 -x 150 -ta r -h 16 -y 900 -fn terminus 
+: 1393478577:0;conky | dzen2 -e - -bg black -fg white -w 1225 -x 175 -ta r -h 16 -y 900 -fn terminus 
+: 1393481531:0;conky | dzen2 -e - -bg black -fg white -w 825 -x 175 -ta r -h 16 -y 900 -fn terminus 
+: 1393481539:0;conky | dzen2 -e - -bg black -fg white -w 725 -x 175 -ta r -h 16 -y 900 -fn terminus 
+: 1393481546:0;conky | dzen2 -e - -bg black -fg white -w 775 -x 175 -ta r -h 16 -y 900 -fn terminus 
+: 1393481560:0;conky | dzen2 -e - -bg black -fg white -w 800 -x 175 -ta r -h 16 -y 900 -fn terminus 
+: 1393481568:0;conky | dzen2 -e - -bg black -fg white -w 800 -x 175 -ta r -h 12 -y 900 -fn terminus 
+: 1393481575:0;conky | dzen2 -e - -bg black -fg white -w 800 -x 175 -ta l -h 16 -y 900 -fn terminus 
+: 1393481581:0;conky | dzen2 -e - -bg black -fg white -w 800 -x 475 -ta l -h 16 -y 900 -fn terminus 
+: 1393481586:0;conky | dzen2 -e - -bg black -fg white -w 800 -x 675 -ta l -h 16 -y 900 -fn terminus 
+: 1393481591:0;conky | dzen2 -e - -bg black -fg white -w 800 -x 575 -ta l -h 16 -y 900 -fn terminus 
+: 1393481602:0;conky | dzen2 -e - -bg black -fg white -w 800 -x 600 -ta l -h 16 -y 900 -fn terminus 
+: 1393481610:0;conky | dzen2 -e - -bg black -fg white -w 800 -x 610 -ta l -h 16 -y 900 -fn terminus 
+: 1393481659:0;conky | dzen2 -e - -bg black -fg white -w 800 -x 610 -ta l -h 16 -y 900 -fn terminus >| ~/bin/status.sh
+: 1393481673:0;rm ~/bin/status.sh
+: 1393481709:0;chmod a+x ~/bin/status.sh
+: 1393482045:0;echo "conky | dzen2 -e - -bg black -fg white -w 800 -x 610 -ta l -h 16 -y 900 -fn terminus" >| ~/bin/status.sh
+: 1393482076:0;gedit ~/.conkyrc
+: 1393482287:0;cat /dev/urandom
+: 1393482457:0;vim ~/.i3/control.py
+: 1393482472:0;python2 .i3/control.py
+: 1393482490:0;yaourt -S pip2
+: 1393482493:0;yaourt -Ss pip2
+: 1393482495:0;yaourt -Ss pip
+: 1393482500:0;yaourt -Ss python pip
+: 1393482506:0;yaourt -S python2-pop
+: 1393482509:0;yaourt -S python2-pip
+: 1393482633:0;vim ~/bin/con.py
+: 1393482666:0;python ~/bin/con.py
+: 1393482678:0;rm ~/bin/con.py
+: 1393482708:0;which sh
+: 1393482710:0;which bash
+: 1393482939:0;mkdir tmp
+: 1393482940:0;cd t
+: 1393482941:0;cd tmp
+: 1393482946:0;git clone https://github.com/dduponchel/dotfiles.git
+: 1393482950:0;cd dotfiles
+: 1393482965:0;cd xmonad
+: 1393482970:0;cd ..
+: 1393482977:0;cp dzen-icons ~/.i3
+: 1393482982:0;cp -r dzen-icons ~/.i3
+: 1393482985:0;cd ~/.i3
+: 1393483052:0;sudo pip2 install simplejson
+: 1393483058:0;python2 control.py
+: 1393483223:0;cd .i3
+: 1393483232:0;cd dzen-icons
+: 1393483939:0;cat README
+: 1393483954:0;conky
+: 1393483968:0;vim ~/test
+: 1393484012:0;echo ~/.i3/dzen-icons/eye_r.xbm
+: 1393484017:0;echo ~/.i3/dzen-icons/eye_r.xbm | dzen2
+: 1393484025:0;echo ~/.i3/dzen-icons/eye_r.xbm | dzen2 -p
+: 1393484036:0;echo ^i(~/.i3/dzen-icons/eye_r.xbm) | dzen2 -p
+: 1393484059:0;echo ^i(/home/kemus/.i3/dzen-icons/eye_r.xbm) | dzen2 -p
+: 1393484074:0;echo "^i(/home/kemus/.i3/dzen-icons/eye_r.xbm)" | dzen2 -p
+: 1393484087:0;echo "^i(/home/kemus/.i3/dzen-icons/ac_01.xbm)" | dzen2 -p
+: 1393484100:0;echo "^i(/home/kemus/.i3/dzen-icons/arch.xbm)" | dzen2 -p
+: 1393484113:0;echo "^i(/home/kemus/.i3/dzen-icons/bluetooth)" | dzen2 -p
+: 1393484118:0;echo "^i(/home/kemus/.i3/dzen-icons/bluetooth.xbm)" | dzen2 -p
+: 1393484128:0;echo "^i(/home/kemus/.i3/dzen-icons/arch_10x10)" | dzen2 -p
+: 1393484132:0;echo "^i(/home/kemus/.i3/dzen-icons/arch_10x10.xbm)" | dzen2 -p
+: 1393484137:0;echo "^i(/home/kemus/.i3/dzen-icons/arch)" | dzen2 -p
+: 1393484167:0;man ls
+: 1393484294:0;vim test.py
+: 1393484318:0;python2 test.py
+: 1393484327:0;python2 test.py | dzen2
+: 1393484772:0;ls -1
+: 1393484790:0;xbacklight -set 5
+: 1393484818:0;conky\
+
+: 1393484826:0;vim ~/.conkyrc
+: 1393485308:0;python2 test.py | dzen2 -p
+: 1393486540:0;ifdown
+: 1393486545:0;iwdown
+: 1393486549:0;if
+: 1393486554:0;iwconfig
+: 1393486559:0;iwconfig wlp2s0
+: 1393486561:0;iwconfig wlp2s0 down
+: 1393486565:0;iwconfig down wlp2s0 
+: 1393486715:0;amixer
+: 1393486717:0;amixer -get
+: 1393486727:0;amixer sget Master
+: 1393486731:0;amixer sget Master,1
+: 1393486769:0;alsamixer\
+
+: 1393486776:0;amixer sget
+: 1393486781:0;amixer '1'
+: 1393486784:0;amixer sget '1'
+: 1393486789:0;amixer sget 'Master',0
+: 1393486790:0;amixer sget 'Master',1
+: 1393486791:0;amixer sget 'Master',2
+: 1393486795:0;amixer sget Master 
+: 1393486796:0;amixer sget Master 1
+: 1393486797:0;amixer sget Master 2
+: 1393486826:0;amixer 
+: 1393486831:0;amixer 1
+: 1393486853:0;cat /proc/asound
+: 1393486864:0;cat /proc/asound/PCH/pcm0p/info
+: 1393486871:0;cat /proc/asound/card1
+: 1393486875:0;cat /proc/asound/card1/eld\#0.2
+: 1393486876:0;cat /proc/asound/card1/eld\#0.1
+: 1393486878:0;cat /proc/asound/card1/eld\#0.0
+: 1393486886:0;cat /proc/asound/card1/pcm7p/sub0/info
+: 1393486895:0;cat /proc/asound/card1/pcm3p/info
+: 1393486916:0;amixer -c 1 sget Master
+: 1393486920:0;amixer -c 2 sget Master
+: 1393486957:0;amixer -c 0 sget Master
+: 1393487133:0;amixer -c0 get Master
+: 1393487159:0;amixer -c0 sget Master | tail
+: 1393487161:0;amixer -c0 sget Master | tail -n1
+: 1393487165:0;amixer -c0 sget Master | tail -n1 | cut 4
+: 1393487168:0;amixer -c0 sget Master | tail -n1 | cut -f 3
+: 1393487176:0;amixer -c0 sget Master | tail -n1 | cut -d' ' 4
+: 1393487177:0;amixer -c0 sget Master | tail -n1 | cut -d' ' 3
+: 1393487181:0;amixer -c0 sget Master | tail -n1 | cut -f 2
+: 1393487182:0;amixer -c0 sget Master | tail -n1 | cut -f 1
+: 1393487270:0;cat /var/lib/alsa/asound.state
+: 1393487292:0;awk -F"[][]" '/dB/ { print $2 }' <(amixer -c1 sget Master)
+: 1393487304:0;awk -F"[][]" '/dB/ { print $2 }' <(amixer -c2 sget Master)
+: 1393487323:0;amixer -c0 sget Master | tail -n1 
+: 1393487355:0;man awk
+: 1393487397:0;awk -F"[][]" '/dB/ { print $1 }' <(amixer -c2 sget Master)
+: 1393487400:0;awk -F"[][]" '/dB/ { print $1 }' <(amixer -c1 sget Master)
+: 1393487406:0;awk -F"[][]" '/dB/ { print $2 }' <(amixer -c 1 sget Master)
+: 1393487416:0;awk -F"[][]" '/dB/ { print $2 }' <(amixer  sget Master)
+: 1393487420:0;awk -F"[][]" '/dB/ { print $2 }' <(amixer -c0 sget Master)
+: 1393487424:0;awk -F"[][]" '/dB/ { print $1 }' <(amixer -c0 sget Master)
+: 1393487434:0;amixer -c0 sget Master
+: 1393487451:0;awk -F"[][]" '/dB/ { print $3 }' <(amixer -c0 sget Master)
+: 1393487455:0;awk -F"[][]" '/dB/ { print $4 }' <(amixer -c0 sget Master)
+: 1393487464:0;awk -F"[]%[]" '/dB/ { print $2 }' <(amixer -c0 sget Master)
+: 1393487552:0;vim ~/bin/getvol.sh
+: 1393487575:0;chmod a+x ~/bin/getvol.sh
+: 1393487734:0;alsamixer
+: 1393488016:0;man conky
+: 1393488204:0;vim ~/bin/status.sh
+: 1393488469:0;xkey
+: 1393488472:0;xkeymap
+: 1393488473:0;xkeys
+: 1393488604:0;amixer -c 0 sset Master 0
+: 1393488611:0;amixer -c 0 sset Master 1+
+: 1393488849:0;amixer -c 0
+: 1393489012:0;amixer -c 0 sset Master 1-
+: 1393489055:0;vim ~/bin/sounddown.sh
+: 1393489093:0;chmod a+x sounddown.sh
+: 1393489094:0;./sounddown.sh
+: 1393489112:0;cd 
+: 1393489724:0;which amixer
+: 1393490262:0;python2 ~/bin/windows.py Down
+: 1393490553:0;xbacklight -set 99999
+: 1393490558:0;xbacklight -set 100
+: 1393490561:0;xbacklight -set 90
+: 1393490564:0;xbacklight -set 60
+: 1393490566:0;xbacklight -set 50
+: 1393490568:0;xbacklight -set 30
+: 1393490572:0;xbacklight -set 20
+: 1393490573:0;xbacklight -set 1
+: 1393490575:0;xbacklight -set 2
+: 1393490577:0;xbacklight -set 3
+: 1393490647:0;python2 ~/bin/windows.py down
+: 1393490695:0;vim ~/bin/windows.py
+: 1393495923:0;cd ~/bin
+: 1393495929:0;rm getvol.sh
+: 1393495936:0;vim magnet.sh
+: 1393495946:0;rm sounddown.sh
+: 1393495952:0;rm shrinkpdf
+: 1393496143:0;xbacklight -get
+: 1393496190:0;vim getvol.sh -r
+: 1393496193:0;vim getvol.sh 
+: 1393496236:0;chmod a+x bin/getvol.sh
+: 1393496249:0;./getvol.sh
+: 1393496350:0;history
+: 1393496403:0;vim bin/getvol.sh
+: 1393496419:0;vim ~/.vim/backup/getvol.sh\~
+: 1393496435:0;cd bin
+: 1393496436:0;la
+: 1393496478:0;getvol.sh
+: 1393496499:0;vim status.sh
+: 1393496560:0;vim getvol.sh
+: 1393496572:0;1
+: 1393496578:0;cd
+: 1393496588:0;vim ~/.i3/config
+: 1393496908:0;cal
+: 1393497451:0;cat /etc/issue
+: 1393497849:0;fehbg
+: 1393497942:0;feh --bg-fill wall.png&
+: 1393498005:0;yaourt -R xcompmgr
+: 1393498026:0;yaourt -S compton-git
+: 1393498053:0;vim ~/.Xdefaults   
+: 1393498129:0;yaourt -S xcompmgr
+: 1393498137:0;xcompmgr -c &
+: 1393498346:0;logout
+: 1393498364:0;kemus
+: 1393498391:0;man xcompmgr
+: 1393498449:0;ls
+: 1393498529:0;yaourt -S compton
+: 1393498652:0;man compton
+: 1393498690:0;killall xcompmgr
+: 1393498699:0;compton -b
+: 1393498729:0;vim ~/.Xdefaults
+: 1393498737:0;vim ~/.xinitrc
+: 1393498766:0;start
+: 1393498771:0;startx
+: 1393498837:0;yaourt -S alsi
+: 1393498841:0;alsi -l
+: 1393498881:0;yaourt -Syu
+: 1393498975:0;yaourt -Syua
+: 1393499258:0;sudo rm -rf /tmp/yaourt-tmp-kemus/*
+: 1393499684:0;ping google.com
+: 1393499695:0;sudo dhcdpcd
+: 1393499715:0;yaourt -Syua --devel
+: 1393499772:0;sudo killall dhcpcd
+: 1393499774:0;sudo wifi-menu
+: 1393499780:0;sudo dhcpcd
+: 1393499807:0;yaourt -Syu cmus-git
+: 1393499812:0;yaourt -Sy cmus-git
+: 1393499966:0;yaourt -S lesspipe
+: 1393499975:0;lesspipe
+: 1393499981:0;less -v
+: 1393499985:0;less --help
+: 1393500014:0;source /etc/profile.d/lesspipe.sh
+: 1393500016:0;less
+: 1393500068:0;yaourt -S vimpager-git
+: 1393500095:0;yaourt -S vimpager
+: 1393500145:0;dircolors
+: 1393500147:0;dircolors -b
+: 1393500333:0;yaourt -S xorg-xman
+: 1393500394:0;yaourt -S man-pages
+: 1393500475:0;vim ~/.zprofile
+: 1393500694:0;yaourt -S xf86-video-intel lib32-intel-dri
+: 1393500740:0;colordiff
+: 1393500744:0;yaourt -S colordiff
+: 1393500751:0;vim ~/.zsh/aliases.zsh
+: 1393500784:0;du
+: 1393500786:0;du -c
+: 1393500794:0;du -h
+: 1393500796:0;du -c -h
+: 1393500836:0;yaourt -S nano
+: 1393500865:0;man dmesg
+: 1393500997:0;;q
+: 1393500999:0;:q
+: 1393501003:0;exit
+: 1393501045:0;yaourt -S unp
+: 1393501086:0;ls -hall 
+: 1393501089:0;ls -hal
+: 1393501091:0;ls -hall
+: 1393501097:0;ls -hall --color=auto
+: 1393501100:0;ls -hall --color=none
+: 1393501103:0;ls -hall 
+: 1393501175:0;fortune
+: 1393501179:0;yaourt -S fortune
+: 1393501184:0;yaourt -Ss fortune
+: 1393501205:0;yaourt -S fortune-mod
+: 1393501237:0;yaourt -S cow-fortune
+: 1393501241:0;yaourt -S cowfortune
+: 1393501259:0;fortune-mod-all-en
+: 1393501264:0;yaourt -S fortune-mod-all-en
+: 1393501379:0;yaourt -R fortune-mod-all-en
+: 1393501383:0;yaourt -S fortune-mod-all-en
+: 1393501445:0;fortune
+: 1393501458:0;cowfortune
+: 1393501531:0;sudo wifi
+: 1393501550:0;yaourt -S fortune-mod-all-en
+: 1393501653:0;wifi
+: 1393501686:0;yaourt -S fortune-mod-all-en
+: 1393501833:0;yaourt -R fortune-mod-mlp
+: 1393501925:0;fortune archlinux
+: 1393501951:0;fortune
+: 1393502054:0;yaourt -R fortune-mod-mlpfim
+: 1393502083:0;yaourt -R fortune-mod-2brokegirls
+: 1393502153:0;yaourt -R fortune-mod-mentalist
+: 1393502228:0;yaourt -R fortune-mod-house
+: 1393502263:0;yaourt -S fortune-mod-all-en
+: 1393502282:0;yaourt -Ss fortune-mod-
+: 1393502419:0;yaourt -S fortune-mod-frisk fortune-mod-futurama fortune-mod-horse_ebooks fortune-mod-seinfeld
+: 1393502461:0;yaourt -S  fortune-mod-futurama fortune-mod-horse_ebooks fortune-mod-seinfeld
+: 1393502501:0;yaourt -S fortune-mod-stargate fortune-mod-the-godfather
+: 1393502518:0;yaourt -S  fortune-mod-the-godfather
+: 1393502534:0;yaourt -R fortune-mod-stargate 
+: 1393502542:0;fortune
+: 1393502587:0;fortune supernatural
+: 1393502636:0;fortune 
+: 1393502652:0;yaourt -R fortune-mod-metalocalypse
+: 1393502654:0;fortune 
+: 1393502674:0;yaourt -R fortune-mod-prettylittleliars
+: 1393502676:0;fortune 
+: 1393502709:0;yaourt -R fortune-mod-warehouse13
+: 1393502711:0;fortune 
+: 1393502717:0;yaourt -R fortune-mod-twoandahalfmen
+: 1393502718:0;fortune 
+: 1393502734:0;vim ~/.zshrc
+: 1393502742:0;vim ~/.zlogin
+: 1393502748:0;vim ~/.zshrc
+: 1393502792:0;yaourt -R fortune-mod-marriedwithchildren
+: 1393502802:0;fortune 
+: 1393502818:0;yaourt -S cowfortune
+: 1393502848:0;cat /usr/share/doc/cowfortune/README.md
+: 1393502885:0;yaourt -S lolcat
+: 1393502965:0;fortune 
+: 1393502971:0;cowfortune 
+: 1393503025:0;yaourt -R fortune-mod-darkangel
+: 1393503028:0;cowfortune 
+: 1393503156:0;yaourt -R fortune-mod-willandgrace
+: 1393503159:0;cowfortune 
+: 1393503243:0;vim ~/.zshrc
+: 1393503280:0;cowfortune 
+: 1393503434:0;hist
+: 1393503438:0;history | grep feg
+: 1393503439:0;history | grep feh
+: 1393503444:0;feh --bg-fill wall.png&
+: 1393527044:0;ls
+: 1393527065:0;mv Downloads/1558455_468219686616050_1539534259_n.jpg scott.jpg
+: 1393527080:0;yaourt -R fortune-mod-theshield
+: 1393527422:0;gimp scott.jpg
+: 1393531422:0;mkdir a
+: 1393531424:0;cd a
+: 1393531431:0;python -m SimpleHTTPServer
+: 1393531446:0;sudo pip2 install SimpleHTTPServer
+: 1393531568:0;python2 -m SimpleHTTPServer
+: 1393531579:0;echo lol >| b
+: 1393531581:0;python2 -m SimpleHTTPServer
+: 1393531603:0;ls
+: 1393531614:0;mv b b.txt
+: 1393531616:0;python2 -m SimpleHTTPServer
+: 1393531660:0;touch index.html
+: 1393531661:0;python2 -m SimpleHTTPServer
+: 1393531716:0;vim serve.py
+: 1393531965:0;ls
+: 1393531968:0;cd a
+: 1393531969:0;ls
+: 1393531972:0;python2 serve.py
+: 1393531975:0;python2 serve.py a
+: 1393532038:0;ls
+: 1393532043:0;python2 serve.py b.txt
+: 1393532560:0;ls
+: 1393532622:0;python2 serve.py b.txt
+: 1393532691:0;ls
+: 1393532692:0;cd temp
+: 1393532692:0;ls
+: 1393532715:0;cd ..
+: 1393532717:0;python2 serve.py b.txt
+: 1393532725:0;sudo killall python2
+: 1393532732:0;python2 serve.py b.txt
+: 1393532914:0;sudo killall python2
+: 1393533344:0;python2 serve.py b.txt
+: 1393533523:0;ls
+: 1393533526:0;cd downloads
+: 1393533526:0;ls
+: 1393533528:0;cd ..
+: 1393533529:0;cd a
+: 1393533529:0;ls
+: 1393533531:0;cd serving
+: 1393533531:0;ls
+: 1393533546:0;ls -la
+: 1393533557:0;find
+: 1393533594:0;python2 serve.py b.txt
+: 1393533606:0;ls
+: 1393533665:0;python2 serve.py temp
+: 1393533839:0;ls
+: 1393533843:0;python2 serve.py temp
+: 1393533845:0;ls
+: 1393534030:0;python2 serve.py temp b.txt
+: 1393534064:0;ls
+: 1393534066:0;cd a
+: 1393534066:0;ls
+: 1393534070:0;cd serving
+: 1393534070:0;ls
+: 1393534125:0;python2 serve.py temp b.txt
+: 1393534138:0;ls
+: 1393534148:0;rm index.html
+: 1393534189:0;python2 serve.py temp b.txt
+: 1393534823:0;ls
+: 1393534829:0;rm -rf serving
+: 1393534834:0;python2 serve.py temp b.txt
+: 1393534865:0;ls
+: 1393534868:0;cd serving
+: 1393534868:0;ls
+: 1393534884:0;python2 serve.py temp b.txt
+: 1393534887:0;ls
+: 1393534889:0;cd ..
+: 1393534890:0;python2 serve.py temp b.txt
+: 1393534893:0;ls
+: 1393534894:0;cd ..
+: 1393534894:0;ls
+: 1393534904:0;python2 serve.py b.txt
+: 1393535019:0;ls
+: 1393535023:0;cd serving
+: 1393535023:0;ls
+: 1393535025:0;cd ..
+: 1393535026:0;ls
+: 1393535243:0;python2 serve.py b.txt
+: 1393535395:0;python2 serve.py temp b.txt
+: 1393535542:0;python2 serve.py b.txt
+: 1393536126:0;git clone https://github.com/kemus/share.py.git
+: 1393536129:0;ls
+: 1393536137:0;cd share.py
+: 1393536137:0;ls
+: 1393536149:0;mv ../serve.py .
+: 1393536149:0;ls
+: 1393536158:0;mv serve.py share.py
+: 1393536161:0;ls
+: 1393536165:0;vim share.py
+: 1393536184:0;git add .
+: 1393536184:0;ls
+: 1393536190:0;git add share.py
+: 1393536200:0;git commit -m 'initial'
+: 1393536222:0;git config --global user.email "kemus@mit.edu"
+: 1393536235:0;git config --global user.name "Kevin Mustelier"
+: 1393536237:0;git commit -m 'initial'
+: 1393536240:0;git push
+: 1393536276:0;vim README.md
+: 1393536362:0;git commit -m 'readme'
+: 1393536366:0;git add .
+: 1393536366:0;git commit -m 'readme'
+: 1393536369:0;git push
+: 1393537796:0;ld
+: 1393537797:0;ls
+: 1393537819:0;cd a
+: 1393537820:0;l
+: 1393537824:0;cd share.py
+: 1393537825:0;ls
+: 1393537835:0;python2 share.py README.md LICENSE
+: 1393537898:0;vim share.py
+: 1393538075:0;python2 share.py README.md LICENSE
+: 1393538079:0;ls
+: 1393538081:0;cd a
+: 1393538084:0;cd share.py
+: 1393538086:0;python2 share.py README.md LICENSE
+: 1393538247:0;ping 255.255.255.255
+: 1393538253:0;ping -c 1 255.255.255.255
+: 1393540651:0;cowfortune supernatural
+: 1393540671:0;fortune | cowsay
+: 1393540677:0;fortune supernatural | cowsay
+: 1393540728:0;fortune supernatural | cowsay | lolcat
+: 1393542743:0;ls
+: 1393542744:0;cd wallpapers
+: 1393542745:0;ls
+: 1393542751:0;vim files.py
+: 1393542787:0;python2 files.py
+: 1393542795:0;sudo pip2 install magic
+: 1393542814:0;sudo pip2 install magic --allow-external magic
+: 1393542824:0;sudo pip2 install magic --allow-external magic --allow-unverified magic
+: 1393542838:0;yaourt -S python2-magic
+: 1393542846:0;python2 files.py
+: 1393542847:0;yaourt -S python2-magic
+: 1393542852:0;vim files.py
+: 1393542859:0;python2 files.py
+: 1393542864:0;vim files.py
+: 1393542953:0;python2 files.py
+: 1393542959:0;vim files.py
+: 1393542972:0;python2 files.py
+: 1393542975:0;vim files.py
+: 1393542998:0;python2 files.py
+: 1393543000:0;vim files.py
+: 1393543005:0;python2 files.py
+: 1393543013:0;vim files.py
+: 1393543076:0;python2 files.py
+: 1393543078:0;vim files.py
+: 1393543085:0;python2 files.py
+: 1393543087:0;vim files.py
+: 1393543093:0;python2 files.py
+: 1393543105:0;rm *.htm
+: 1393543112:0;python2 files.py
+: 1393543115:0;rm *.html
+: 1393543117:0;python2 files.py
+: 1393543120:0;rm *.html
+: 1393543122:0;python2 files.py
+: 1393543130:0;mv files.py ..
+: 1393543132:0;cd ..
+: 1393543134:0;vim files.py 
+: 1393543146:0;python2 files.py
+: 1393543150:0;vim files.py 
+: 1393543166:0;python2 files.py
+: 1393543183:0;cd ../Downloads
+: 1393543186:0;ls
+: 1393543188:0;vim files.py 
+: 1393543256:0;ls
+: 1393543257:0;python2 files.py
+: 1393543261:0;python2 files.py | wc
+: 1393543272:0;ls wallpapers |wc
+: 1393543274:0;ls
+: 1393543276:0;vim files.py 
+: 1393543363:0;python2 files.py
+: 1393543365:0;vim files.py 
+: 1393543372:0;python2 files.py
+: 1393543377:0;cd wallpapers
+: 1393543378:0;ls
+: 1393543388:0;feh MnhCg.png
+: 1393543421:0;vim ~/bin/fehbg
+: 1393543449:0;man feh
+: 1393543583:0;vim ~/bin/fehbg.py
+: 1393543614:0;python2 ~/bin/fehbg.py
+: 1393543617:0;vim ~/bin/fehbg.py
+: 1393543625:0;python2 ~/bin/fehbg.py
+: 1393543628:0;vim ~/bin/fehbg.py
+: 1393543634:0;python2 ~/bin/fehbg.py
+: 1393543646:0;vim ~/bin/fehbg.py
+: 1393543664:0;python2 ~/bin/fehbg.py
+: 1393543696:0;ls
+: 1393543719:0;cd wallpapers
+: 1393543720:0;ls
+: 1393543721:0;cd ..
+: 1393543722:0;ls
+: 1393543728:0;python2 ~/bin/fehbg.py
+: 1393543839:0;rm ~/bin/fehbg.py
+: 1393543844:0;vim ~/bin/fehbg
+: 1393543888:0;chmod a+x ~/bin/fehbg
+: 1393543890:0;fehbg
+: 1393543894:0;vim ~/bin/fehbg
+: 1393543902:0;man feh
+: 1393543949:0;fehbg
+: 1393543957:0;vim ~/bin/fehbg
+: 1393543965:0;fehbg
+: 1393543982:0;vim ~/.i3/config
+: 1393544110:0;cow
+: 1393544112:0;ls
+: 1393544115:0;ls -la
+: 1393635146:0;fehbg
+: 1393635166:0;wifi-menu
+: 1393635170:0;wifi
+: 1393705581:0;alsamixer
+: 1393707416:0;vim ~/.conkyrc
+: 1393707430:0;ls
+: 1393707441:0;vim todo.txt o
+: 1393707660:0;vim ~/classes/6.004
+: 1393709675:0;wifi
+: 1393717758:0;yaourt -S steam
+: 1393717870:0;yaourt -Syu
+: 1393717927:0;yaourt -Syua
+: 1393717981:0;wifi
+: 1393718008:0;yaourt -Syua
+: 1393718026:0;killall git
+: 1393718044:0;yaourt -Syua
+: 1393718065:0;yaourt -Syu --devel
+: 1393718087:0;killall git
+: 1393718146:0;yaourt -Ss git
+: 1393718177:0;sudo vim /etc/pacman.conf
+: 1393718277:0;killall git
+: 1393718468:0;yaourt -Syu
+: 1393718761:0;sudo vim /etc/pacman.d/gnupg/gpg.conf
+: 1393718781:0;yaourt -Syu
+: 1393718816:0;pacman-key --populate
+: 1393718818:0;sudo pacman-key --populate
+: 1393718821:0;yaourt -Syu
+: 1393718951:0;sudo vim /etc/pacman.d/gnupg/gpg.conf
+: 1393718961:0;sudo vim /etc/pacman.conf
+: 1393718990:0;sudo pacman-key --populate
+: 1393718993:0;yaourt -Syu
+: 1393719036:0;sudo vim /etc/pacman.conf
+: 1393719236:0;yaourt -Syu
+: 1393719256:0;sudo pacman-key --populate
+: 1393719262:0;yaourt -Syu
+: 1393719289:0;sudo vim /etc/pacman.conf
+: 1393719311:0;yaourt -Syu
+: 1393719318:0;sudo killall yaourt
+: 1393719328:0;sudo killall pacman
+: 1393719331:0;yaourt -Syu
+: 1393719334:0;yaourt -Sy
+: 1393719336:0;yaourt -Ss
+: 1393719340:0;yaourt -Ss s
+: 1393719387:0;yaourt -Ss 
+: 1393719390:0;yaourt -Sy
+: 1393719394:0;wifi
+: 1393719411:0;yaourt -Sy
+: 1393719426:0;yaourt -Ss s
+: 1393719436:0;pacman -Ss s
+: 1393719451:0;sudo vim /etc/pacman.conf
+: 1393719494:0;yaourt -Sy
+: 1393719524:0;yaourt -Ss
+: 1393719529:0;yaourt -Ss | grep suckless
+: 1393719538:0;yaourt -Ss | grep apathism
+: 1393719551:0;yaourt -Ss | grep blackarch
+: 1393719582:0;yaourt -Ss | grep pipelight
+: 1393719587:0;yaourt -S pipelight
+: 1393719599:0;yaourt -S ttf-ms-fonts
+: 1393719672:0;yaourt -S pipelight
+: 1393719765:0;yaourt -Ss | grep sergej
+: 1393719794:0;yaourt -Ss suckless
+: 1393719804:0;yaourt -Ss git
+: 1393719839:0;yaourt -S git-git
+: 1393719866:0;yaourt -R git
+: 1393719870:0;yaourt -S git
+: 1393719880:0;yaourt -S git-git
+: 1393719900:0;sudo wifi-menu
+: 1393719926:0;ls
+: 1393719927:0;yaourt -S git-git
+: 1393719977:0;vim ~/.ssh/config
+: 1393720060:0;yaourt -S wicd-curses
+: 1393720065:0;yaourt -S wicd
+: 1393720072:0;wicd-curses
+: 1393720080:0;sudo wicd-curses
+: 1393720085:0;yaourt -S wicd-gtk
+: 1393720090:0;wicd-gtk
+: 1393720114:0;yaourt -Ss pynotift
+: 1393720118:0;yaourt -Ss pynotify
+: 1393720130:0;sudo pip2 install pynotify
+: 1393720141:0;sudo pip2 install notify
+: 1393720147:0;wicd-gtk
+: 1393720292:0;yaourt -S git-git
+: 1393720343:0;git -v
+: 1393720346:0;git --version
+: 1393720366:0;yaourt -S i3-git
+: 1393720394:0;yaourt -Sy --devel
+: 1393720402:0;yaourt -Syu --devel
+: 1393720426:0;yaourt -S apache
+: 1393720460:0;yaourt -S bash grub
+: 1393720476:0;yaourt -S keyutils
+: 1393720489:0;yaourt -S lib32-systemd
+: 1393720539:0;yaourt -S libnl libpulse 
+: 1393720546:0;yaourt -S libnl libpulse pulseaudio
+: 1393720557:0;yaourt -R libreoffice
+: 1393720601:0;yaourt -R clucene hyphen kdelibs libetonyek libodfgen libreoffice-af libvisio libwps lpsolve postgresql-libs
+: 1393720629:0;yaourt -R  attica gperf grantlee libdbusmenu-qt libutempter libwpg  media-player-info phonon-qt4 polkit-qt qca qtwebkit  shared-desktop-ontologies soprano strigi 
+: 1393720638:0;yaourt -R libiodbc libqzeitgeist libwpd phonon-gstreamer redland virtuoso-base
+: 1393720739:0;yaourt -S manpages mjpegtools mod_dnssd subversion systemd systemd-sysvcompat webkitgtk
+: 1393720747:0;yaourt -S man-pages mjpegtools mod_dnssd subversion systemd systemd-sysvcompat webkitgtk
+: 1393720783:0;sudo vim /etc/pacman.conf
+: 1393720808:0;yaourt -Syu 
+: 1393720815:0;yaourt -Syua
+: 1393720829:0;yaourt -Syu --devel
+: 1393721055:0;yaourt -Qqe
+: 1393721069:0;yaourt -Ss acpi-git
+: 1393721073:0;yaourt -Ss acpid-git
+: 1393721080:0;yaourt -Ss alsa-oss-git
+: 1393721086:0;yaourt -Ss arch-wiki
+: 1393721101:0;yaourt -Ss artwiz-fonts
+: 1393721111:0;yaourt -Ss audacious-git
+: 1393721116:0;yaourt -S audacious-git
+: 1393721128:0;yaourt -R aurvote
+: 1393721146:0;yaourt -Ss autoconf
+: 1393721189:0;sudo vim /usr/lib/yaourt/aur.sh
+: 1393721222:0;yaourt -S autoconf-git
+: 1393721249:0;yaourt -Ss automake-git
+: 1393721263:0;\
+\
+yaourt -Ss automake
+: 1393721284:0;yaourt -S baobab-git
+: 1393721319:0;yaourt -Ss gnuli
+: 1393721329:0;yaourt -S gnulib-git
+: 1393721390:0;yaourt -S bash-git
+: 1393721394:0;yaourt -Ss bash-git
+: 1393721397:0;yaourt -Ss bash
+: 1393721431:0;yaourt -Ss bash-completion
+: 1393721442:0;yaourt -S bash-completion-git
+: 1393721478:0;yaourt -Ss bc
+: 1393721481:0;yaourt -Ss bc-git
+: 1393721490:0;yaourt -S baobab-git
+: 1393721502:0;yaourt -S bison-git
+: 1393721508:0;yaourt -S bison++-git
+: 1393721526:0;yaourt -S bzip2-git
+: 1393721532:0;yaourt -S bzr-git
+: 1393721536:0;yaourt -Ss bzr-
+: 1393721553:0;yaourt -S bzr-dev
+: 1393721585:0;yaourt -Ss chromium
+: 1393721613:0;yaourt -S chromium-nightly
+: 1393721728:0;yaourt -Ss command-not-found
+: 1393721742:0;widc
+: 1393721750:0;man command-not-found
+: 1393721799:0;vim ~/.zshrc
+: 1393721811:0;rezsh
+: 1393721817:0;wcdi
+: 1393721821:0;wicd
+: 1393721861:0;yaourt -S tth-hannom otf-ipafont ttf-indic-otf chromium-libpdf chromium-pepper-flash
+: 1393721868:0;yaourt -S ttf-hannom otf-ipafont ttf-indic-otf chromium-libpdf chromium-pepper-flash
+: 1393721882:0;yaourt -Ss compton
+: 1393721889:0;yaourt -S compton-git
+: 1393721922:0;yaourt -S conky-git
+: 1393721967:0;yaourt -Ss freetype
+: 1393721979:0;yaourt -S freetype2
+: 1393721987:0;yaourt -Ss freetype
+: 1393722002:0;yaourt -Ss freetype-git
+: 1393722051:0;yaourt -S freetype2-git lib32-libxft oglft python2-freetype-py 
+: 1393722094:0;yaourt -S bzip2
+: 1393722097:0;yaourt -S freetype2-git lib32-libxft oglft python2-freetype-py 
+: 1393722112:0;yaourt -S base-devel
+: 1393722145:0;yaourt -S freetype2-git lib32-libxft oglft python2-freetype-py 
+: 1393722177:0;yaourt -S freetype2 lib32-libxft oglft python2-freetype-py 
+: 1393722228:0;yaourt -S conky-git
+: 1393722327:0;yaourt -Ss conky
+: 1393722379:0;yaourt -S ttf-stylebats
+: 1393722393:0;yaourt -Ss coreutils
+: 1393722407:0;yaourt -S coreutils-git
+: 1393722438:0;yaourt -S gperf
+: 1393722440:0;yaourt -S coreutils-git
+: 1393722527:0;yaourt -Ss cowfortune
+: 1393722545:0;yaourt -Ss dhcpcd
+: 1393722563:0;yaourt -S dialog
+: 1393722570:0;yaourt -Ss dialog
+: 1393722592:0;yaourt -Ss diffuse
+: 1393722598:0;yaourt -Ss diffutils
+: 1393722604:0;yaourt -S diffutils-git
+: 1393722746:0;yaourt -Ss dump-git
+: 1393722758:0;yaourt -Ss dzen2-git
+: 1393722762:0;yaourt -S dzen2-git
+: 1393722835:0;yaourt -Ss empathy
+: 1393722997:0;yaourt -Ss eog
+: 1393723014:0;yaourt -Ss epiphany
+: 1393723020:0;yaourt -S epiphany-git
+: 1393723033:0;yaourt -S webkitgtk3
+: 1393723048:0;yaourt -S gtk3
+: 1393723069:0;yaourt -Ss evince
+: 1393723084:0;yaourt -S evince-gtk
+: 1393723113:0;yaourt -Ss feh
+: 1393723122:0;yaourt -S feh-git
+: 1393723146:0;yaourt -Ss festival
+: 1393723172:0;yaourt -S festival-english festival-us 
+: 1393723199:0;yaourt -S firefox-nightly
+: 1393723212:0;yaourt -Ss flake
+: 1393723222:0;yaourt -Ss flashplugin
+: 1393723236:0;yaourt -Ss flex
+: 1393723295:0;yaourt -Ss fluidsynth
+: 1393723302:0;yaourt -S fluidsynth-svn
+: 1393723357:0;vim ~/.zaliases
+: 1393723367:0;vim ~/.zsh/aliases.zsh
+: 1393723378:0;foremost
+: 1393723419:0;yaourt -R fortune-mod-horse_ebooks fortune-mod-futurama fortune-mod-seinfeld
+: 1393723428:0;yaourt -S gawk-git
+: 1393723506:0;yaourt -R gedit
+: 1393723512:0;yaourt -S beaver
+: 1393723515:0;beaver
+: 1393723530:0;yaourt -R gnome
+: 1393723566:0;yaourt -R evince-gtk cheese gnome-clocks network-manager-applet gnome-color-manager mutter-wayland 
+: 1393723584:0;yaourt -R evince-gtk cheese gnome-clocks network-manager-applet gnome-color-manager mutter-wayland empathy gnome-contacts gnome-control-center gnome-shell sushi
+: 1393723594:0;yaourt -R evince-gtk cheese gnome-clocks network-manager-applet gnome-color-manager mutter-wayland empathy gnome-contacts gnome-control-center gnome-shell sushi gdm gnome-shell-extensions
+: 1393723626:0;yaourt -R  accountsservice caribou colord-gtk cups-pk-helper djvulibre exiv2 folks gjs  gnome-menus gnome-video-effects gtksourceview3 libchamplain libgdm  libgnomekbd libgxps libmusicbrainz5 libspectre mash  mobile-broadband-provider-info modemmanager shared-color-targets smbclient  telepathy-farstream telepathy-logger telepathy-mission-control
+: 1393723640:0;yaourt -R  cifs-utils evolution-data-server farstream ghostscript ldb libmbim libqmi  libxklavier ppp python2-atspi zeitgeist 
+: 1393723650:0;yaourt -R libgdata libnice libpaper libwbclient python2-gobject tevent
+: 1393723657:0;yaourt -R  gnome-online-accounts libbsd talloc
+: 1393723664:0;yaourt -R rest
+: 1393723671:0;yaourt -R gnome
+: 1393723675:0;yaourt -R gnome libgweather
+: 1393723716:0;yaourt -R  cantarell-fonts clutter-gst clutter-gtk exempi gcr geoclue2 geocode-glib   gnome-bluetooth grilo gst-plugins-base gst-plugins-good gtkmm3 gvfs   icon-naming-utils iso-codes libcanberra-pulse libcap-ng libgee libgsf libibus libnautilus-extension libpeas libpwquality libtracker-sparql libwacom  libwnck3 mod_dnssd nautilus-sendto networkmanager pulseaudio-alsa  python-gobject telepathy-glib upower vte3 webkitgtk xdg-user-dirs 
+: 1393723764:0;yaourt -R  aalib apache bluez clutter geoclue gobject-introspection gst-plugins-bad   libavc1394 libcaca libcanberra libcdio-paranoia libiec61883 libimobiledevice  libmm-glib liboauth libsecret libxres perl-xml-simple pygobject-devel  python-cairo taglib totem-plparser udisks2 vte-common 
+: 1393723789:0;yaourt -R   celt chromaprint cogl faac gmime gst-plugins-base-libs json-glib libatasmart   libcdio libdca libdvdnav libevdev libgme libical libofa libraw1394 libsou  libsrtp libwebp mjpegtools mpg123 neon python2-mako sound-theme-freedesktop   soundtouch spandsp usbmuxd wildmidi
+: 1393723799:0;yaourt -R   celt chromaprint cogl faac gmime gst-plugins-base-libs json-glib libatasmart   libcdio libdca libdvdnav libevdev libgme libical libofa libraw1394 libsoup  libsrtp libwebp mjpegtools mpg123 neon python2-mako sound-theme-freedesktop   soundtouch spandsp usbmuxd wildmidi
+: 1393723807:0;yaourt -R  glib-networking gstreamer libcddb libdv libdvdread libmp4v2 libplist python2-beaker python2-markupsafe
+: 1393723819:0; glib-networking gstreamer libcddb libdv libdvdread libmp4v2 libplist python2-beaker python2-markupsafe
+: 1393723822:0;yaourt -R gsettings-desktop-schemas libproxy
+: 1393723827:0;yaourt -S evince-gtk apache
+: 1393723912:0;yaourt -Qqe
+: 1393723939:0;yaourt -S grep-git
+: 1393724012:0;yaourt -S djvulibre libspectre libgxps gvfs
+: 1393724038:0;yaourt -Ss htop
+: 1393724053:0;yaourt -S htop-git
+: 1393724080:0;yaourt -S strace lsof
+: 1393724094:0;yaourt -S aspell
+: 1393724096:0;yaourt -S aspell-en
+: 1393724103:0;yaourt -Ss spell-en
+: 1393724126:0;yaourt -S firefox-spell-en-us hunspell-en-base
+: 1393724147:0;\
+yaourt -S firefox-spell-en-us 
+: 1393724331:0;yaourt -Ss i3
+: 1393724342:0;yaourt -Ss i3-
+: 1393724358:0;yaourt -Ss inkscape
+: 1393724364:0;wifi
+: 1393724367:0;wicd
+: 1393724372:0;sudo wicd
+: 1393724378:0;sudo killall wicd
+: 1393724378:0;sudo wicd
+: 1393724383:0;sudo wicd-gtk
+: 1393724488:0;yaourt -Ss i3-
+: 1393724582:0;yaourt -S mutt-git
+: 1393724589:0;yaourt -Ss mutt-
+: 1393724602:0;yaourt -S mutt-hg
+: 1393724664:0;yaourt -S texlive
+: 1393724673:0;yaourt -Ss texlive
+: 1393724730:0;yaourt -S xorg-git
+: 1393724738:0;yaourt -Ss zsh-
+: 1393724791:0;yaourt -S zsh-git
+: 1393724998:0;yaourt -S zsh-doc zsh-yaourt 
+: 1393725007:0;yaourt -S zsh-doc 
+: 1393725095:0;yaourt -R zsh-syntax-highlighting-git
+: 1393725099:0;yaourt -S zsh-git
+: 1393725276:0;yaourt -S mutt-hg
+: 1393725285:0;yaourt -S zsh-syntax-highlighting
+: 1393725292:0;yaourt -S zsh-syntax-highlighting-git
+: 1393725332:0;ls
+: 1393725348:0;yaourt -Ss urxvt
+: 1393725397:0;yaourt -S urxvt-perls
+: 1393725407:0;yaourt -Ss rxvt-unicode
+: 1393725529:0;yaourt -Ss tmux
+: 1393725549:0;yaourt -S tmux-git
+: 1393725598:0;yaourt -Ss rxvt-unicode
+: 1393725632:0;yaourt -Ss vim
+: 1393725700:0;yaourt -S vim-spell-en
+: 1393725715:0;yaourt -S zsh-syntax-completion-git
+: 1393725721:0;yaourt -Ss zsh-sy
+: 1393725730:0;yaourt -Ss zsh-syntax-highlighting-git
+: 1393725736:0;yaourt -S zsh-syntax-highlighting-git
+: 1393725771:0;vim ~/.zsh/alia
+: 1393725776:0;vim ~/.zsh/aliases.zsh
+: 1393725783:0;ls
+: 1393725826:0;yaourt -S vim-spell-en
+: 1393725843:0;yaourt -S ranger
+: 1393725898:0;yaourt -S ranger-git
+: 1393726203:0;yaourt -S mutt-hg
+: 1393733840:0;yaourt -R fortune-mod-homeland
+: 1393733850:0;yaourt -R fortune-mod-americandad
+: 1393733856:0;yaourt -R fortune-mod-3rfts
+: 1393733861:0;yaourt -R fortune-mod-archer
+: 1393733868:0;yaourt -R fortune-mod-arresteddevelopment
+: 1393733888:0;yaourt -R fortune-mod-chappelle
+: 1393733894:0;yaourt -R fortune-mod-dexter
+: 1393733899:0;yaourt -R fortune-mod-dexterslab 
+: 1393733906:0;yaourt -R fortune-mod-entourage
+: 1393733909:0;yaourt -R fortune-mod-entourage-ari_gold
+: 1393733917:0;yaourt -R fortune-mod-fringe
+: 1393733923:0;yaourt -R fortune-mod-blackadder
+: 1393733929:0;yaourt -R fortune-mod-dharmaandgreg
+: 1393733937:0;yaourt -R fortune-mod-homestuck-git
+: 1393733944:0;yaourt -R fortune-mod-joel
+: 1393733950:0;yaourt -R fortune-mod-darkwingduck
+: 1393733955:0;yaourt -R fortune-mod-chuck
+: 1393733961:0;yaourt -R fortune-mod-bunheads
+: 1393733967:0;yaourt -R fortune-mod-californication
+: 1393733973:0;yaourt -R fortune-mod-carnivale
+: 1393733980:0;yaourt -R fortune-mod-darkknight
+: 1393733986:0;yaourt -R fortune-mod-protolol-git
+: 1393733993:0;yaourt -R fortune-mod-mynameisearl
+: 1393733999:0;yaourt -R fortune-mod-newgirl
+: 1393734006:0;yaourt -R fortune-mod-dune-the-butlerian-jihad
+: 1393734012:0;yaourt -R fortune-mod-freshprince
+: 1393734017:0;yaourt -R fortune-mod-fullhouse
+: 1393734022:0;yaourt -R fortune-mod-himym
+: 1393734028:0;yaourt -R fortune-mod-lostgirl
+: 1393734033:0;yaourt -R fortune-mod-kylexy
+: 1393734040:0;yaourt -R fortune-mod-scrubs
+: 1393734047:0;yaourt -R fortune-mod-tgagaapp
+: 1393734053:0;yaourt -R fortune-mod-that70sshow
+: 1393734059:0;yaourt -R fortune-mod-thebigbangtheory
+: 1393734065:0;yaourt -R fortune-mod-burnnotice
+: 1393734074:0;yaourt -R fortune-mod-chucknorris
+: 1393734080:0;yaourt -R fortune-mod-ducktales
+: 1393734095:0;yaourt -R fortune-mod-leagueofgentlemen
+: 1393734105:0;yaourt -R fortune-mod-mrsunshine
+: 1393734126:0;yaourt -R fortune-mod-misfits
+: 1393734131:0;yaourt -R fortune-mod-quantumleap
+: 1393734138:0;yaourt -R fortune-mod-thenewsroom
+: 1393734158:0;yaourt -R fortune-mod-sabrina
+: 1393734167:0;yaourt -R fortune-mod-southpark
+: 1393734200:0;yaourt -R fortune-mod-betteroffted
+: 1393734208:0;steam&
+: 1393734232:0;wicd-gt
+: 1393734238:0;\
+\
+wicd-gtk
+: 1393784530:0;ssh kemus@athena.dialup
+: 1393827779:0;wicd-curses
+: 1393830940:0;ls
+: 1393831162:0;yaourt -Syu
+: 1393831236:0;sudo vim /etc/pacman.conf
+: 1393831246:0;yaourt -Syu
+: 1393831251:0;yaourt -Syua
+: 1393831261:0;yaourt -Syua --devel
+: 1393831590:0;yaourt -Qqe
+: 1393831602:0;yaourt -Ss acpi
+: 1393831613:0;yaourt -Ss acpi-
+: 1393831621:0;yaourt -Ss acpid-
+: 1393831629:0;yaourt -Ss alsa-oss-
+: 1393831634:0;yaourt -Ss alsa-plugins-
+: 1393831650:0;yaourt -Ss alsa-tools-
+: 1393831657:0;yaourt -Ss alsa-utils-
+: 1393831671:0;yaourt -S alsa-utils-transparent
+: 1393831709:0;yaourt -Ss alsi
+: 1393831719:0;yaourt -Ss apache-
+: 1393831754:0;yaourt -Ss arch-wiki-
+: 1393831771:0;yaourt -Ss aspell-
+: 1393831794:0;yaourt -Ss autoconf-
+: 1393831810:0;yaourt -S bash-
+: 1393831813:0;yaourt -Ss bash-
+: 1393831852:0;yaourt -S bash-docs bash-completion-git 
+: 1393831882:0;yaourt -S bash-docs
+: 1393831890:0;yaourt -S bc-git
+: 1393831896:0;yaourt -Ss bc-
+: 1393831915:0;yaourt -S bc-alpha
+: 1393831938:0;yaourt -Ss beaver-
+: 1393831945:0;yaourt -S beaver-git
+: 1393831974:0;automake --version
+: 1393831989:0;yaourt -Ss automake-
+: 1393831998:0;yaourt -S automake-1.11
+: 1393832013:0;yaourt -S beaver-git
+: 1393832025:0;yaourt -R automake-1.11
+: 1393832038:0;yaourt -S bison-
+: 1393832042:0;yaourt -Ss bison-
+: 1393832048:0;yaourt -Ss bison++-
+: 1393832057:0;yaourt -Ss bzip2-
+: 1393832076:0;yaourt -S bzip2-tools lbzip2-git
+: 1393832092:0;yaourt -S lbzip2-git
+: 1393836990:0;lsblk
+: 1393837000:0;[â€ƒ³]OscarGrouchisMyHero 39 points 5 hours ago
+: 1393837000:0;Stood by my friend through his dad beating him up, his family almost disowning him, motivating him to go to med school, helping with his tuition, and being a shoulder for him and his fam when his dad passed away only to be told I was selfish, evil, and have never done anything good for him. Happened yesterday.
+: 1393837043:0;lsblk
+: 1393837384:0;NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+: 1393838405:0;sudo killall dhcpcd
+: 1393838410:0;sudo dhcpcd
+: 1393868409:0;wicd-curses
+: 1393868431:0;sudo killall dhcpcd
+: 1393868437:0;sudo dhcpcd
+: 1393868440:0;sudo killall dhcpcd
+: 1393868557:0;wicd-gtk
+: 1393868594:0;sudo wifi-menu
+: 1393868704:0;wicd-curses
+: 1393868709:0;sudo wicd-curses
+: 1393868729:0;sudo wifi-menu
+: 1393868745:0;sudo dhcpcd
+: 1393870127:0;sudo killall dhcpcd
+: 1393870131:0;sudo dhcpcd
+: 1393870136:0;sudo killall dhcpcd
+: 1393870139:0;sudo wifi-menu
+: 1393870195:0;sudo killall dhcpcd
+: 1393870202:0;sudo dhcpcd
+: 1393870250:0;vim todo.txt
+: 1393876570:0;yaourt -Syu
+: 1393876590:0;yaourt -Syua
+: 1393876597:0;yaourt -Syua --devel
+: 1393877315:0;yaourt -Qqe
+: 1393877316:0;yaourt -Qq
+: 1393877330:0; yaourt -Ss python2-
+: 1393877340:0; yaourt -Ss python2-git
+: 1393877349:0; yaourt -Ss python2-dev
+: 1393877355:0; yaourt -Ss python2-hg
+: 1393877556:0;alsamixer
+: 1393889901:0;sudo wicd-curses
+: 1393889904:0;alsamixer
+: 1393889913:0;sudo wifi-menu
+: 1393889933:0;sudo dhcpcd
+: 1393889937:0;sudo killall dhcpcd
+: 1393889938:0;sudo dhcpcd
+: 1393890106:0;killall firefox
+: 1393908502:0;cd downloads
+: 1393908502:0;ls
+: 1393908505:0;cd ../Downloads
+: 1393908506:0;ls
+: 1393908523:0;evince PVSD.pdf
+: 1393908530:0;Good Guy Boss (a good friend of mine) saves his hourly employees from the "snow day, no pay" dilemma. (livememe.com)
+: 1393908530:0;submitted 9 hours ago by VersatilityMaster
+: 1393908530:0;    61 comments
+: 1393913966:0;sudo wifi-menu\
+\
+
+: 1393958709:0;vim
+: 1393965102:0;sudo killall dhcpcd
+: 1393965106:0;sudo dhcpcd
+: 1393965119:0;sudo wifi-menu
+: 1393965132:0;sudo killall dhcpcd
+: 1393965134:0;sudo dhcpcd
+: 1393966377:0;sudo wifi-menu
+: 1393966558:0;alsamixer
+: 1393976303:0;sudo wifi-menu
+: 1393984364:0;alsamixer
+: 1393986620:0;yaourt -Ss internet
+: 1393986646:0;wine
+: 1393986654:0;yaourt -S winetricks
+: 1393986685:0;yaourt -S ies4linux
+: 1393986702:0;wine
+: 1393986706:0;wine ie6
+: 1393986801:0;yaourt -S wine-gecko
+: 1393986805:0;yaourt -Ss wine-gecko
+: 1393986807:0;yaourt -Ss wine gecko
+: 1393986814:0;yaourt -S wine_gecko
+: 1393986846:0;wine ie6
+: 1393986850:0;wine ie7
+: 1393986851:0;wine ie8
+: 1393986852:0;wine ie
+: 1393986866:0;ies4linux
+: 1393986902:0;sudo ies4linux
+: 1393986921:0;ie6\
+
+: 1393986925:0;wine ie6\
+
+: 1393986946:0;sudo ln -sv /usr/bin/winecfg /usr/bin/wineprefixcreate
+: 1393986949:0;ies4linux
+: 1393986963:0;wine ie6
+: 1393986968:0;ie5
+: 1393986969:0;ie6
+: 1393986971:0;ie6.exe
+: 1393986977:0;ies4linux
+: 1394003307:0;yaourt -Syu
+: 1394003339:0;yaourt -Syua
+: 1394003488:0;yaourt -Syu --devel
+: 1394003834:0;yaourt -Qq
+: 1394003839:0;yaourt -Qq >| packages
+: 1394003853:0;for $i in `cat packages`; do print $i; done
+: 1394003857:0;for i in `cat packages`; do print $i; done
+: 1394003977:0;for i in `cat packages`; do print $i-git; done
+: 1394003987:0;for i in `cat packages`; do yaourt -Ss $i-git; done
+: 1394004002:0;killall zsh
+: 1394004005:0;killall bash
+: 1394004009:0;killall yaourt
+: 1394004020:0;killall for
+: 1394004057:0;yaourt -Ssq cnacl-git
+: 1394004070:0;killall yaourt
+: 1394004120:0;for i in `cat packages`; do killall yaourt; done
+: 1394004140:0;yaourt -Ssq yaourt-git
+: 1394004145:0;yaourt -Ssq "yaourt-git"
+: 1394004150:0;yaourt -Ssq yaourt-git
+: 1394004166:0;yaourt -Ssqe yaourt-git
+: 1394004170:0;yaourt -Ssqq yaourt-git
+: 1394004175:0;yaourt -Sssq yaourt-git
+: 1394004180:0;yaourt -Ssq yaourt-git
+: 1394004202:0;for i in `cat packages`; do yaourt -Ssq $i-git >>| packages-git; done
+: 1394004209:0;touch packages-git
+: 1394004211:0;for i in `cat packages`; do yaourt -Ssq $i-git >>| packages-git; done
+: 1394004224:0;cat packages-git
+: 1394004270:0;cat packages-git | grep -e "-git$"
+: 1394004309:0;cat packages-git | grep -e "-git$" 
+: 1394004391:0;yaourt -Qqe | grep "-git$"
+: 1394004398:0;yaourt -Qqe -git | grep "-git$"
+: 1394004404:0;yaourt -Qqe -git | grep -e "-git$"
+: 1394004413:0;yaourt -Qqe  | grep -e "-git$"
+: 1394004431:0;yaourt -Qqe  | grep -e "-git$" >| packages-git-installed
+: 1394004438:0;cat packages-git | grep -e "-git$" 
+: 1394004495:0;for i in `cat packages`; do killall yaourt; done
+: 1394004506:0;rm packages-git
+: 1394004510:0;touch packages-git
+: 1394004528:0;rm packages
+: 1394004529:0;yaourt -
+: 1394004532:0;yaourt -Qqe
+: 1394004539:0;yaourt -Qqe >| packages
+: 1394004550:0;yaourt -Qq >| packages2
+: 1394004555:0;wc packages
+: 1394004558:0;wc packages2
+: 1394004584:0;for i in `cat packages`; do yaourt -Ssq $i-git >>| packages-git; done
+: 1394004595:0;cat packages-git | grep -e "-git$" 
+: 1394004619:0;yaourt -Ss sony-acpid
+: 1394004763:0;for i in `cat packages`; do killall yaourt; done
+: 1394004768:0;wc packages-git
+: 1394004817:0;for i in `cat packages`; do yaourt -Ssq $i-git | grep -e "\$$i-git"; done
+: 1394004835:0;for i in `cat packages`; do killall yaourt; done
+: 1394004851:0;for i in `cat packages`; do yaourt -Ssq $i-git | grep -e "$i-git"; done
+: 1394004870:0;for i in `cat packages`; do killall yaourt; done
+: 1394004895:0;for i in `cat packages`; do yaourt -Ssq $i-git | grep -e "$$i-git^"; done
+: 1394004908:0;for i in `cat packages`; do killall yaourt; done
+: 1394004983:0;man grep
+: 1394004993:0;$PAGER = less
+: 1394005001:0;$PAGER = less -T
+: 1394005010:0;man grep | cat
+: 1394005018:0;man grep | vim
+: 1394005043:0;man grep 
+: 1394005048:0;sudo man grep
+: 1394005087:0;for i in `cat packages`; do yaourt -Ssq $i-git | grep -x "$i-git"; done
+: 1394005095:0;for i in `cat packages`; do killall yaourt; done
+: 1394005108:0;rm packages-git
+: 1394005113:0;touch packages-git
+: 1394005125:0;for i in `cat packages`; do yaourt -Ssq $i-git | grep -x "$i-git" >>| packages-git; done
+: 1394005131:0;cat packages-git
+: 1394005321:0;yaourt -Ss alsa-plugins-git
+: 1394005327:0;yaourt -S alsa-plugins-git
+: 1394005422:0;cat packages-git
+: 1394005435:0;yaourt -S autoconf-git
+: 1394005441:0;cat packages-git
+: 1394005460:0;yaourt -Ss bash-completion-git
+: 1394005466:0;yaourt -S bash-completion-git
+: 1394005481:0;yaourt -Ss beaver-git
+: 1394005493:0;yaourt -S beaver-git
+: 1394005614:0;yaourt -S conky-git
+: 1394005753:0;yaourt -S freetype2-git
+: 1394005801:0;yaourt -S conky-git
+: 1394005984:0;yaourt -S freetype-dev
+: 1394005988:0;yaourt -Ss freetype-dev
+: 1394005990:0;yaourt -Ss freetype
+: 1394006040:0;yaourt -S lib32-freetype2-infinality
+: 1394006089:0;yaourt -S e2fsprogs-git
+: 1394006101:0;yaourt -S fontforge-git
+: 1394006159:0;yaourt -S gcc-multilib-git
+: 1394006170:0;yaourt -S fontforge-git
+: 1394006184:0;yaourt -Ss git-git
+: 1394006192:0;yaourt -S git-git
+: 1394006227:0;yaourt -Ss autogen
+: 1394006231:0;yaourt -S autogen
+: 1394006237:0;yaourt -S fontforge-git
+: 1394006297:0;yaourt -S gimp-git
+: 1394006996:0;yaourt -S gvfs-git
+: 1394007188:0;yaourt -Ss i3status-git
+: 1394007192:0;yaourt -S i3status-git
+: 1394007217:0;yaourt -S iproute2-git
+: 1394007266:0;yaourt -S mdadm-git
+: 1394007275:0;yaourt -S mpd-git
+: 1394007287:0;yaourt -S mdadm-git
+: 1394007307:0;yaourt -S mupdf-git
+: 1394007414:0;yaourt -S openssh-git
+: 1394007425:0;yaourt -S pacman-git
+: 1394007530:0;yaourt -S pipelight-git
+: 1394007548:0;yaourt -S powertop-git
+: 1394007614:0;yaourt -S procps-ng-git
+: 1394007670:0;yaourt -S python2-magic-git
+: 1394007772:0;yaourt -S rsync-git
+: 1394007874:0;yaourt -S s-nail-git
+: 1394007906:0;yaourt -S smtp-forwarder-git
+: 1394007909:0;yaourt -S smtp-forwarder
+: 1394007920:0;yaourt -Sy
+: 1394007928:0;yaourt -Ss
+: 1394007930:0;yaourt -Ss a
+: 1394007933:0;yaourt -Ss s
+: 1394007941:0;pacman -Sy
+: 1394007944:0;sudo pacman -Sy
+: 1394007958:0;sudo vim /etc/pacman.conf
+: 1394007989:0;sudo mv /etc/pacman.conf.pacsave /etc/pacman.conf
+: 1394007990:0;ls
+: 1394008013:0;ls -l
+: 1394008015:0;ls 
+: 1394008654:0;yaourt -S smtp-forwarder
+: 1394008739:0;yaourt -S vimpager-git
+: 1394008752:0;yaourt -S wine-git
+: 1394008773:0;yaourt -S xmms2-git
+: 1394008795:0;yaourt -S cunit
+: 1394008807:0;yaourt -S xmms2-git
+: 1394008969:0;touch packages-dev
+: 1394008971:0;for i in `cat packages`; do yaourt -Ssq $i-dev | grep -x "$i-dev" >>| packages-dev; done
+: 1394010228:0;cat packages-dev
+: 1394010238:0;yaourt -S chromium-libpdf-dev
+: 1394010288:0;yaourt -S chromium-pepper-flash-dev
+: 1394010657:0;yaourt -S ntp-dev
+: 1394010757:0;touch packages-devel
+: 1394010759:0;for i in `cat packages`; do yaourt -Ssq $i-devel | grep -x "$i-devel" >>| packages-devel; done
+: 1394010776:0;yaourt -Ss -svn
+: 1394010779:0;yaourt -Ss svn
+: 1394010815:0;touch packages-svn
+: 1394010821:0;for i in `cat packages`; do yaourt -Ssq $i-svn | grep -x "$i-svn" >>| packages-svn; done
+: 1394010830:0;touch packages-hg
+: 1394010843:0;for i in `cat packages`; do yaourt -Ssq $i-hg | grep -x "$i-hg" >>| packages-svn; done
+: 1394010873:0;for i in `cat packages`; do yaourt -Ssq $i-hg | grep -x "$i-hg" >>| packages-hg; done
+: 1394010939:0;cat packages-devel
+: 1394010945:0;yaourt -Ss gimp-devel
+: 1394010954:0;yaourt -Ssq gimp-
+: 1394010959:0;yaourt -Ssq gimp-git
+: 1394010963:0;yaourt -Ss gimp-git
+: 1394011214:0;cat packages-devel
+: 1394011221:0;cat packages-svn
+: 1394011229:0;yaourt -S ftgl-svn
+: 1394011239:0;yaourt -S imagemagick-svn
+: 1394011247:0;yaourt -S nano-svn
+: 1394011281:0;yaourt -S ntop-svn
+: 1394011293:0;yaourt -S vbam-gtk-svn
+: 1394011335:0;cat packages-hg
+: 1394011340:0;yaourt -S mutt-hg
+: 1394011352:0;yaourt -S vim-hg
+: 1394011389:0;yaourt -Syu
+: 1394075965:0;sudo wifi-menu
+: 1394087685:0;ls
+: 1394087691:0;cd Downloads
+: 1394087692:0;ls
+: 1394087695:0;cd ps1_submissions
+: 1394087695:0;ls
+: 1394087702:0;mupdf epopova.pdf
+: 1394141394:0;wifi
+: 1394147282:0;sudo killall dhcpcd
+: 1394147293:0;sudo dhcpcd
+: 1394147500:0;vim
+: 1394161980:0;killall dhcpcd
+: 1394161983:0;sudo killall dhcpcd
+: 1394161988:0;sudo dhcpcd
+: 1394202882:0;sudo killall dhcpcd
+: 1394202886:0;sudo dhcpcd
+: 1394209612:0;alsamixer
+: 1394215390:0;sudo killall dhcpcd
+: 1394215410:0;sudo dhcpcd
+: 1394215434:0;sudo wifi-menu
+: 1394215695:0;alsamixer
+: 1394223212:0;gedit
+: 1394224977:0;sudo dhcpcd
+: 1394228876:0;wifi-menu
+: 1394228883:0;sudo wifi-menu
+: 1394247008:0;yaourt -Syu
+: 1394247051:0;yaourt -Syua
+: 1394247059:0;yaourt -Syu --devel
+: 1394258989:0;sudo wifi-menu
+: 1394311448:0;vim todo.txt
+: 1394312770:0;ssh kemus@athena.dialup
+: 1394318807:0;sudo wifi-menu
+: 1394318889:0;vim
+: 1394335152:0;sudo wifi-menu
+: 1394337380:0;sudo dhcdpcd
+: 1394337385:0;sudo dhcpcd
+: 1394337836:0;alsamixer
+: 1394341271:0;sudo wifi-menu
+: 1394341673:0;sudo dhcpcd
+: 1394341680:0;sudo killall dhcpcd
+: 1394341681:0;sudo dhcpcd
+: 1394343568:0;cd Downloads
+: 1394343577:0;unzip fuckface.zip
+: 1394343587:0;evince crazy.pdf
+: 1394343625:0;evince developement.pdf
+: 1394343668:0;evince development.pdf
+: 1394343676:0;evince essay1.pdf
+: 1394343711:0;evince k1.pdf
+: 1394343719:0;evince social.pdf
+: 1394343733:0;evince crazy.pdf
+: 1394344452:0;q\
+q\
+
+: 1394392804:0;ls
+: 1394392806:0;cd Downloads
+: 1394392807:0;ls
+: 1394392817:0;vlc ec-1934.mp4
+: 1394392824:0;yaourt -S vlc
+: 1394392841:0;vlc ec-1934.mp4
+: 1394392860:0;alsamixer
+: 1394403998:0;vim
+: 1394410673:0;killall youtube
+: 1394410677:0;killall firefox
+: 1394410697:0;yaourt -Ss flash
+: 1394410703:0;yaourt -S flashplugin
+: 1394410717:0;yaourt -Ss pepper
+: 1394410751:0;alsamixer
+: 1394500943:0;evince development.pd
+: 1394500951:0;cd
+: 1394500954:0;vim todo.txt
+: 1394514910:0;vim multi.py
+: 1394514966:0;python2 multi.py
+: 1394517861:0;vim multi.py
+: 1394525033:0;killall firefox\
+
+: 1394567146:0;q\
+
+: 1394567199:0;yaourt -Syu
+: 1394567360:0;yaourt -Syua
+: 1394567455:0;yaourt -Syu --devel
+: 1394567634:0;vim ~/.i3/config
+: 1394567660:0;vim ~/bin/windows.py
+: 1394574197:0;alsamixer
+: 1394575806:0;speakertest
+: 1394575816:0;yaourt -S alsa-utils
+: 1394575826:0;speakertest
+: 1394575829:0;speaker-test
+: 1394575833:0;speaker-test -c2
+: 1394575839:0;speaker-test -c2 -d2
+: 1394575840:0;speaker-test -c2 -d
+: 1394575843:0;speaker-test -c2 
+: 1394575873:0;speaker-test -c2 -D2
+: 1394575876:0;speaker-test -c2 -D1
+: 1394575878:0;speaker-test -c2 -D1,2
+: 1394575880:0;speaker-test -c2 -D6
+: 1394575881:0;speaker-test -c2 -D5
+: 1394575883:0;speaker-test -c2 
+: 1394575887:0;speaker-test -c
+: 1394575888:0;speaker-test -
+: 1394575894:0;speaker-test -D
+: 1394575931:0;aplay -l
+: 1394575947:0;vim ~/.asoundrc
+: 1394575970:0;aplay -l
+: 1394575977:0;speaker-test
+: 1394576110:0;ps -ax
+: 1394576124:0;lsof | grep snd
+: 1394576174:0;speaker-tes
+: 1394576175:0;speaker-test
+: 1394576180:0;speaker-test -c2
+: 1394576187:0;wifi-menu
+: 1394576191:0;sudo wifi-menu
+: 1394576227:0;vim ~/.asoundrc
+: 1394576282:0;wifi
+: 1394576306:0;speaker-test
+: 1394576310:0;speaker-test -c2
+: 1394576314:0;vim ~/.asoundrc
+: 1394576321:0;speaker-test -c2
+: 1394576323:0;speaker-test -c
+: 1394576324:0;speaker-test -c1
+: 1394576327:0;speaker-test 
+: 1394576366:0;vim ~/.asoundrc
+: 1394576378:0;speaker-test 
+: 1394576381:0;vim ~/.asoundrc
+: 1394576412:0;speaker-test
+: 1394576415:0;speaker-test -c2
+: 1394576425:0;speaker-test 
+: 1394576434:0;ls
+: 1394576439:0;aplay
+: 1394576487:0;yaourt -S chromium-dev
+: 1394576555:0;sudo pip2 remove simplejson
+: 1394576560:0;sudo pip2 
+: 1394576566:0;sudo pip2 uninstall simplejson
+: 1394576571:0;yaourt -S chromium-dev
+: 1394577278:0;sudo vim /etc/pacman.conf
+: 1394582023:0;ls
+: 1394582025:0;cd Downloads
+: 1394582025:0;ls
+: 1394582032:0;cp ps2.zip ..
+: 1394582033:0;cd ..
+: 1394582034:0;ls
+: 1394582044:0;mkdir 6.813-pset2
+: 1394582050:0;mv ps2.zip 6.813-pset2
+: 1394582054:0;cd 6.813-pset2
+: 1394582054:0;ls
+: 1394582057:0;unzip ps2.zip
+: 1394582058:0;ls
+: 1394582060:0;cd src
+: 1394582060:0;ls
+: 1394582098:0;vim index.html
+: 1394582686:0;alsamixer
+: 1394582697:0;yaourt -S alsamixer
+: 1394582703:0;yaourt -S alsa-utils
+: 1394582709:0;yaourt -S alsa-utils-transparent
+: 1394582737:0;alsamixer
+: 1394582739:0;alsamixer &
+: 1394582740:0;alsamixer 
+: 1394582743:0;alsamixer a
+: 1394582745:0;alsamixer c
+: 1394582746:0;alsamixer
+: 1394582749:0;amixer
+: 1394582752:0;amix
+: 1394582769:0;vim ~/bin/windows.py
+: 1394582774:0;amixer -c 0
+: 1394582779:0;amixer -c 0 sset Speaker 0
+: 1394582786:0;amixer -c 0 sset Headphone 0
+: 1394582789:0;amixer -c 0 sset Headphone 100
+: 1394583207:0;amixer -c 0 sset Speaker 100
+: 1394583215:0;amixer -c 0 sset Speaker 0
+: 1394583217:0;amixer -c 0 sset Headphone 100
+: 1394583221:0;speaker-test
+: 1394583224:0;speaker-test -c2
+: 1394583229:0;killall chromium
+: 1394583232:0;killall chromium-browser
+: 1394583235:0;killall chrome
+: 1394583271:0;lsof snd
+: 1394583276:0;lsof | grep snd
+: 1394583319:0;amixer -c 0 sset Speaker 0
+: 1394583322:0;amixer -c 0 sset Headphone 100
+: 1394583328:0;speaker-test -c2
+: 1394583374:0;wifi
+: 1394583490:0;vim 6.813-pset2/src/index.html
+: 1394583661:0;vim 6.813-pset2/src/board.js
+: 1394583721:0;vim 6.813-pset2/src/index.html
+: 1394583757:0;vim 6.813-pset2/src/board.js
+: 1394585053:0;vim 6.813-pset2/src/mainLayout.css
+: 1394585138:0;vim 6.813-pset2/src/board.js
+: 1394585140:0;vim 6.813-pset2/src/index.html
+: 1394585221:0;vim 6.813-pset2/src/mainLayout.css
+: 1394585417:0;vim 6.813-pset2/src/index.html
+: 1394585423:0;vim 6.813-pset2/src/mainLayout.css
+: 1394585454:0;vim 6.813-pset2/src/index.html
+: 1394585815:0;vim 6.813-pset2/src/mainLayout.css
+: 1394585946:0;ls
+: 1394585948:0;cd 6.813-pset2
+: 1394585948:0;ls
+: 1394585950:0;cd src
+: 1394585951:0;ls
+: 1394585953:0;cd graphics
+: 1394585953:0;ls
+: 1394585954:0;feh
+: 1394586358:0;vim 6.813-pset2/src/index.html
+: 1394586364:0;vim index.html
+: 1394586368:0;cd ..
+: 1394586368:0;vim index.html
+: 1394587172:0;cd 6.813-pset2/src
+: 1394587173:0;l
+: 1394587175:0;vim checker.js
+: 1394587202:0;ls
+: 1394587232:0;ls graphics
+: 1394587866:0;vim board.js
+: 1394588250:0;vim checker.js
+: 1394588305:0;vim board.js
+: 1394589258:0;vim index.html
+: 1394590318:0;vim mainLayout.css
+: 1394592554:0;vim board.js
+: 1394593249:0;vim mainLayout.css
+: 1394596977:0;vim board.js
+: 1394597042:0;vim boardEvent.js
+: 1394597049:0;vim rules.js
+: 1394597309:0;vim board.js
+: 1394613139:0;history | grep amixer
+: 1394613151:0;amixer -c0 sset Headphone 100
+: 1394613158:0;amixer -c0 sset Speaker 0
+: 1394620036:0;killall chrome
+: 1394620061:0;speaker-test
+: 1394620064:0;speaker-test -c2
+: 1394620158:0;lsof | grep snd
+: 1394620177:0;sudokillall CrShutdown
+: 1394620181:0;sudo killall CrShutdown
+: 1394620185:0;lsof | grep snd
+: 1394620188:0;lsof
+: 1394620197:0;man lsof
+: 1394620206:0;man lsof | cat
+: 1394620263:0;lsof | grep snd
+: 1394620277:0;sudo kill 8259
+: 1394620284:0;lsof | grep snd
+: 1394620290:0;speaker-test -c2
+: 1394620298:0;sudo kill 7961
+: 1394620299:0;speaker-test -c2
+: 1394620300:0;lsof | grep snd
+: 1394620308:0;sudo kill 7967
+: 1394620309:0;lsof | grep snd
+: 1394620312:0;sudo kill 7967
+: 1394620315:0;lsof | grep snd
+: 1394620319:0;sudo kill 7987
+: 1394620320:0;lsof | grep snd
+: 1394620324:0;sudo kill 7990
+: 1394620325:0;lsof | grep snd
+: 1394620327:0;speaker-test -c2
+: 1394620330:0;lsof | grep snd
+: 1394622183:0;kill 8967
+: 1394622184:0;lsof | grep snd
+: 1394644113:0;sudo wifi-menu
+: 1394656066:0;sudo killall dhcpcd
+: 1394656074:0;sudo killall wpa_supplicant
+: 1394656082:0;sudo wifi-menu
+: 1394656295:0;tracert
+: 1394656297:0;traceroute
+: 1394656305:0;traceroute 18.111.7.15
+: 1394656356:0;sudo wifi-menu
+: 1394656370:0;traceroute 18.111.7.159
+: 1394658586:0;ping 18.111.7.159
+: 1394658595:0;traceroute 18.111.7.159
+: 1394658611:0;ping 18.111.7.159
+: 1394658627:0;ping -c1337 18.111.7.159
+: 1394658830:0;man ping
+: 1394658834:0;man ping |cat
+: 1394658856:0;sudo ping -c1337 -i0 18.111.7.159
+: 1394658883:0;sudo ping -c1337 -i0.01 18.111.7.159
+: 1394659064:0;sudo ping -c1337 -i0.01 18.111.7.159 >| pinga
+: 1394659090:0;gedit
+: 1394659095:0;yaourt gedit
+: 1394659101:0;yaourt -S gedit
+: 1394659105:0;gedit
+: 1394659109:0;gedit pinga
+: 1394659181:0;htop
+: 1394660443:0;arp -a
+: 1394662830:0;ip link show wlp2s0
+: 1394662835:0;ip link show 
+: 1394662887:0;arp -a
+: 1394662897:0;arp 
+: 1394662913:0;ping 10.189.71.183
+: 1394662918:0;arp -a
+: 1394662922:0;arp 
+: 1394662925:0;ping 10.189.71.183
+: 1394662929:0;arp 
+: 1394665147:0;wifi-menu
+: 1394665152:0;sudo wifi-menu
+: 1394667267:0;ls
+: 1394667269:0;cd 6.813-pset2
+: 1394667269:0;ls
+: 1394667281:0;mkdir kemus
+: 1394667284:0;mv src kemus
+: 1394667287:0;cd kemus/src
+: 1394667287:0;ls
+: 1394667291:0;vim index.html
+: 1394667296:0;ls
+: 1394667297:0;cd ..
+: 1394667298:0;ls
+: 1394667304:0;zip kemus
+: 1394667309:0;zip kemus.zip kemus
+: 1394667311:0;ls
+: 1394667314:0;zip kemus.zip kemus -r
+: 1394667317:0;ls
+: 1394667319:0;mkdir kemus2
+: 1394667325:0;mv kemus.zip kemus2
+: 1394667327:0;cd kemus2
+: 1394667328:0;ld
+: 1394667332:0;ls
+: 1394667335:0;unzip kemus.zip
+: 1394667338:0;ls
+: 1394667366:0;mv kemus.zip ~
+: 1394667423:0;ls
+: 1394667424:0;cd kemus
+: 1394667424:0;ls
+: 1394667426:0;cd src
+: 1394667426:0;ls
+: 1394667430:0;vim index.html
+: 1394667630:0;vim board.js
+: 1394667659:0;ls
+: 1394667660:0;cd ..
+: 1394667661:0;ls
+: 1394667662:0;cd ..
+: 1394667662:0;ls
+: 1394667673:0;zip kemus.zip kemus/ -r
+: 1394667691:0;mkdir ~/ps2
+: 1394667697:0;mv kemus.zip ~/ps2
+: 1394667700:0;cd ~/ps2
+: 1394667700:0;ls
+: 1394667703:0;unzip kemus.zip
+: 1394667740:0;vim kemus/src/index.html
+: 1394672012:0;sudo wifi-menu
+: 1394673199:0;wifi-menu
+: 1394674494:0;cat /etc/words
+: 1394674557:0;cat /usr/lib/aspell-0.60/english.alias
+: 1394674584:0;cat /usr/share/dict/words
+: 1394674611:0;yaourt -S words
+: 1394674691:0;cat /usr/share/dict/usa
+: 1394674704:0;cat /usr/share/dict/usa | grep '.'*\1
+: 1394674714:0;cat /usr/share/dict/usa | grep -e '.*\1'
+: 1394674716:0;cat /usr/share/dict/usa | grep -e '.\1'
+: 1394674720:0;cat /usr/share/dict/usa | grep -e '(.)\1'
+: 1394674722:0;cat /usr/share/dict/usa | grep -e '(.)'
+: 1394674728:0;cat /usr/share/dict/usa | grep -e .
+: 1394674762:0;cat /usr/share/dict/usa | grep -e '(.)'
+: 1394674766:0;cat /usr/share/dict/usa | grep -e '\(.\)'
+: 1394674769:0;cat /usr/share/dict/usa | grep -e '\(.\)\1'
+: 1394674775:0;cat /usr/share/dict/usa | grep -e '\(.\).*\1'
+: 1394674786:0;cat /usr/share/dict/usa | grep -e '\(.\).*\1.*\1'
+: 1394674794:0;cat /usr/share/dict/usa | grep -e '\(.\).*\1.*\1.*\1'
+: 1394674802:0;cat /usr/share/dict/usa | grep -e '\(.\).*\1.*\1.*\1.*\1'
+: 1394674808:0;cat /usr/share/dict/usa | grep -e '\(.\).*\1.*\1.*\1.*\1.*\1'
+: 1394675693:0;cat /usr/share/dict/usa | grep -e '\(.\).*\1.*\1.*\1.*\1.*\1.*\1'
+: 1394675698:0;cat /usr/share/dict/usa | grep -e '\(.\).*\1.*\1.*\1.*\1.*\1'
+: 1394675753:0;ls /usr/share/dict
+: 1394675765:0;mkdir words
+: 1394675768:0;mv words
+: 1394675780:0;cp /usr/share/dict/words .
+: 1394675787:0;cp /usr/share/dict/words/* .
+: 1394675789:0;ls
+: 1394675794:0;cd words
+: 1394675796:0;cp /usr/share/dict/words/* .
+: 1394675807:0;cp /usr/share/dict/* .
+: 1394675807:0;ls
+: 1394675815:0;cat words
+: 1394675818:0;ls
+: 1394675839:0;cat * >| word
+: 1394675840:0;ls
+: 1394675843:0;cat word
+: 1394675845:0;cat word 
+: 1394675849:0;cat word |wc
+: 1394675854:0;cat word | sort
+: 1394675870:0;cat word | sort | uniq >| word2
+: 1394675900:0;cat word | sort | uniq -i >| word2
+: 1394675905:0;cat word | sort | uniq -i >| word3
+: 1394675918:0;wc word3
+: 1394675921:0;ls
+: 1394675946:0;rm catala catalan finnish french german italian ngerman ogerman spanish word word2 word3 words
+: 1394675949:0;ls
+: 1394675952:0;cat cracklib-small
+: 1394676612:0;ls
+: 1394676614:0;rm cracklib-small
+: 1394676631:0;cat * |sort |uniq -i >| words
+: 1394676637:0;wc words
+: 1394676640:0;cat words
+: 1394676668:0;cat words | grep -ve "'s$"
+: 1394676675:0;cat words | grep -ve "'s$" >| words2
+: 1394676678:0;wc words2
+: 1394676750:0;yaourt -S transmission
+: 1394676756:0;yaourt -S transmission-gtk
+: 1394676763:0;transmission
+: 1394676765:0;transmission-gtk
+: 1394676924:0;wifi-menu
+: 1394676929:0;sudo wifi-menu
+: 1394679242:0;man wc
+: 1394679245:0;man wc |cat
+: 1394679259:0;wc winetricks -l
+: 1394680505:0;yaourt -S bsd-games
+: 1394680559:0;yaourt -Ss bsd-games
+: 1394680566:0;yaourt -Ss -games
+: 1394680575:0;yaourt -Ssq -games
+: 1394680578:0;yaourt -Ssq -games |grep games
+: 1394680657:0;yaourt -S texlive-games
+: 1394688238:0;sudo wifi-menu
+: 1394688389:0;ls
+: 1394688391:0;cd /share
+: 1394688392:0;ls
+: 1394688395:0;ls -la
+: 1394688398:0;rm lost+found
+: 1394688400:0;rm lost+found -r
+: 1394688403:0;y
+: 1394688406:0;ls
+: 1394688412:0;rm lost+found -rf
+: 1394688419:0;sudo rm lost+found -rf
+: 1394688423:0;ls
+: 1394688438:0;sudo chmod a+rw .
+: 1394688439:0;ls
+: 1394688441:0;ls -la
+: 1394688473:0;wget -w 2 -m -H "http://www.gutenberg.org/robot/harvest?filetypes[]=txt&langs[]=en"
+: 1394688484:0;man wget | cat
+: 1394688491:0;man wget | grep "-w"
+: 1394688498:0;man wget | grep -- "-w"
+: 1394688510:0;wget -w 0 -m -H "http://www.gutenberg.org/robot/harvest?filetypes[]=txt&langs[]=en"
+: 1394736895:0;alsamixer
+: 1394736900:0;amixer
+: 1394736909:0;history | grep speaker
+: 1394736915:0;history | grep Speaker
+: 1394736924:0;amixer -c0 sser Speaker 100
+: 1394736928:0;amixer -c0 sset Speaker 100
+: 1394740976:0;quiz
+: 1394740984:0;mkdir ~/output
+: 1394740985:0;quiz
+: 1394740987:0;ls
+: 1394740989:0;cd output
+: 1394740989:0;ls
+: 1394740992:0;cat audit.txt
+: 1394740995:0;rm audit.txt
+: 1394740999:0;quiz
+: 1394741001:0;s
+: 1394741003:0;a
+: 1394741015:0;q
+: 1394741017:0;v
+: 1394741023:0;yaourt -S moreutils
+: 1394746549:0;vim multi.py
+: 1394746724:0;python2 multi.py
+: 1394749017:0;ls
+: 1394749018:0;cd Desktop
+: 1394749019:0;ls
+: 1394749026:0;cd ../Downloads
+: 1394749026:0;ls
+: 1394749032:0;cd ../Desktop
+: 1394749032:0;ls
+: 1394749045:0;cd Xowa_enwiktionary_2013-11-17_complete
+: 1394749046:0;ls
+: 1394749053:0;unzip Xowa_enwiktionary_2013-11-17_complete.zip
+: 1394749088:0;ls
+: 1394749090:0;cd wiki
+: 1394749091:0;ls
+: 1394749092:0;cd en.wiktionary.org
+: 1394749092:0;ls
+: 1394749098:0;vim en.wiktionary.org.000.sqlite3
+: 1394749111:0;cd Desktop
+: 1394749111:0;ls
+: 1394749118:0;cd Xowa_enwiktionary_2013-11-17_complete
+: 1394749118:0;ls
+: 1394749119:0;cd wiki
+: 1394749120:0;ls
+: 1394749122:0;cd en.wiktionary.org
+: 1394749122:0;ls
+: 1394749126:0;less en.wiktionary.org.000.sqlite3
+: 1394749134:0;head en.wiktionary.org.000.sqlite3
+: 1394749142:0;head -n50 en.wiktionary.org.000.sqlite3
+: 1394749153:0;head -n500 en.wiktionary.org.000.sqlite3
+: 1394750422:0;[?1;2c
+: 1394750423:0;ls
+: 1394750426:0;cd output
+: 1394750427:0;ls
+: 1394750429:0;cd ..
+: 1394750430:0;ls
+: 1394750818:0;alsamixer
+: 1394750819:0;alsamixer -c0
+: 1394750892:0;ls
+: 1394759561:0;killall chrome
+: 1394759609:0;wifi
+: 1394760304:0;wifi-menu
+: 1394760306:0;sudo wifi-menu
+: 1394858928:0;sudo killall wpa_supplicant
+: 1394858930:0;sudo wifi-menu
+: 1394910031:0;wifi
+: 1394914941:0;alsamixer
+: 1394914944:0;alsamixer -c0
+: 1394958396:0;sudo killall firefox
+: 1394992616:0;alsamixer -c0
+: 1395006538:0;sudo wifi-menu
+: 1395006574:0;sudo killall wpa_supplicant
+: 1395006575:0;sudo wifi-menu
+: 1395006589:0;sudo dhcpcd
+: 1395009556:0;sudo killall firefox
+: 1395009560:0;alsamixer -c0
+: 1395032379:0;sudo killall dhcpcd
+: 1395032383:0;sudo dhcpcd
+: 1395042988:0;sudo killall dhcpcd
+: 1395042998:0;sudo dhcpcd
+: 1395043001:0;sudo wifi-menu
+: 1395080636:0;lsof | grep snd
+: 1395080645:0;kill 14763
+: 1395080646:0;lsof | grep snd
+: 1395082447:0;sudo wifi-menu
+: 1395106400:0;sudo killall dhcpcd
+: 1395106403:0;sudo dhcpcd
+: 1395129959:0;sudo wifi-menu
+: 1395180160:0;lsof | grep snd
+: 1395180178:0;kill 1800
+: 1395180180:0;lsof | grep snd
+: 1395180321:0;cowspeak lol
+: 1395180323:0;cowspeak
+: 1395180325:0;cow
+: 1395186428:0;lsof
+: 1395186433:0;lsof | grep snd
+: 1395186441:0;kill 18422
+: 1395186443:0;lsof | grep snd
+: 1395186450:0;kill 24984
+: 1395193830:0;ls
+: 1395193832:0;xd Downloads
+: 1395193835:0;cd Downloads
+: 1395193835:0;ls
+: 1395193840:0;unzip dp1.zip
+: 1395193841:0;ls
+: 1395193851:0;evince dp1prop.pdf
+: 1395257087:0;sudo wifi-menu
+: 1395257104:0;sudo killall dhcpcd
+: 1395257108:0;sudo dhcpcd
+: 1395257862:0;sudo killall dhcpcd
+: 1395257878:0;sudo dhcpcd
+: 1395257887:0;ssh kemus@athena.dialup
+: 1395271015:0;sudo wifi-menu
+: 1395275871:0;fd
+: 1395281633:0;ls
+: 1395281647:0;cd Downloads
+: 1395281648:0;ls
+: 1395281670:0;cd 
+: 1395281671:0;ls
+: 1395281707:0;l
+: 1395281708:0;ls
+: 1395281710:0;cd Downloads
+: 1395281710:0;ls
+: 1395281715:0;evince dp1prop.pdf
+: 1395341375:0;sudo wifi-menu
+: 1395341931:0;alsamixer
+: 1395341934:0;alsamixer -c0
+: 1395344321:0;vim
+: 1395357061:0;lsof snd
+: 1395357065:0;lsof | grep snd
+: 1395357070:0;kill 17036
+: 1395357074:0;kill 17044
+: 1395357077:0;lsof | grep snd
+: 1395357081:0;kill 10434
+: 1395357083:0;lsof | grep snd
+: 1395357088:0;kill 3352
+: 1395357090:0;lsof | grep snd
+: 1395367318:0;man find | less
+: 1395367320:0;man find | cat
+: 1395371745:0;man find | grep size
+: 1395371752:0;man find | cat
+: 1395371763:0;man find | grep size -A20
+: 1395381954:0;cd Downloads
+: 1395381954:0;ls
+: 1395381972:0;mv CopyofPVSD.pdf ~/dp1.pdf
+: 1395381974:0;cd 
+: 1395381974:0;ls
+: 1395381979:0;evince dp1.pdf
+: 1395382057:0;evince Downloads/CopyofPVSD.pdf
+: 1395382090:0;evince Downloads/DP1.pdf
+: 1395382170:0;evince Downloads/DP1-kemus.pdf
+: 1395382192:0;evince Downloads/DP1-final.pdf
+: 1395433904:0;ls
+: 1395433907:0;cd words
+: 1395433908:0;ls
+: 1395433912:0;wc words
+: 1395433937:0;cat words 
+: 1395433955:0;cat words | grep -ve "'s"
+: 1395433961:0;cat words | grep -ve "'s" >| wordslol
+: 1395433965:0;cat wordslol
+: 1395433977:0;ls
+: 1395433982:0;ls -la wordslol
+: 1395433985:0;ls -lah wordslol
+: 1395434023:0;cat wordslol
+: 1395434035:0;cat wordslol | grep -e "s$"
+: 1395434040:0;cat wordslol | grep -e "s$" >| wordslols
+: 1395434066:0;for word in `cat wordslols`; do echo "a$word";done
+: 1395434094:0;for word in `cat wordslols`; do echo "$word";done
+: 1395434099:0;for word in `cat wordslol`; do echo "$word";done
+: 1395455579:0;cd Downloads
+: 1395455579:0;ls
+: 1395455586:0;unzip kemus.zip
+: 1395455589:0;cd kemus
+: 1395455590:0;ls
+: 1395455592:0;cd src
+: 1395455592:0;ls
+: 1395455601:0;fins
+: 1395455602:0;find
+: 1395493732:0;sudo wifi-menu
+: 1395494061:0;alsamixer -c0
+: 1395550257:0;wifi
+: 1395554377:0;lsof | grep snd
+: 1395554387:0;lsof | grep snd | cut -f2
+: 1395554415:0;lsof | grep snd | awk -e "print {$1}"
+: 1395554419:0;lsof | grep snd | awk -e "print $1"
+: 1395554445:0;lsof | grep snd | awk  "{print $1}"
+: 1395554458:0;lsof | grep snd | awk  '{print $1}'
+: 1395554462:0;lsof | grep snd | awk  '{print $2}'
+: 1395554469:0;lsof | grep snd | awk  '{print $2}' | sort | uniq
+: 1395554489:0;for id in `lsof | grep snd | awk  '{print $2}' | sort | uniq`; do kill $id;done
+: 1395554502:0;vim ~/bin/snd
+: 1395554527:0;chmod a+x ~/bin/snd 
+: 1395554528:0;snd
+: 1395554631:0;alsamixer -c0
+: 1395554713:0;snd
+: 1395554746:0;lsof | grep snd
+: 1395554755:0;kill 8260
+: 1395554756:0;lsof | grep snd
+: 1395557995:0;cd Downloads
+: 1395557995:0;ls
+: 1395557999:0;vlc 
+: 1395558009:0;vlc Dream-Note-Ep1-Eng-Sub.mkv.crdownload
+: 1395558029:0;snd
+: 1395558032:0;vlc Dream-Note-Ep1-Eng-Sub.mkv.crdownload
+: 1395558408:0;yaourt -S mplayer
+: 1395558420:0;mplayer
+: 1395558425:0;mplayer Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558462:0;snd
+: 1395558468:0;lsof | grep snd
+: 1395558476:0;kill 8631
+: 1395558479:0;mplayer Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558494:0;vlc Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558506:0;lsof | grep snd
+: 1395558513:0;kill 14557
+: 1395558514:0;lsof | grep snd
+: 1395558516:0;vlc Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558525:0;mplayer Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558533:0;lsof | grep snd
+: 1395558538:0;kill 14616
+: 1395558540:0;lsof | grep snd
+: 1395558543:0;mplayer Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558604:0;ls -lah
+: 1395558616:0;cvlc 
+: 1395558624:0;cvlc Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558644:0;yaourt -Ss mkv
+: 1395558657:0;yaourt -Ss video
+: 1395558720:0;mpg123
+: 1395558724:0;mpg123 Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558780:0;vlc Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558881:0;mpg123 Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558883:0;vlc Dream-Note-Ep1-Eng-Sub.mkv
+: 1395558895:0;lsof | grep snd
+: 1395558902:0;kill 14987
+: 1395558903:0;lsof | grep snd
+: 1395558904:0;vlc Dream-Note-Ep1-Eng-Sub.mkv
+: 1395559330:0;lsof | grep snd
+: 1395559385:0;alsamixer -c0
+: 1395563847:0;lsof | grep snd
+: 1395563851:0;killall chrome
+: 1395563852:0;lsof | grep snd
+: 1395614896:0;alsamixer -c0
+: 1395629571:0;yaourt -Syu
+: 1395646798:0;sudo wifi-menu
+: 1395665143:0;alsamixer -c0
+: 1395700963:0;wifi-menu
+: 1395700965:0;sudo wifi-menu
+: 1395707183:0;ls
+: 1395707185:0;cd Downloads
+: 1395707185:0;ls
+: 1395707203:0;vlc Dream-Note-Ep1-Eng-Sub.mkv
+: 1395722952:0;alsamixer -c0
+: 1395722964:0;lsof | grep snd
+: 1395722969:0;kill 1726
+: 1395722971:0;lsof | grep snd
+: 1395722977:0;kill 27978
+: 1395722978:0;lsof | grep snd
+: 1395814947:0;snd
+: 1395814955:0;lsof | grep snd
+: 1395814961:0;kill 30737
+: 1395872294:0;sudo wifi-,emi
+: 1395872299:0;sudo wifi-menu
+: 1396117711:0;lsof | grep snd
+: 1396117717:0;kill 29729
+: 1396117719:0;lsof | grep snd
+: 1396124754:0;sudo wifi-menu
+: 1396170704:0;cd Downloads2
+: 1396170705:0;ls
+: 1396170720:0;vlc SubDESU-H-Dream-Note-Ep2.mp4
+: 1396171067:0;ls
+: 1396171071:0;cd ../Downloads
+: 1396171071:0;ls
+: 1396171078:0;vlc Bible-Black-Ep1-\(Unc-Subbed\).mp4
+: 1396171454:0;vlc Bible-Black-Ep2-\(Unc-Subbed\).mp4
+: 1396200014:0;cd Downloads2
+: 1396200015:0;ls
+: 1396200020:0;cd ../Downloads
+: 1396200021:0;lx
+: 1396200022:0;ls
+: 1396200031:0;vlc Bible-Black-Ep3-\(Unc-Subbed\).mp4
+: 1396244503:0;lsof | grep snd
+: 1396244512:0;kill 1513
+: 1396244517:0;kill 2070
+: 1396244518:0;lsof | grep snd
+: 1396244526:0;kill 1507
+: 1396244529:0;kill 1543
+: 1396244532:0;kill 1546
+: 1396244533:0;lsof | grep snd
+: 1396248586:0;ls
+: 1396249366:0;sudo wifi-menu
+: 1396249839:0;sudo killall dhcpcd
+: 1396249846:0;sudo dhcpcd
+: 1396249896:0;vim ~/.conkyrc
+: 1396249915:0;killall conky
+: 1396249923:0;vim ~/.conkyrc
+: 1396250005:0;killall conky
+: 1396252166:0;vlc Downloads2/new-jav.net_DV1331.avi.crdownload
+: 1396252194:0;cd Downloads2/MC\ Theater
+: 1396252195:0;ls
+: 1396252198:0;vlc Disc\ Connection.wmv
+: 1396252641:0;ls
+: 1396252652:0;vlc scentlure-big-qt.mov.part
+: 1396252903:0;ls
+: 1396252910:0;vlc Model\ Behavior.mp4
+: 1396253284:0;o\
+o\
+vlc scentlure-big-qt.mov
+: 1396285211:0;sudo wifi-menu
+: 1396316880:0;cd Downloads2
+: 1396316880:0;ls
+: 1396316883:0;mv kemus.zip ~
+: 1396316886:0;cd 
+: 1396316886:0;ls
+: 1396316890:0;mkdir ps3
+: 1396316895:0;mv kemus.zip ps3
+: 1396316895:0;ls
+: 1396316898:0;cd ps3
+: 1396316898:0;ls
+: 1396316902:0;unzip kemus.zip
+: 1396316903:0;ls
+: 1396316904:0;cd kemus
+: 1396316905:0;ls
+: 1396316907:0;cd src/
+: 1396316908:0;ls
+: 1396316924:0;vim board.js
+: 1396316931:0;vim checker.js
+: 1396316937:0;vim rules.js
+: 1396316951:0;vim boardEvent.js
+: 1396316957:0;vim board.js
+: 1396316970:0;ls
+: 1396316974:0;grep * 
+: 1396316976:0;grep * l
+: 1396316979:0;grep l *
+: 1396316988:0;grep event *
+: 1396316996:0;grep listener *
+: 1396317001:0;grep delete *
+: 1396317015:0;ls
+: 1396317016:0;ls -la
+: 1396317023:0;ls -lsa sort
+: 1396317026:0;ls -lsa --sort
+: 1396317028:0;ls -lsa --sort d
+: 1396317030:0;ls -lsa --sort time
+: 1396317042:0;vim board.js
+: 1396317075:0;ls
+: 1396317083:0;vim board.js
+: 1396317094:0;grep remove *
+: 1396317106:0;ls
+: 1396317143:0;grep black *
+: 1396317146:0;vim index.html
+: 1396318518:0;ls
+: 1396318519:0;cd 
+: 1396318519:0;ls
+: 1396318523:0;cd ps3/kemus/src/
+: 1396318524:0;ls
+: 1396318582:0;cd graphics
+: 1396318582:0;ls
+: 1396319466:0;cd ..
+: 1396319467:0;ls
+: 1396319471:0;vim mainLayout.css
+: 1396320608:0;vim index.html
+: 1396322478:0;ls
+: 1396322480:0;ls graphics
+: 1396326730:0;ls
+: 1396326734:0;vim board.js
+: 1396327839:0;vim mainLayout.css
+: 1396327960:0;vim rules.js
+: 1396330340:0;vim board.js
+: 1396330522:0;vim rules.js
+: 1396330549:0;vim board.js
+: 1396331096:0;vim rules.js
+: 1396331776:0;vim board.js
+: 1396331871:0;vim rules.js
+: 1396340125:0;cd Downloads2
+: 1396340125:0;ls
+: 1396340127:0;cd MC\ Theater
+: 1396340128:0;ls
+: 1396340228:0;vlc Employee\ Orientation.wmv
+: 1396340465:0;vlc bluff-big-qt.mov
+: 1396404448:0;yaourt -Syu
+: 1396404729:0;sudo wifi-menu
+: 1396411468:0;vim mainLayout.css
+: 1396417229:0;vim ps3/kemus/src/mainLayout.css
+: 1396418815:0;vim board.js
+: 1396418832:0;vim checker.js
+: 1396420912:0;vim mainLayout.css
+: 1396421687:0;vim board.js
+: 1396422763:0;cp index.html index2.html
+: 1396422765:0;vim index2.html
+: 1396443134:0;cd Downloads
+: 1396443137:0;cd Downloads2
+: 1396443140:0;cd ../Downloads2
+: 1396443144:0;cd MC\ Theater
+: 1396443145:0;ls
+: 1396443176:0;vlc Act\ Now.mp4
+: 1396443715:0;vlc `\
+
+: 1396443742:0;vlc The\ Truth\ About\ Hypnosis,\ Part\ 1.wmv
+: 1396462783:0;killall chrome
+: 1396480554:0;sudo wifi-menu
+: 1396488018:0;vim ps3/kemus/src/index2.html
+: 1396488046:0;cd ps3/kemus/src
+: 1396488052:0;diff index2.html index3.html
+: 1396488080:0;vim index3.html
+: 1396493617:0;mv index.html index2.html ~
+: 1396493617:0;ls
+: 1396493619:0;cd ..
+: 1396493620:0;ls
+: 1396493627:0;zip src -r
+: 1396493631:0;zip -r src
+: 1396493662:0;zip  src
+: 1396493702:0;zip -r kemus.zip src
+: 1396493708:0;mv kemus.zip ~
+: 1396493710:0;cd ~
+: 1396493710:0;ls
+: 1396493714:0;mkdir test
+: 1396493719:0;mv kemus.zip test
+: 1396493723:0;cd test
+: 1396493727:0;unzip kemus.zip
+: 1396493731:0;ls
+: 1396493734:0;cd src
+: 1396493735:0;ls
+: 1396493741:0;mv index3.html index.html
+: 1396493743:0;cd ..
+: 1396493744:0;ls
+: 1396493746:0;rm kemus.zip
+: 1396493753:0;zip -r kemus.zip src
+: 1396493759:0;rm -r src
+: 1396493763:0;ls
+: 1396493767:0;unzip kemus.zip
+: 1396493769:0;cd src
+: 1396493769:0;ls
+: 1396493775:0;chromium index.html
+: 1396493944:0;cd 
+: 1396493947:0;cd Downloads2
+: 1396494032:0;\
+vlc MC\ Theater/scentlure-big-qt.mov
+: 1396494198:0;\
+vlc MC\ Theater/The\ Truth\ About\ Hypnosis,\ Part\ 1.wmv
+: 1396494673:0;redshift
+: 1396494680:0;yaourt -S redshift-gtk
+: 1396494693:0;yaourt -S redshift
+: 1396494703:0;yaourt -S gtk-redshift
+: 1396494711:0;redshift
+: 1396494723:0;yaourt -S geoclue
+: 1396494739:0;yaourt -S gnome-clock
+: 1396494793:0;vim ~/.zaliases
+: 1396494800:0;vim ~/.zsh/aliases.zsh
+: 1396494860:0;redshift
+: 1396494880:0;vim ~/.zsh/aliases.zsh
+: 1396494895:0;redshift
+: 1396494898:0;vim ~/.zsh/aliases.zsh
+: 1396494921:0;redshift
+: 1396494929:0;vim ~/.zsh/aliases.zsh
+: 1396494942:0;redshift
+: 1396495054:0;sudo vim /etc/rc.d/ntpd
+: 1396495068:0;sudo vim /etc/rc.d/ntpdate
+: 1396495074:0;sudo vim /etc/rc.conf
+: 1396495134:0;sudo rm /etc/rc.conf
+: 1396495152:0;hwclock --systohc --localtime
+: 1396495156:0;sudo hwclock --systohc --localtime
+: 1396495175:0;sudo hwclock --systohc --utc
+: 1396495197:0;sudo hwclock --debug
+: 1396495254:0;timedatectl status
+: 1396495264:0;sudo timedatectl list-timezones
+: 1396495296:0;sudo timedatectl set-timezone America/New_York
+: 1396544286:0;sudo wifi-menu
+: 1396575401:0;vim book
+: 1396575798:0;ls
+: 1396575801:0;cd ebooks
+: 1396575801:0;ls
+: 1396575806:0;evince Principle_Of_Computer_System_Design_An_Introduction.pdf
+: 1396631037:0;sudo wifi-menu
+: 1396632533:0;cd Downloads3
+: 1396632533:0;ls
+: 1396632539:0;chromium *
+: 1396633016:0;cd Downloads3
+: 1396633023:0;evince therac.pdf
+: 1396633034:0;evince therac.pdf &
+: 1396633052:0;evince Tocs97.pdf&
+: 1396633061:0;evince mapreduce-osdi04.pdf&
+: 1396633069:0;evince pig-latin.pdf
+: 1396633081:0;evince pig-latin.pdf &
+: 1396633090:0;evince ron-sosp2001.pdf&
+: 1396633097:0;evince endtoend.pdf
+: 1396633100:0;evince endtoend.pdf&
+: 1396633144:0;evince gettys.pdf&
+: 1396633150:0;evince allman &
+: 1396633156:0;evince allman.pdf &
+: 1396633169:0;evince dctcp-final.pdf&
+: 1396633180:0;evince roofnet.pdf&
+: 1396634150:0;sudo killall wpa_supplicant
+: 1396634155:0;sudo killall dhcpcd
+: 1396634161:0;sudo killall wifi-menu
+: 1396641603:0;killall firefox
+: 1396641605:0;killall evince
+: 1396641612:0;sudo wifi-menu
+: 1396641633:0;sudo dhcpcd
+: 1396650494:0;lsof | grep snd
+: 1396650498:0;kill 12018
+: 1396650499:0;lsof | grep snd
+: 1396650505:0;kill 19412
+: 1396650509:0;kill 19406
+: 1396650510:0;kill 19412
+: 1396650512:0;lsof | grep snd
+: 1396650515:0;kill 19427
+: 1396650517:0;kill 19430
+: 1396654620:0;vim
+: 1396688130:0;vlc Desktop/Captain\ America\ The\ Winter\ Soldier\ 2014\ NEW\ \(FIXED\)\ 720p\ CAM\ x264\ Pimp4003/\[WWW.PIMP4003.NET\]\ Captain\ America\ The\ Winter\ Soldier\ 2014\ NEW\ \(FIXED\)\ 720p\ CAM\ x264\ Pimp4003.mp4
+: 1396756761:0;sudo wifi-menu
+: 1396824325:0;yaourt -Syu
+: 1396830456:0;vlc Downloads/Bible-Black-Ep4-\(Unc-Subbed\).mp4
+: 1396831108:0;killall vlc
+: 1396831209:0;sudo wifi-menu
+: 1396849416:0;redshift
+: 1396863779:0;vlc Downloads2/MC\ Theater/Cafe\ Society.wmv
+: 1396893663:0;killall redshift
+: 1396896255:0;sudo wifi-menu
+: 1396896470:0;sudo killall wifi-menu
+: 1396896475:0;sudo killall wpa_supplicant
+: 1396896479:0;sudo killall dhcpcd
+: 1396896481:0;sudo wifi-menu
+: 1396905523:0;sudo dhcpcd
+: 1396905534:0;sudo killall dhcpcd
+: 1396905535:0;sudo dhcpcd
+: 1396905537:0;sudo killall dhcpcd
+: 1396905543:0;sudo killall wpa_supplicant
+: 1396905544:0;sudo wifi-menu
+: 1396905550:0;a\
+\
+
+: 1396905554:0;sudo wifi-menu
+: 1396905590:0;sudo dhcpcd
+: 1396905661:0;sudo wifi-menu
+: 1396905675:0;sudo killall wpa_supplicant
+: 1396905679:0;sudo killall dhcpcd
+: 1396905680:0;sudo wifi-menu
+: 1396905700:0;sudo wpa_supplicant
+: 1396905708:0;sudo dhcpcd
+: 1396905756:0;sudo killall wpa_supplicant
+: 1396905761:0;sudo wicd-curses
+: 1396905766:0;sudo wicd
+: 1396905770:0;sudo killall dhcpcd
+: 1396905779:0;sudo wifi-menu
+: 1396905790:0;sudo dhcpcd
+: 1396905800:0;vim lol
+: 1396906630:0;sudo wpa_supplicant
+: 1396906640:0;sudo wpa_supplicant -Dnl80211
+: 1396906645:0;sudo wpa_supplicant -Dnl80211 -iwlan0
+: 1396906654:0;sudo wpa_supplicant -Dnl80211 -iwlan0 -c/etc/wpa_supplicant.conf
+: 1396906661:0;sudo wifi-menu
+: 1396907880:0;htop
+: 1396907982:0;sudo wifi-menu
+: 1396908046:0;gedit lol
+: 1396912295:0;sudo wifi-menu
+: 1396919110:0;ssh kemus@athena.dialup
+: 1396919483:0;vim hologging
+: 1396920746:0;gedit hologging
+: 1396920804:0;mv hologging hologging.txt
+: 1396920948:0;vim homapreduce.txt
+: 1396921415:0;ssh kemus@dialup.athena
+: 1396921424:0;ssh kemus@athena.dialup
+: 1396922672:0;vim homapreduce.txt
+: 1396922885:0;vim hotraceroute.txt
+: 1396923913:0;ping -c100 -s56 www.wits.ac.za
+: 1396923958:0;ping -c100 -s56 www.unsw.edu.au
+: 1396924162:0;ping -c100 -s56 www.microsoft.com
+: 1396924995:0;vim hotraceroute.txt
+: 1396924999:0;vim homapreduce.txt
+: 1396925010:0;vim hotraceroute.txt
+: 1396925023:0;gedit homapreduce.txt
+: 1396925037:0;vim hotraceroute.txt
+: 1396925049:0;gedit homapreduce.txt
+: 1396925125:0;vim hotcp.txt
+: 1396925155:0;ssh -X kemus@athena.dialup
+: 1396925248:0;yaourt -S tcpdump
+: 1396925254:0;athena% wget http://web.mit.edu/6.033/www/assignments/tcpdump.dat
+: 1396925263:0;mkdir handsontcp
+: 1396925265:0;cd handsontcp
+: 1396925286:0;wget http://web.mit.edu/6.033/www/assignments/tcpdump.dat
+: 1396925301:0;tcpdump -r tcpdump.dat >| outfile.txt
+: 1396925304:0;vim outfile.txt
+: 1396925352:0;vim handsontcp.txt
+: 1396925451:0;man tcpdump
+: 1396925456:0;man tcpdump | less
+: 1396925467:0;PAGER=less
+: 1396925468:0;man tcpdump | less
+: 1396925470:0;man tcpdump 
+: 1396925495:0;tcpdump -r -f tcpdump.dat >| outfileip.txt
+: 1396925502:0;tcpdump -fr tcpdump.dat >| outfileip.txt
+: 1396925506:0;man tcpdump 
+: 1396925606:0;tcpdump -er tcpdump.dat >| outfileip.txt
+: 1396925612:0;vim outfileip.txt
+: 1396925632:0;vim outfile.txt
+: 1396925646:0;vim outfileip.txt
+: 1396925688:0;vim outfile.txt
+: 1396926109:0;ssh kemus@athena.dialup
+: 1396926152:0;ssh -X kemus@athena.dialup
+: 1396926557:0;cd handsontcp
+: 1396926557:0;ls
+: 1396926563:0;vim outfile.txt
+: 1396926600:0;cat outfile.txt| grep seq
+: 1396926659:0;vim outfile.txt
+: 1396926731:0;cat outfile.txt| grep seq
+: 1396926768:0;vim outfile.txt
+: 1396926849:0;cat outfile.txt| grep seq
+: 1396926884:0;vim outfile.txt
+: 1396927127:0;cd ..
+: 1396927131:0;gedit homapreduce.txt
+: 1396928973:0;ls
+: 1396928978:0;cd Downloads3
+: 1396928979:0;ls
+: 1396928989:0;unzip ps3_submissions.zip
+: 1396928996:0;cd assignment_3
+: 1396928996:0;ls
+: 1396929066:0;cd ..
+: 1396929066:0;ls
+: 1396929071:0;pdflatex rubric.tex
+: 1396929081:0;vim rubric.
+: 1396929088:0;vim rubric.tex
+: 1396929190:0;cd Downloads3/assignment_3
+: 1396929191:0;ls
+: 1396929196:0;evince namer_pset3.pdf
+: 1396929480:0;evince nicklima_pset3.pdf
+: 1396929490:0;evince nbrimmer_pset3.pdf
+: 1396929515:0;evince namer_pset3.pdf
+: 1396929773:0;evince nbrimmer_pset3.pdf
+: 1396930085:0;evince nhynes_pset3.pdf
+: 1396930540:0;evince nicklima_pset3.pdf
+: 1396930762:0;evince nicku_pset3.pdf
+: 1396931234:0;evince nicseo_pset3.pdf
+: 1396931564:0;evince nihala_pset3.pdf
+: 1396931858:0;evince nkbuduma_pset3.pdf
+: 1396932169:0;evince nmohr_pset3.pdf
+: 1396932234:0;evince nihala_pset3.pdf
+: 1396932249:0;evince nmohr_pset3.pdf
+: 1396932431:0;evince npan_pset3.pdf
+: 1396933009:0;evince nursen_pset3.pdf
+: 1396933046:0;evince ochaykov_pset3.pdf
+: 1396933441:0;sudo wifi-menu
+: 1396933520:0;cd Downloads3
+: 1396933521:0;ls
+: 1396933533:0;cd assignment_3
+: 1396933534:0;ls
+: 1396933540:0;evince ochaykov_pset3.pdf
+: 1396933571:0;cd Downloads3
+: 1396933573:0;cd assignment_3
+: 1396933573:0;ls
+: 1396933581:0;cd ..
+: 1396933581:0;ls
+: 1396933594:0;vim *.tex
+: 1396933838:0;evince olearym_pset3.pdf
+: 1396933980:0;evince otasman_pset3.pdf
+: 1396934345:0;evince padillap_pset3.pdf
+: 1396934502:0;evince paerhati_pset3.pdf
+: 1396934873:0;evince pandit_pset3.pdf
+: 1396935194:0;evince peitao_pset3.pdf
+: 1396935357:0;evince peterkg_pset3.pdf
+: 1396935475:0;evince phager_pset3.pdf
+: 1396935563:0;evince pheyse_pset3.pdf
+: 1396935667:0;evince phoebet_pset3.pdf
+: 1396935768:0;evince phzhou_pset3.pdf
+: 1396936003:0;evince pisces_pset3.pdf
+: 1396936155:0;evince plowe_pset3.pdf
+: 1396936428:0;evince powellj_pset3.pdf
+: 1396936838:0;evince prafulla_pset3.pdf
+: 1396936969:0;evince priscila_pset3.pdf
+: 1396937600:0;evince rahunt_pset3.pdf
+: 1396937717:0;evince rboyland_pset3.pdf
+: 1396937946:0;evince rcha_pset3.pdf
+: 1396937997:0;evince rchipman_pset3.pdf
+: 1396938916:0;evince rcspence_pset3.pdf
+: 1396939145:0;evince rhristov_pset3.pdf
+: 1396939307:0;evince rhsu0529_pset3.pdf
+: 1396939504:0;evince rishabh_pset3.pdf
+: 1396939613:0;evince rjliu_pset3.pdf
+: 1396939714:0;evince rliu42_pset3.pdf
+: 1396939831:0;evince robtucci_pset3.pdf
+: 1396940120:0;evince saadiyah_pset3.pdf
+: 1396940299:0;evince samedson_pset3.pdf
+: 1396940618:0;evince samopp_pset3.pdf
+: 1396940646:0;evince samedson_pset3.pdf
+: 1396940657:0;evince samopp_pset3.pdf
+: 1396940867:0;evince samedson_pset3.pdf
+: 1396940873:0;cd Downloads3/assignment_3
+: 1396940874:0;evince samedson_pset3.pdf
+: 1396941376:0;evince Sarivera_pset3.pdf
+: 1396941510:0;evince sdrammis_pset3.pdf
+: 1396941684:0;evince sfine_pset3.pdf
+: 1396941754:0;evince shanthir_pset3.pdf
+: 1396941827:0;evince shinde_pset3.pdf
+: 1396942084:0;evince shinh_pset3.pdf
+: 1396942240:0;evince samedson_pset3.pdf
+: 1396942245:0;evince samopp_pset3.pdf
+: 1396943270:0;grep * 'in theory'
+: 1396943276:0;grep 'in theory' *
+: 1396943285:0;grep 'theory' *
+: 1396943287:0;grep 'the' *
+: 1396943643:0;evince samopp_pset3.pdf
+: 1396943716:0;evince samedson_pset3.pdf
+: 1396976539:0;sudo wifi-menu
+: 1396979539:0;yaourt -Syu
+: 1396979572:0;yaourt -Syua
+: 1396980083:0;vim count.py
+: 1396980157:0;python count.py
+: 1396980194:0;python2 count.py
+: 1396980309:0;python2 count.py >| loll
+: 1396980312:0;gedit loll
+: 1396986977:0;sudo wifi-menu
+: 1396987002:0;sudo killall dhcpcd
+: 1396987004:0;sudo dhcpcd
+: 1397017209:0;htop
+: 1397019597:0;diff lab6-2 beta
+: 1397020072:0;killall firefox
+: 1397020076:0;killall chrome
+: 1397020220:0;wifi-menu
+: 1397020223:0;sudo wifi-menu
+: 1397047146:0;sudo killall wine
+: 1397047151:0;sudo killall firefox
+: 1397063696:0;sudo wifi-menu
+: 1397065962:0;lynx
+: 1397065969:0;sudo yaourt -S lync
+: 1397065972:0;sudo yaourt -S lynx
+: 1397066033:0;lynx fox.com
+: 1397066039:0;lynx www.fox.com
+: 1397066044:0;lynx www.nbc.com
+: 1397082803:0;la
+: 1397082807:0;cd Downloads3
+: 1397082810:0;la
+: 1397082816:0;xs assignment_3
+: 1397082819:0;cd assignment_3
+: 1397082820:0;ls
+: 1397082836:0;vim ../*.tex
+: 1397082855:0;cd Downloads3/assignment_3
+: 1397082855:0;ls
+: 1397082890:0;evince korlando_pset3.pdf 
+: 1397083467:0;evince kphil61_pset3.pdf 
+: 1397083675:0;evince ksho_pset3.pdf
+: 1397084012:0;evince tjtalkar_pset3.pdf
+: 1397084334:0;evince tsitkov_pset3.pdf
+: 1397084541:0;evince tsoejima_pset3.pdf
+: 1397084736:0;evince tyyan_pset3.pdf
+: 1397084892:0;evince uayyaz_pset3.pdf
+: 1397084977:0;evince ulloac_pset3.pdf
+: 1397085053:0;evince vcjones_pset3.pdf
+: 1397085137:0;evince vdean_pset3.pdf
+: 1397085811:0;evince victorz_pset3.pdf
+: 1397085898:0;evince vkee_pset3.pdf
+: 1397085956:0;evince vtjeng_pset3.pdf
+: 1397086226:0;evince ycoroneo_pset3.pdf
+: 1397086855:0;evince yonadav_pset3.pdf
+: 1397090613:0;mkdir uturn
+: 1397090614:0;cd uturn
+: 1397090615:0;ls
+: 1397090623:0;git clone https://github.com/drosophyllum/uturn.git
+: 1397090627:0;ls
+: 1397090629:0;cd uturn
+: 1397090629:0;l
+: 1397090633:0;vim README.md
+: 1397090645:0;git add README.md 
+: 1397090659:0;git commit -m 'testing'
+: 1397090663:0;git push 
+: 1397090815:0;ls
+: 1397090816:0;vim index.html
+: 1397090853:0;git pull
+: 1397090855:0;ls
+: 1397090856:0;vim index.html
+: 1397091041:0;git commit -m 'menu'
+: 1397091046:0;git add ..
+: 1397091047:0;git add .
+: 1397091050:0;git commit -m 'menu'
+: 1397091054:0;git push
+: 1397091208:0;vim index.html
+: 1397091641:0;vim style.css
+: 1397091664:0;vim index.html
+: 1397091668:0;vim style.css
+: 1397091791:0;vim index.html
+: 1397091831:0;vim style.css
+: 1397091934:0;git pull
+: 1397091953:0;git commit -m 'menu css'
+: 1397091956:0;git add .
+: 1397091957:0;git commit -m 'menu css'
+: 1397091960:0;git push
+: 1397091979:0;vim style.css
+: 1397092016:0;git commit -m 'inline'
+: 1397092019:0;git add .
+: 1397092023:0;git commit -m 'inline'
+: 1397092026:0;git push
+: 1397092238:0;vim style.css
+: 1397092242:0;vim index.html
+: 1397092697:0;git pull
+: 1397092713:0;git commit -m 'merging'
+: 1397092716:0;git add index.html
+: 1397092717:0;git commit -m 'merging'
+: 1397092721:0;git pull
+: 1397092737:0;git push
+: 1397092743:0;vim index.html
+: 1397092858:0;vim style.css
+: 1397092889:0;vim index.html
+: 1397092927:0;vim style.css
+: 1397093394:0;vim index.html
+: 1397093413:0;vim style.css
+: 1397093469:0;vim index.html
+: 1397093471:0;vim style.css
+: 1397093502:0;vim index.html
+: 1397093527:0;vim style.css
+: 1397093573:0;vim index.html
+: 1397093955:0;cd uturn/uturn
+: 1397093955:0;ls
+: 1397094128:0;vim style.css
+: 1397094180:0;vim index.html
+: 1397094185:0;vim style.css
+: 1397094607:0;git commit -m 'search box'
+: 1397094611:0;ls
+: 1397094613:0;rm jquery-1.11.0.min.js
+: 1397094630:0;mkdir images
+: 1397094634:0;mkdir jquery
+: 1397094639:0;mv jquery-1.11.0.js jquery
+: 1397094644:0;mv logo.png images
+: 1397094649:0;vim index.html
+: 1397094695:0;vim main.js
+: 1397094709:0;vim index.html
+: 1397094733:0;vim main.js
+: 1397094739:0;vim index.html
+: 1397094752:0;vim main.js
+: 1397094825:0;vim index.html
+: 1397094836:0;vim main.js
+: 1397094867:0;git add .
+: 1397094879:0;git add -A
+: 1397094890:0;git commit -m 'reorganized + searchbox'
+: 1397094893:0;git push
+: 1397095793:0;ls
+: 1397095795:0;cd ..
+: 1397095796:0;ls
+: 1397095800:0;git clone https://github.com/beschulz/wav2png
+: 1397095807:0;cd wav2png
+: 1397095808:0;ls
+: 1397095812:0;cd dependencies
+: 1397095813:0;ls
+: 1397095814:0;cd ..
+: 1397095815:0;ls
+: 1397095830:0;cd build
+: 1397095831:0;make all
+: 1397095843:0;yaourt -Ss png++
+: 1397095885:0;yaourt -S png++ 
+: 1397095903:0;make all
+: 1397095920:0;yaourt -Ss g++
+: 1397095923:0;yaourt -S g++
+: 1397095951:0;yaourt -Ssq g++ 
+: 1397095958:0;yaourt -Ssq g++  | grep g++
+: 1397095970:0;q\
+yaourt -Ssq gpp  | grep gpp
+: 1397095973:0;\
+yaourt -Ssq gpp  | grep gpp
+: 1397095980:0;yaourt -S gpp
+: 1397096214:0;yaourt -Ss libsndfile
+: 1397096220:0;yaourt -Ss libpng
+: 1397096288:0;yaourt -Ss libboost
+: 1397096292:0;yaourt -Ss boost
+: 1397096395:0;make all
+: 1397096416:0;make clean
+: 1397096418:0;make all
+: 1397096440:0;make clean
+: 1397096441:0;yaourt -Ss libpng
+: 1397096459:0;yaourt -S libpng12
+: 1397096463:0;make all
+: 1397096468:0;yaourt -Ss libpng
+: 1397096497:0;yaourt -S lib32-libpng12 png++-svn
+: 1397096512:0;make all
+: 1397096521:0;ls
+: 1397096524:0;make clean
+: 1397096526:0;make all
+: 1397096534:0;ls
+: 1397096535:0;cd ..
+: 1397096536:0;ls
+: 1397096547:0;wav2png
+: 1397096552:0;cd build
+: 1397096554:0;make install
+: 1397096555:0;ls
+: 1397096558:0;cd ..
+: 1397096558:0;ls
+: 1397096563:0;cd bin
+: 1397096564:0;ls
+: 1397096566:0;cd Linux
+: 1397096567:0;ls
+: 1397096569:0;./wav2png
+: 1397096617:0;ls
+: 1397096618:0;cd ..
+: 1397096618:0;ls
+: 1397096620:0;cd ..
+: 1397096620:0;ls
+: 1397096626:0;mv testmp3testfile_64kb_mp3.zip bin/Linux
+: 1397096626:0;ls
+: 1397096631:0;cd bin/Linux
+: 1397096632:0;ls
+: 1397096637:0;unzip testmp3testfile_64kb_mp3.zip
+: 1397096638:0;ls
+: 1397096685:0;sox mpthreetest.mp3 -c l -t wav - | ./wav2png -o test.png /dev/stdin
+: 1397096691:0;yaourt -S sox
+: 1397096695:0;sox mpthreetest.mp3 -c l -t wav - | ./wav2png -o test.png /dev/stdin
+: 1397096704:0;sox mpthreetest.mp3 -c 1 -t wav - | ./wav2png -o test.png /dev/stdin
+: 1397096706:0;l
+: 1397096712:0;feh test.png
+: 1397096844:0;ifconfig
+: 1397096876:0;yaourt -S openssh
+: 1397096925:0;systemctl start sshd
+: 1397096929:0;sudo systemctl start sshd
+: 1397096935:0;sudo systemctl enable sshd
+: 1397096978:0;ls
+: 1397096998:0;cd santi
+: 1397096998:0;ls
+: 1397097001:0;ls -la
+: 1397097017:0;cp aude.wav ../uturn/wav2png/bin
+: 1397097109:0;./wav2png -o aude.png ../aude.wav
+: 1397097111:0;ls
+: 1397097116:0;feh aude.png
+: 1397097330:0;ls
+: 1397097456:0;cd ../../..
+: 1397097457:0;ls
+: 1397097470:0;git clone https://github.com/rg3/youtube-dl
+: 1397097499:0;ls
+: 1397097501:0;cd youtube-dl
+: 1397097501:0;ls
+: 1397097581:0;yaourt -Ss ipython
+: 1397097594:0;yaourt -S ipython2
+: 1397097655:0;ipython2
+: 1397097662:0;ls
+: 1397097668:0;cd uturn/uturn
+: 1397097670:0;cd ..
+: 1397097675:0;cd youtube-dl
+: 1397097675:0;ls
+: 1397097678:0;cat README.md
+: 1397097748:0;yaourt -Ss julia
+: 1397097771:0;yaourt -S julia-git
+: 1397097810:0;sudo pip2 install youtube-dl
+: 1397097816:0;ls
+: 1397097867:0;./youtube-dl
+: 1397097898:0;cp youtube-dl ..
+: 1397097904:0;cd ..
+: 1397097905:0;ls
+: 1397097908:0;cd youtube-dl
+: 1397097908:0;ls
+: 1397097916:0;cp youtube-dl ..
+: 1397097923:0;cd ..
+: 1397097923:0;ls
+: 1397097932:0;mkdir youtube2png
+: 1397097944:0;cp youtube-dl/youtube-dl youtube2png
+: 1397097947:0;cd youtube2png
+: 1397097948:0;ls
+: 1397097949:0;ls -la
+: 1397097952:0;cd ..
+: 1397097952:0;ls
+: 1397097955:0;cd wav2png
+: 1397097955:0;ls
+: 1397097960:0;cd bin/Linux
+: 1397097960:0;ls
+: 1397097972:0;cp wav2png ../../../youtube2png
+: 1397097976:0;cd ../../../youtube
+: 1397097979:0;cd ../../../youtube2png
+: 1397097979:0;ls
+: 1397097983:0;./youtube-dl
+: 1397097988:0;./wav2png
+: 1397098000:0;vim youtube2png.py
+: 1397098015:0;which ipython2
+: 1397098017:0;vim youtube2png.py
+: 1397098037:0;chmod a+x youtube2png.py
+: 1397098038:0;ls
+: 1397098045:0;cd ..
+: 1397098046:0;ls
+: 1397098049:0;cp youtube2png uturn
+: 1397098052:0;cp youtube2png uturn -r
+: 1397098054:0;cd uturn
+: 1397098054:0;ls
+: 1397098059:0;git add .
+: 1397098070:0;git commit -m 'creating youtube2png'
+: 1397098075:0;git push
+: 1397098101:0;cd youtube2png/
+: 1397098101:0;ls
+: 1397098110:0;./youtube2png.py
+: 1397098120:0;vim youtube2png.py
+: 1397098258:0;./youtube2png.py
+: 1397098281:0;vim youtube2png.py
+: 1397098295:0;./youtube2png.py
+: 1397098300:0;vim youtube2png.py
+: 1397098305:0;./youtube2png.py
+: 1397098335:0;vim youtube2png.py
+: 1397098343:0;./youtube2png.py
+: 1397098347:0;vim youtube2png.py
+: 1397098365:0;youtube-dl https://www.youtube.com/watch?v=ZoK63Bk7pgw
+: 1397098401:0;./youtube-dl https://www.youtube.com/watch?v=ZoK63Bk7pgw
+: 1397098408:0;./youtube-dl http://www.youtube.com/watch?v=ZoK63Bk7pgw
+: 1397098413:0;./youtube-dl url http://www.youtube.com/watch?v=ZoK63Bk7pgw
+: 1397098419:0;./youtube-dl url 'http://www.youtube.com/watch?v=ZoK63Bk7pgw'
+: 1397098423:0;ls
+: 1397098426:0;vim youtube2png.py
+: 1397098439:0;./youtube2png.py
+: 1397098443:0;vim youtube2png.py
+: 1397098453:0;./youtube2png.py
+: 1397098470:0;ls
+: 1397098481:0;rm Oeps\ interview\ blooper\ hahaha-TrdUDA0GMQc.mp4 Metric\ -\ Help\ I\'m\ Alive\ \(Album\ Version\)-ZoK63Bk7pgw.mp4
+: 1397098483:0;vim youtube2png.py
+: 1397098556:0;./youtube-dl
+: 1397098560:0;./youtube-dl -help
+: 1397098589:0;cd uturn/uturn/youtube2png
+: 1397098589:0;ls
+: 1397098621:0;vim youtube2png.py
+: 1397098648:0;./youtube-dl -help | less
+: 1397098654:0;less ./youtube-dl -help 
+: 1397098658:0; ./youtube-dl -help 
+: 1397098711:0;./youtube2png.py
+: 1397098723:0;ls
+: 1397098727:0;rm Metric\ -\ Help\ I\'m\ Alive\ \(Album\ Version\)-ZoK63Bk7pgw.m4a Oeps\ interview\ blooper\ hahaha-TrdUDA0GMQc.m4a
+: 1397098729:0;./youtube2png.py
+: 1397098760:0;ls
+: 1397098764:0;cd output
+: 1397098765:0;ls
+: 1397098767:0;cd ..
+: 1397098770:0;git pull
+: 1397098792:0;ls
+: 1397098794:0;cd ..
+: 1397098794:0;ls
+: 1397098799:0;vim wave.jl
+: 1397098867:0;cd youtube2png/
+: 1397098868:0;ls
+: 1397098875:0;rm Metric\ -\ Help\ I\'m\ Alive\ \(Album\ Version\)-ZoK63Bk7pgw.m4a Oeps\ interview\ blooper\ hahaha-TrdUDA0GMQc.m4a
+: 1397098899:0;./youtube-dl --no-playlist https://www.youtube.com/watch?v=ZoK63Bk7pgw
+: 1397098904:0;./youtube-dl --no-playlist url https://www.youtube.com/watch?v=ZoK63Bk7pgw
+: 1397098910:0;./youtube-dl --no-playlist url 'https://www.youtube.com/watch?v=ZoK63Bk7pgw'
+: 1397098964:0;./youtube-dl --no-playlist --extract-audio url 'https://www.youtube.com/watch?v=ZoK63Bk7pgw'
+: 1397098986:0;vlc Metric\ -\ Help\ I\'m\ Alive\ \(Album\ Version\)-ZoK63Bk7pgw.m4a
+: 1397099033:0;ls
+: 1397099041:0;rm Metric\ -\ Help\ I\'m\ Alive\ \(Album\ Version\)-ZoK63Bk7pgw.m*
+: 1397099046:0;rm Oeps\ interview\ blooper\ hahaha-TrdUDA0GMQc.m*
+: 1397099076:0; ./youtube-dl -help 
+: 1397099132:0;./youtube-dl --no-playlist --extract-audio url https://www.youtube.com/watch?v=dlWph8X18sc
+: 1397099144:0;./youtube-dl --no-playlist --extract-audio url 'https://www.youtube.com/watch?v=dlWph8X18sc'
+: 1397099164:0;ls
+: 1397099180:0;vim youtube2png.py
+: 1397099397:0;./youtube2png.py
+: 1397099404:0;ls
+: 1397099412:0;rm Husky\ -\ History\'s\ Door-dlWph8X18sc.m4a Oeps\ interview\ blooper\ hahaha-TrdUDA0GMQc.m4a
+: 1397099416:0;rm dlWph8X18sc.m4a
+: 1397099418:0;./youtube2png.py
+: 1397099425:0;ls
+: 1397099596:0;sox dlWph8X18sc.m4a -c 1 -t wav - | ./wav2png -o test.png /dev/stdin
+: 1397099637:0;yaourt -Ss sox
+: 1397099679:0;yaourt -S avconv
+: 1397099686:0;yaourt -Ss avconv
+: 1397099689:0;yaourt -Ss avconvert
+: 1397099713:0;ffmpeg -i dlWph8X18sc.m4a -o test.wav
+: 1397099721:0;ffmpeg -i dlWph8X18sc.m4a -O test.wav
+: 1397099727:0;man ffmpeg
+: 1397099732:0;man ffmpeg | less
+: 1397099740:0;man ffmpeg | cat
+: 1397099752:0;ffmpeg -i dlWph8X18sc.m4a test.wav
+: 1397099754:0;ls
+: 1397099764:0;ffmpeg -i dlWph8X18sc.m4a -
+: 1397099773:0;ffmpeg -i dlWph8X18sc.m4a -t wav -
+: 1397099783:0;ls
+: 1397099789:0;vim youtube2png.py
+: 1397099901:0;./youtube2png.py
+: 1397099903:0;vim youtube2png.py
+: 1397099911:0;./youtube2png.py
+: 1397099913:0;vim youtube2png.py
+: 1397100108:0;ls
+: 1397100110:0;rm dlWph8X18sc.m4a
+: 1397100113:0;rm test.wav
+: 1397100134:0;./youtube2png.py dlWph8X18sc
+: 1397100149:0;ls
+: 1397100164:0;vim youtube2png.py
+: 1397100173:0;rm dlWph8X18sc.*
+: 1397100177:0;rm dlWph8X18sc.m4a
+: 1397100180:0;ls
+: 1397100184:0;./youtube2png.py dlWph8X18sc
+: 1397100191:0;ls
+: 1397100196:0;feh dlWph8X18sc.
+: 1397100197:0;feh dlWph8X18sc.png
+: 1397100224:0;yaourt -S julia-git
+: 1397100243:0;sudo echo
+: 1397100246:0;yaourt -S julia-git
+: 1397100395:0;ls
+: 1397100399:0;ipython julia
+: 1397100574:0;./youtube2png.py 7K8lVfnzByY
+: 1397100612:0;ls
+: 1397100618:0;feh 7K8lVfnzByY.png
+: 1397100813:0;yaourt -Ss julia
+: 1397100850:0;yaourt -S julia
+: 1397100879:0;julia
+: 1397100965:0;ls
+: 1397100969:0;cd uturn/uturn
+: 1397100970:0;ls
+: 1397100978:0;julia
+: 1397101035:0;ls
+: 1397101042:0;cd uturn/youtube2png
+: 1397101042:0;ls
+: 1397101084:0;./youtube2png.py pco91kroVgQ
+: 1397101086:0;ls
+: 1397101103:0;cd ..
+: 1397101104:0;ls
+: 1397101107:0;cd uturn/youtube2png
+: 1397101107:0;ls
+: 1397101138:0;./youtube2png.py 4W8EwuMOi8I
+: 1397101217:0;feh 4W8EwuMOi8I.png
+: 1397101237:0;ls
+: 1397101239:0;vim wave.jl
+: 1397101256:0;julia
+: 1397101351:0;ls
+: 1397101354:0;cd ..
+: 1397101355:0;ls
+: 1397101362:0;cp wave.jl youtube2png
+: 1397101362:0;ls
+: 1397101364:0;cd youtube2png
+: 1397101364:0;ls
+: 1397101366:0;cd ..
+: 1397101366:0;ls
+: 1397101370:0;rm wave.jl
+: 1397101380:0;cd youtube2png
+: 1397101380:0;ls
+: 1397101390:0;rm *.m4a *.wav *.png
+: 1397101393:0;ls
+: 1397101399:0;vim youtube2png.py
+: 1397101542:0;ls
+: 1397101543:0;cd ..
+: 1397101543:0;ls
+: 1397101546:0;cd ..
+: 1397101547:0;ls
+: 1397101553:0;git clone https://github.com/JuliaLang/IJulia.jl
+: 1397101555:0;ls
+: 1397101557:0;cd IJulia.jl
+: 1397101558:0;ls
+: 1397101566:0;cd python
+: 1397101567:0;ls
+: 1397101579:0;sudo python2 setup.py install
+: 1397101606:0;ls
+: 1397101608:0;cd ..
+: 1397101609:0;ls
+: 1397101610:0;cd ..
+: 1397101610:0;ls
+: 1397101613:0;cd youtube2png
+: 1397101614:0;ls
+: 1397101617:0;vim youtube2png.py
+: 1397101622:0;cd ..
+: 1397101622:0;ls
+: 1397101625:0;cd uturn
+: 1397101625:0;ls
+: 1397101627:0;cd youtube2png
+: 1397101628:0;ls
+: 1397101630:0;vim youtube2png.py
+: 1397101749:0;./youtube2png.py 4W8EwuMOi8I
+: 1397101764:0;vim youtube2png.py
+: 1397101790:0;ls
+: 1397101792:0;cd ../../
+: 1397101793:0;ls
+: 1397101797:0;cd IJulia.jl
+: 1397101797:0;ls
+: 1397101800:0;cd python
+: 1397101800:0;ls
+: 1397101813:0;sudo ipython2 setup.py install
+: 1397101816:0;cd ../
+: 1397101816:0;ls
+: 1397101818:0;cd ..
+: 1397101822:0;cd uturn/youtube2png
+: 1397101822:0;ls
+: 1397101827:0;./youtube2png.py 4W8EwuMOi8I
+: 1397101848:0;ipython
+: 1397101850:0;ipython2
+: 1397101936:0;ls
+: 1397101941:0;feh 4W8EwuMOi8I.png
+: 1397102163:0;ls
+: 1397102167:0;vim youtube2png.py
+: 1397102188:0;cd uturn/uturn
+: 1397102188:0;ls
+: 1397102190:0;cd youtube2png
+: 1397102191:0;ls
+: 1397102229:0;./youtube-dl --help
+: 1397102440:0;./youtube2png.py 4W8EwuMOi8I
+: 1397102449:0;ls
+: 1397102457:0;cat 4W8EwuMOi8I.info.json
+: 1397102504:0;cat 4W8EwuMOi8I.mp4.description
+: 1397102517:0;ls
+: 1397102524:0;feh 4W8EwuMOi8I.jpg
+: 1397102564:0;ls
+: 1397102624:0;cd ..
+: 1397102624:0;ls
+: 1397102626:0;la
+: 1397102631:0;vim .gitignore
+: 1397102650:0;ls youtube2png
+: 1397102655:0;vim .gitignore
+: 1397102668:0;ls youtube2png
+: 1397102674:0;vim .gitignore
+: 1397102686:0;ls youtube2png
+: 1397102696:0;git add .
+: 1397102697:0;ls
+: 1397102706:0;git add --all
+: 1397102707:0;ls
+: 1397102765:0;git commit -m 'youtube2png works'
+: 1397102773:0;git push
+: 1397102806:0;ls
+: 1397102807:0;la
+: 1397102814:0;vim .gitignore
+: 1397102840:0;la
+: 1397102845:0;rm .DS_Store
+: 1397102850:0;rm ._logo.png
+: 1397102854:0;rm ._.DS_Store
+: 1397102854:0;ls
+: 1397102856:0;la
+: 1397102861:0;git add -all
+: 1397102863:0;git add --all
+: 1397102873:0;git commit -m 'cleanup'
+: 1397102877:0;git push
+: 1397103110:0;cd uturn/uturn
+: 1397103111:0;ls
+: 1397103189:0;cd youtube2png
+: 1397103189:0;ls
+: 1397103199:0;vim wave.jl
+: 1397103291:0;julia
+: 1397103330:0;julia wave.jl 4W8EwuMOi8I.png
+: 1397103348:0;vim wave.jl
+: 1397103420:0;julia wave.jl 4W8EwuMOi8I.png
+: 1397103449:0;vim wave.jl
+: 1397103460:0;julia wave.jl 4W8EwuMOi8I.png
+: 1397103483:0;vim youtube2png.py
+: 1397103557:0;ls
+: 1397103598:0;cd uturn/uturn
+: 1397103598:0;ls
+: 1397103850:0;cd youtube2png
+: 1397103851:0;ls
+: 1397103890:0;vim youtube2png.py
+: 1397103947:0;./youtube2png.py 4W8EwuMOi8I
+: 1397103980:0;vim youtube2png.py
+: 1397104063:0;./youtube2png.py 4W8EwuMOi8I
+: 1397104066:0;vim youtube2png.py
+: 1397104121:0;./youtube2png.py 4W8EwuMOi8I
+: 1397104144:0;vim youtube2png.py
+: 1397104164:0;./youtube2png.py 4W8EwuMOi8I
+: 1397104190:0;ls
+: 1397104257:0;vim youtube2png.py
+: 1397104849:0;cd uturn/uturn
+: 1397104849:0;ls
+: 1397104852:0;cd youtube2png
+: 1397104852:0;ls
+: 1397104859:0;./youtube-dl --help
+: 1397104935:0;cd uturn/uturn
+: 1397104935:0;ls
+: 1397104937:0;cd youtube2png
+: 1397104938:0;ls
+: 1397105960:0;./youtube2png.py
+: 1397105983:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106013:0;ls
+: 1397106020:0;rm 4*
+: 1397106020:0;ls
+: 1397106028:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106036:0;vim youtube2png.py
+: 1397106052:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106066:0;vim youtube2png.py
+: 1397106070:0;ls
+: 1397106078:0;cd video
+: 1397106079:0;ls
+: 1397106086:0;vim youtube2png.py
+: 1397106091:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106096:0;vim youtube2png.py
+: 1397106118:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106144:0;vim youtube2png.py
+: 1397106366:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106384:0;vim youtube2png.py
+: 1397106403:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106408:0;vim youtube2png.py
+: 1397106415:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106420:0;cd ..
+: 1397106421:0;ls
+: 1397106426:0;rm pngpeaks -r
+: 1397106432:0;ls
+: 1397106436:0;cd peaks
+: 1397106436:0;ls
+: 1397106446:0;vim youtube2png.py
+: 1397106450:0;cd ..
+: 1397106451:0;vim youtube2png.py
+: 1397106468:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106502:0;cd peaks
+: 1397106503:0;ls
+: 1397106507:0;cd ..
+: 1397106510:0;vim youtube2png.py
+: 1397106522:0;cd peaks
+: 1397106522:0;ls
+: 1397106525:0;rm %s.txt
+: 1397106527:0;cd ..
+: 1397106528:0;ls
+: 1397106531:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106563:0;ls
+: 1397106567:0;cd ..
+: 1397106568:0;ls
+: 1397106571:0;vim .gitignore
+: 1397106595:0;git add .
+: 1397106618:0;git commit -m 'improved y2png'
+: 1397106802:0;feh youtube2png/png/4W8EwuMOi8I.png
+: 1397106931:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106939:0;cd youtube2png
+: 1397106940:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106947:0;vim youtube2png.py
+: 1397106988:0;./youtube2png.py 4W8EwuMOi8I
+: 1397106990:0;vim youtube2png.py
+: 1397107110:0;./youtube2png.py 4W8EwuMOi8I
+: 1397107113:0;vim youtube2png.py
+: 1397107118:0;./youtube2png.py 4W8EwuMOi8I
+: 1397107167:0;cd info
+: 1397107168:0;ls
+: 1397107171:0;cat 4W8EwuMOi8I.json
+: 1397107256:0;cd ..
+: 1397107269:0;./youtube2png.py DUT5rEU6pqM
+: 1397107358:0;vim youtube2png.py
+: 1397107439:0;./youtube2png.py DUT5rEU6pqM
+: 1397107441:0;vim youtube2png.py
+: 1397107577:0;./youtube2png.py DUT5rEU6pqM
+: 1397107587:0;vim youtube2png.py
+: 1397107602:0;./youtube2png.py DUT5rEU6pqM
+: 1397107606:0;vim youtube2png.py
+: 1397107634:0;./youtube2png.py DUT5rEU6pqM
+: 1397107659:0;vim youtube2png.py
+: 1397107668:0;./youtube2png.py DUT5rEU6pqM
+: 1397107670:0;vim youtube2png.py
+: 1397107785:0;./youtube2png.py DUT5rEU6pqM
+: 1397107788:0;vim youtube2png.py
+: 1397107803:0;./youtube2png.py DUT5rEU6pqM
+: 1397107804:0;vim youtube2png.py
+: 1397107823:0;./youtube2png.py DUT5rEU6pqM
+: 1397107884:0;cd ..
+: 1397107885:0;ls
+: 1397107901:0;vim index.html
+: 1397108018:0;vim main.js
+: 1397108036:0;cd ../..
+: 1397108037:0;ls
+: 1397108038:0;cd ..
+: 1397108041:0;cd ps3
+: 1397108041:0;ls
+: 1397108046:0;cd kemus/src/
+: 1397108047:0;ls
+: 1397108051:0;vim index3.html
+: 1397108108:0;vim main.js
+: 1397108187:0;vim index3.html
+: 1397108191:0;vim index.html
+: 1397108203:0;vim index3.html
+: 1397108206:0;vim main.js
+: 1397108480:0;vim index.html
+: 1397108485:0;vim main.js
+: 1397108497:0;vim index.html
+: 1397108511:0;vim main.js
+: 1397108943:0;vim index3.html
+: 1397108951:0;cd uturn/uturn
+: 1397108951:0;ls
+: 1397108961:0;python -m SimpleHTTPServer
+: 1397108974:0;sudo pip2 install SimpleHTTPServer
+: 1397108994:0;yaourt -Ss simplehttpserver
+: 1397109021:0;python2 -m SimpleHTTPServer
+: 1397109883:0;vim index.html
+: 1397109899:0;vim main.js
+: 1397110231:0;vim index.html
+: 1397110235:0;vim main.js
+: 1397110352:0;ls
+: 1397110355:0;vim main.js
+: 1397110663:0;vim mainLayout.css
+: 1397110675:0;vim style.css
+: 1397110804:0;vim mainLayout.css
+: 1397110810:0;vim index.html
+: 1397110837:0;vim mainLayout.css
+: 1397110842:0;vim main.js
+: 1397110845:0;vim mainLayout.css
+: 1397110849:0;vim main.css
+: 1397110854:0;vim style.css
+: 1397110884:0;vim main.css
+: 1397110887:0;vim index.html
+: 1397110914:0;vim style.css
+: 1397110917:0;vim index.html
+: 1397111009:0;vim style.css
+: 1397111026:0;vim index.html
+: 1397111031:0;vim main.js
+: 1397111546:0;vim index3.html
+: 1397112283:0;vim main.js
+: 1397112284:0;vim index3.html
+: 1397112288:0;vim index.html
+: 1397112293:0;vim style.css
+: 1397112697:0;vim index.html
+: 1397112702:0;vim main.js
+: 1397113898:0;vim index.html
+: 1397113919:0;vim main.js
+: 1397114363:0;vim index.html
+: 1397114380:0;vim main.js
+: 1397114446:0;vim style.css
+: 1397114510:0;vim main.js
+: 1397115847:0;vim index.html
+: 1397115892:0;vim main.js
+: 1397116720:0;vim index.html
+: 1397116747:0;vim main.js
+: 1397118922:0;git add .
+: 1397118935:0;git commit -m 'amplify and move now work'
+: 1397118942:0;git push
+: 1397163489:0;ls
+: 1397163497:0;cd uturn/uturn
+: 1397163498:0;ls
+: 1397163697:0;rm ;
+: 1397163699:0;rm \;
+: 1397163700:0;ls
+: 1397163739:0;cd youtube2png
+: 1397163740:0;ls
+: 1397164347:0;python2 -m SimpleHTTPServer
+: 1397164522:0;cd ..
+: 1397164524:0;cd youtube2png
+: 1397164525:0;ls
+: 1397164586:0;./youtube2png.py 7SlILk2WMTI
+: 1397164742:0;cd ..
+: 1397164743:0;ls
+: 1397164747:0;vim main.js
+: 1397164993:0;ls
+: 1397164998:0;ls youtube2png/peaks
+: 1397165036:0;python2 -m SimpleHTTPServer
+: 1397165055:0;killall python2
+: 1397165057:0;ls
+: 1397165059:0;python2 -m SimpleHTTPServer
+: 1397165080:0;killall python2
+: 1397165081:0;killall python
+: 1397165099:0;python2 -m SimpleHTTPServer
+: 1397165103:0;killall python
+: 1397165145:0;sudo wifi-menu
+: 1397165193:0;python2 -m SimpleHTTPServer
+: 1397165199:0;ls
+: 1397165202:0;cd uturn/uturn
+: 1397165203:0;ls
+: 1397165205:0;python2 -m SimpleHTTPServer
+: 1397166173:0;sudo wifi-menu
+: 1397166210:0;sudo killall dhcpcd
+: 1397166216:0;sudo dhcpcd
+: 1397166223:0;sudo wifi-menu
+: 1397167554:0;vim
+: 1397172179:0;python2 -m SimpleHTTPServer
+: 1397172181:0;ls
+: 1397172183:0;cd uturn/uturn
+: 1397172183:0;ls
+: 1397172185:0;python2 -m SimpleHTTPServer
+: 1397172216:0;cd uturn/uturn
+: 1397172225:0;vim main.js
+: 1397173409:0;ls
+: 1397173411:0;cd ..
+: 1397173412:0;ls
+: 1397173415:0;rm uturn -r
+: 1397173420:0;ls
+: 1397173424:0;surn rm uturn
+: 1397173430:0;sudo rm -r uturn
+: 1397173524:0;git clone https://github.com/drosophyllum/uturn.git
+: 1397173528:0;cd uturn
+: 1397173529:0;ls
+: 1397173545:0;cd ..
+: 1397173545:0;ls
+: 1397173547:0;cd uturn
+: 1397173548:0;ls
+: 1397173553:0;python2 -m SimpleHTTPServer
+: 1397173575:0;vim main.js
+: 1397175853:0;cd ..
+: 1397175857:0;sudo rm -r uturn
+: 1397175872:0;git clone https://github.com/drosophyllum/uturn.git
+: 1397175875:0;cd uturn
+: 1397175875:0;ls
+: 1397175881:0;python2 -m SimpleHTTPServer
+: 1397175884:0;ls
+: 1397175886:0;cd ../uturn
+: 1397175888:0;python2 -m SimpleHTTPServer
+: 1397175903:0;vim main.js
+: 1397178787:0;git commit .
+: 1397178823:0;git push
+: 1397178849:0;vim main.js
+: 1397179265:0;git add .
+: 1397179287:0;git commit -m 'made heights into an array in preparation for multiple songs'
+: 1397179290:0;git push
+: 1397179314:0;vim main.js
+: 1397179346:0;vim README.md
+: 1397179398:0;git add .
+: 1397179406:0;git commit -m 'SimpleHTTPServer'
+: 1397179409:0;git push
+: 1397179477:0;vim main.js
+: 1397179820:0;ls
+: 1397179823:0;rm \;
+: 1397179847:0;git commit -m 'removed silly file'
+: 1397179852:0;git add -A
+: 1397179854:0;git commit -m 'removed silly file'
+: 1397179861:0;git push 
+: 1397179879:0;ls
+: 1397179884:0;vim main.js
+: 1397180017:0;git add .
+: 1397180050:0;git commit -m 'getJSON now takes id as an input'
+: 1397180058:0;git push
+: 1397180095:0;cd youtube2png
+: 1397180096:0;ls
+: 1397180100:0;./wav2png
+: 1397180908:0;sudo wifi-menu
+: 1397189046:0;python2 -m SimpleHTTPServer
+: 1397189134:0;cd uturn/uturn
+: 1397189142:0;vim main.js
+: 1397189350:0;add main.js
+: 1397189353:0;git add main.js
+: 1397189365:0;git commit -m 'getJSON now returns the heights'
+: 1397189372:0;git push
+: 1397189487:0;vim main.js
+: 1397189507:0;ls youtube2png/peaks
+: 1397189514:0;vim main.js
+: 1397189865:0;ls
+: 1397189872:0;python2 -m SimpleHTTPServer
+: 1397195338:0;git add .
+: 1397195360:0;git commit -m 'n songs work (for n=2)'
+: 1397195364:0;git push
+: 1397195405:0;vim main.js
+: 1397195952:0;git add .
+: 1397195968:0;git commit -m 'improved amplify for n songs (for n=2)'
+: 1397195973:0;git push
+: 1397196012:0;cd youtube2png
+: 1397196024:0;./youtube2png.py obV-OL3TwXo
+: 1397196078:0;ls
+: 1397196095:0;ls peaks
+: 1397196108:0;cd ..
+: 1397196110:0;vim main.js
+: 1397196716:0;git add .
+: 1397196736:0;git commit -m 'n songs work (for all positive n!!!)'
+: 1397196750:0;git push
+: 1397196807:0;cd youtube2png
+: 1397196808:0;ls
+: 1397196815:0;rm o-LN1RkZUAg.info.json o-LN1RkZUAg.jpg o-LN1RkZUAg.m4a o-LN1RkZUAg.mp4 o-LN1RkZUAg.mp4.description 
+: 1397196820:0;y
+: 1397196822:0;rm o-LN1RkZUAg.info.json o-LN1RkZUAg.jpg o-LN1RkZUAg.m4a o-LN1RkZUAg.mp4 o-LN1RkZUAg.mp4.description 
+: 1397196825:0;ls
+: 1397196833:0;vim youtube2png.py
+: 1397196878:0;./wav2png
+: 1397196933:0;vim youtube2png.py
+: 1397196999:0;ls png
+: 1397197009:0;ls song
+: 1397197025:0;rm png/*
+: 1397197028:0;rm peaks/*
+: 1397197040:0;ls
+: 1397197058:0;rm song/obV-OL3TwXo.m4a
+: 1397197082:0;cat removed â€ƒ¸peaks/4W8EwuMOi8I.txtâ€ƒ¹
+: 1397197082:0;removed â€ƒ¸peaks/DUT5rEU6pqM.txtâ€ƒ¹
+: 1397197082:0;removed â€ƒ¸peaks/obV-OL3TwXo.txtâ€ƒ¹
+: 1397197101:0;./youtube2png.py obV-OL3TwXo.txt
+: 1397197148:0;find
+: 1397197179:0;vim youtube2png.py
+: 1397197219:0;ls
+: 1397197225:0;./youtube2png.py obV-OL3TwXo.txt
+: 1397197229:0;./youtube2png.py obV-OL3TwXo
+: 1397197242:0;ls
+: 1397197249:0;rm obV-OL3TwXo.info.json obV-OL3TwXo.jpg obV-OL3TwXo.m4a obV-OL3TwXo.mp4 obV-OL3TwXo.mp4.description 
+: 1397197251:0;ls
+: 1397197260:0;rm o-LN1RkZUAg.*
+: 1397197265:0;ls
+: 1397197279:0;./youtube2png.py obV-OL3TwXo
+: 1397197305:0;./youtube2png.py DUT5rEU6pqM
+: 1397197370:0;./youtube2png.py 4W8EwuMOi8I
+: 1397197454:0;ls
+: 1397197463:0;cd peaks
+: 1397197463:0;ls
+: 1397197466:0;len 4W8EwuMOi8I.txt
+: 1397197471:0;wc 4W8EwuMOi8I.txt
+: 1397197475:0;vim 4W8EwuMOi8I.txt
+: 1397197500:0;rm *
+: 1397197501:0;ls
+: 1397197502:0;cd ..
+: 1397197503:0;ls
+: 1397197514:0;rm o-LN1RkZUAg.*
+: 1397197518:0;ls
+: 1397197544:0;./youtube2png.py 4W8EwuMOi8I
+: 1397197557:0;ls
+: 1397197563:0;rm peaks/*
+: 1397197567:0;vim youtube2png.py
+: 1397197585:0;rm peaks/*
+: 1397197590:0;rm png/*
+: 1397197594:0;./youtube2png.py 4W8EwuMOi8I
+: 1397197620:0;./youtube2png.py DUT5rEU6pqM
+: 1397197643:0;./youtube2png.py 4W8EwuMOi8I
+: 1397197647:0;ls
+: 1397197656:0;vim youtube2png.py
+: 1397197806:0;./youtube2png.py obV-OL3TwXo
+: 1397197819:0;vim youtube2png.py
+: 1397197831:0;./youtube2png.py obV-OL3TwXo
+: 1397197837:0;./youtube2png.py DUT5rEU6pqM
+: 1397197844:0;./youtube2png.py 4W8EwuMOi8I
+: 1397197850:0;cd duration
+: 1397197850:0;ls
+: 1397197852:0;cat *
+: 1397197855:0;cat 4W8EwuMOi8I.txt
+: 1397197881:0;cd ..
+: 1397197889:0;git add .
+: 1397197905:0;git commit -m 'youtube2png now writes duration'
+: 1397197915:0;git push
+: 1397197957:0;vim main.js
+: 1397198218:0;python2 -m SimpleHTTPServer
+: 1397198297:0;ls
+: 1397198298:0;cd uturn/uturn
+: 1397198299:0;ls
+: 1397198300:0;cd youtube2png
+: 1397198301:0;ls
+: 1397198303:0;cd duration
+: 1397198304:0;ls
+: 1397198307:0;cat 4W8EwuMOi8I.txt
+: 1397199501:0;cd ..
+: 1397199501:0;ls
+: 1397199685:0;cd peaks
+: 1397199685:0;ls
+: 1397199689:0;cat 4W8EwuMOi8I.txt
+: 1397199947:0;ls
+: 1397199948:0;cd ..
+: 1397199949:0;ls
+: 1397199959:0;wc peaks/DUT5rEU6pqM.txt
+: 1397199970:0;wc peaks/*.txt
+: 1397199976:0;cd uturn/uturn
+: 1397199976:0;ls
+: 1397199978:0;cd youtube2png
+: 1397199982:0;vim youtube2png.py
+: 1397200118:0;rm png/*
+: 1397200122:0;rm peaks/*
+: 1397200134:0;./youtube2png.py 4W8EwuMOi8I
+: 1397200139:0;vim youtube2png.py
+: 1397200147:0;./youtube2png.py 4W8EwuMOi8I
+: 1397200153:0;vim youtube2png.py
+: 1397200164:0;./youtube2png.py 4W8EwuMOi8I
+: 1397200181:0;vim youtube2png.py
+: 1397200189:0;./youtube2png.py 4W8EwuMOi8I
+: 1397200205:0;./youtube2png.py DUT5rEU6pqM
+: 1397200223:0;./youtube2png.py obV-OL3TwXo
+: 1397200235:0;ls
+: 1397200241:0;wc peaks/*
+: 1397200256:0;vim youtube2png.py
+: 1397200266:0;rm peaks/*
+: 1397200269:0;rm png/*
+: 1397200272:0;./youtube2png.py 4W8EwuMOi8I
+: 1397200286:0;./youtube2png.py DUT5rEU6pqM
+: 1397200304:0;./youtube2png.py obV-OL3TwXo
+: 1397200317:0;wc peaks/*
+: 1397200344:0;vim youtube2png.py
+: 1397200369:0;rm png/*
+: 1397200372:0;rm peaks/*
+: 1397200375:0;./youtube2png.py 4W8EwuMOi8I
+: 1397200391:0;./youtube2png.py DUT5rEU6pqM
+: 1397200405:0;./youtube2png.py obV-OL3TwXo
+: 1397200470:0;git add .
+: 1397200538:0;git commit -m 'youtube2png now scales the waveform to time -consequence: maxtime=canvaswidth/2 seconds. currently, 300 seconds (=5 minutes)'
+: 1397200653:0;git push
+: 1397200738:0;vim server.py
+: 1397200876:0;python2 server.py
+: 1397200881:0;vim server.py
+: 1397200894:0;python2 server.py
+: 1397200896:0;vim server.py
+: 1397200909:0;python2 server.py
+: 1397200937:0;vim server.py
+: 1397200960:0;python2 server.py
+: 1397200996:0;vim server.py
+: 1397201083:0;vim youtube2png.py
+: 1397201154:0;cd ..
+: 1397201155:0;ls
+: 1397201178:0;python2 server.py
+: 1397201183:0;vim youtube2png.py
+: 1397201191:0;vim server.py
+: 1397201209:0;python2 server.py
+: 1397201251:0;vim server.py
+: 1397201266:0;python2 server.py
+: 1397201284:0;vim youtube.py
+: 1397201292:0;python2 server.py
+: 1397201324:0;vim server.py
+: 1397201338:0;ls
+: 1397201342:0;vim server.py
+: 1397201351:0;vim youtube.py
+: 1397201539:0;la
+: 1397201564:0;sudo rm -r description duration info peaks/ png song video wav
+: 1397201570:0;ls
+: 1397201580:0;python2 server.py
+: 1397201597:0;vim server.py
+: 1397201601:0;vim youtube.py
+: 1397201618:0;python2 server.py
+: 1397201669:0;vim youtube.py
+: 1397201680:0;python2 server.py
+: 1397201720:0;ls
+: 1397201725:0;vim youtube.py
+: 1397201759:0;vim server.py
+: 1397201765:0;vim youtube.py
+: 1397201786:0;vim server.py
+: 1397201846:0;mv server.py youtube.py youtube2png
+: 1397201849:0;cd youtube2png
+: 1397201854:0;python2 server.py
+: 1397201864:0;vim youtube.py
+: 1397201892:0;python2 server.py
+: 1397201946:0;vim youtube.py
+: 1397201957:0;vim server.py
+: 1397202051:0;python2 server.py
+: 1397202054:0;vim server.py
+: 1397202062:0;python2 server.py
+: 1397202105:0;vim server.py
+: 1397202122:0;python2 server.py
+: 1397202145:0;vim server.py
+: 1397202153:0;python2 server.py
+: 1397202229:0;cd uturn/uturn
+: 1397202238:0;python2 -m SimpleHTTPServer
+: 1397202264:0;vim main.js
+: 1397202303:0;vim index.html
+: 1397202337:0;vim main.js
+: 1397202403:0;vim index.html
+: 1397202415:0;vim main.js
+: 1397202554:0;vim index.html
+: 1397202573:0;vim main.js
+: 1397203504:0;ls
+: 1397203509:0;cd youtube2png
+: 1397203513:0;vim server.py
+: 1397203543:0;python2 server.py
+: 1397203554:0;vim server.py
+: 1397203580:0;python2 server.py
+: 1397203631:0;cp server.py ..
+: 1397203633:0;cd ..
+: 1397203633:0;ls
+: 1397203635:0;vim server.py
+: 1397203654:0;python2 server.py
+: 1397203664:0;vim server.py
+: 1397203674:0;vim main.js
+: 1397203862:0;python2 server.py
+: 1397203877:0;vim main.js
+: 1397203917:0;python2 server.py
+: 1397203920:0;cd uturn/uturn
+: 1397203921:0;python2 server.py
+: 1397204010:0;vim server.py
+: 1397204187:0;python2 server.py
+: 1397204196:0;vim server.py
+: 1397204213:0;python2 server.py
+: 1397204261:0;vim server.py
+: 1397204288:0;python2 server.py
+: 1397204301:0;vim server.py
+: 1397204304:0;ls
+: 1397204307:0;cd youtube2png
+: 1397204307:0;ls
+: 1397204313:0;..
+: 1397204317:0;cd ..
+: 1397204320:0;vim server.py
+: 1397204346:0;python2 server.py
+: 1397204358:0;vim server.py
+: 1397204393:0;mv youtube2png/youtube2png.py ..
+: 1397204393:0;l
+: 1397204395:0;ls
+: 1397204442:0;cd ..
+: 1397204442:0;ls
+: 1397204451:0;mv youtube2png.py uturn
+: 1397204452:0;cd uturn
+: 1397204453:0;ls
+: 1397204458:0;vim youtube2png.py
+: 1397204477:0;python2 server.py
+: 1397204493:0;vim server.py
+: 1397204501:0;python2 server.py
+: 1397204530:0;ls
+: 1397204533:0;la
+: 1397204537:0;la --no-color
+: 1397204539:0;ls --no-color
+: 1397204547:0;ls --color=none
+: 1397204587:0;rm -r description duration images info o-LN1RkZUAg.info.json o-LN1RkZUAg.jpg o-LN1RkZUAg.m4a o-LN1RkZUAg.mp4 o-LN1RkZUAg.mp4.description peaks png song video thumb wav youtube.pyc
+: 1397204590:0;ls
+: 1397204595:0;python2 server.py
+: 1397204961:0;vim server.py
+: 1397204975:0;python2 server.py
+: 1397205428:0;ls
+: 1397205432:0;cd youtube2png
+: 1397205432:0;ls
+: 1397205438:0;rm o-LN1RkZUAg.*
+: 1397205440:0;ls
+: 1397205442:0;cd ..
+: 1397205443:0;ls
+: 1397205445:0;cd youtube2png
+: 1397205446:0;ls
+: 1397205463:0;rm server.py youtube.py youtube.pyc
+: 1397205467:0;ls
+: 1397205471:0;cd ..
+: 1397205471:0;ls
+: 1397205477:0;vim README.md
+: 1397205527:0;git add .
+: 1397205534:0;git add -A
+: 1397205589:0;git commit -m 'searchbox now takes a videoid and runs youtube2png, then displays output'
+: 1397205651:0;git commit -m '...and now i've fixed the logo -- oops'
+: 1397205659:0;git commit -m '...and now I\'ve fixed the logo -- oops'
+: 1397205664:0;git commit -m '...and now I\\'ve fixed the logo -- oops'
+: 1397205672:0;git commit -m "...and now I've fixed the logo -- oops"
+: 1397205686:0;git add .
+: 1397205687:0;git commit -m "...and now I've fixed the logo -- oops"
+: 1397205693:0;git push
+: 1397205701:0;git add .
+: 1397205703:0;git commit -m "...and now I've fixed the logo -- oops"
+: 1397205705:0;ls
+: 1397205731:0;mkdir images
+: 1397205739:0;mv logo\ \(1\).png images/logo.png
+: 1397205742:0;git add .
+: 1397205744:0;git commit -m "...and now I've fixed the logo -- oops"
+: 1397205753:0;ls
+: 1397205768:0;git add images/logo.png
+: 1397205772:0;git add -f images/logo.png
+: 1397205775:0;git commit -m "...and now I've fixed the logo -- oops"
+: 1397205779:0;git push
+: 1397206231:0;cd ..
+: 1397206231:0;ls
+: 1397206236:0;vim youtube2png.py
+: 1397206284:0;vim server.py
+: 1397206316:0;cat server.py
+: 1397206347:0;cp youtube2png.py serveyou.py
+: 1397206351:0;vim serveyou.py
+: 1397206831:0;vim main.js
+: 1397206851:0;vim serveyou.py
+: 1397206907:0;vim main.js
+: 1397207262:0;vim server.py
+: 1397207267:0;vim serveyou.py
+: 1397207362:0;vim index.html
+: 1397207415:0;python2 serveyou.py
+: 1397207450:0;vim index.html
+: 1397207459:0;python2 serveyou.py
+: 1397207462:0;vim main.js
+: 1397207507:0;vim serveyou.py
+: 1397207518:0;vim main.js
+: 1397207521:0;python2 serveyou.py
+: 1397207549:0;vim main.js
+: 1397207553:0;vim serveyou.py
+: 1397207566:0;python2 serveyou.py
+: 1397207592:0;vim serveyou.py
+: 1397207618:0;python2 serveyou.py
+: 1397207635:0;vim serveyou.py
+: 1397207675:0;python2 serveyou.py
+: 1397207689:0;vim serveyou.py
+: 1397207711:0;python2 serveyou.py
+: 1397207848:0;vim serveyou.py
+: 1397207909:0;python2 serveyou.py
+: 1397207951:0;vim serveyou.py
+: 1397207982:0;python2 serveyou.py
+: 1397208013:0;vim serveyou.py
+: 1397208027:0;python2 serveyou.py
+: 1397208089:0;cat youtube2png/duration/NH3WFR6YcQM.txt
+: 1397208091:0;vim serveyou.py
+: 1397208110:0;python2 serveyou.py
+: 1397208119:0;vim serveyou.py
+: 1397208177:0;python2 serveyou.py
+: 1397208197:0;vim serveyou.py
+: 1397208257:0;python2 serveyou.py
+: 1397209829:0;git add .
+: 1397209840:0;git commit -m 'Improved search'
+: 1397209858:0;ls
+: 1397209865:0;rm server.py
+: 1397209876:0;mv serveyou.py server.py
+: 1397209888:0;git add .
+: 1397209892:0;git add -A
+: 1397209908:0;git commit -m 'Improved search & server'
+: 1397209916:0;ls
+: 1397209924:0;git push
+: 1397233246:0;python2 serveyou.py
+: 1397233250:0;python2 server.py
+: 1397242859:0;sudo wifi-menu
+: 1397245256:0;man scrot
+: 1397245260:0;scrot --help
+: 1397245264:0;yaourt -S scrot
+: 1397245284:0;man scrot
+: 1397245341:0;scrot
+: 1397245343:0;la
+: 1397245346:0;mkdir s
+: 1397245350:0;cd s
+: 1397245353:0;scrot
+: 1397245393:0;ls
+: 1397245396:0;rm *
+: 1397245398:0;scrot
+: 1397259904:0;sudo wifi-menu
+: 1397282545:0;sftp beast@nannycheese.mit.edu
+: 1397282564:0;sftp ftp://nannycheese.mit.edu
+: 1397282589:0;yaourt -S filezilla
+: 1397286340:0;sudo wifi-menu
+: 1397301972:0;cd Downloads3
+: 1397301972:0;lx
+: 1397301973:0;ls
+: 1397301981:0;cd ..
+: 1397301983:0;cd Downloads
+: 1397301984:0;ls
+: 1397301991:0;cd ../Downloads2/MC\ Theater
+: 1397301992:0;ls
+: 1397302005:0;vlc Model\ Behavior.mp4
+: 1397328804:0;vim santip
+: 1397328858:0;ssh spock@18.93.14.181
+: 1397331219:0;sudo wifi-menu
+: 1397331301:0;ssh spock@18.93.14.181
+: 1397333912:0;ls
+: 1397333914:0;cd uturn
+: 1397333915:0;s
+: 1397333915:0;ls
+: 1397333916:0;cd uturn
+: 1397333918:0;./server.py
+: 1397334055:0;ls
+: 1397334059:0;git add -A
+: 1397334064:0;git commit -m '?'
+: 1397334067:0;git push
+: 1397334285:0;ls
+: 1397334286:0;cd uturn/uturn
+: 1397334287:0;ls
+: 1397334291:0;cd ..
+: 1397334291:0;ls
+: 1397334295:0;mkdir test
+: 1397334297:0;cd test
+: 1397334316:0;sftp spock@18.93.14.181
+: 1397334410:0;ls
+: 1397334413:0;cd ..
+: 1397334522:0;ls
+: 1397334524:0;cd uturn
+: 1397334524:0;ls
+: 1397334526:0;./server.py
+: 1397334542:0;ls
+: 1397334588:0;cd youtube2png/
+: 1397334589:0;ls
+: 1397334596:0;find obV
+: 1397334597:0;find . obV
+: 1397334603:0;find . | grep obV
+: 1397334630:0;rm */obV-OL3TwXo.*
+: 1397334638:0;cd ..
+: 1397334640:0;./server.py
+: 1397334729:0;ls
+: 1397334750:0;diff youtube2png/song/obV-OL3TwXo.m4a ../test/obV-OL3TwXo.m4a
+: 1397334762:0;ls -la youtube2png/song/obV-OL3TwXo.m4a ../test/obV-OL3TwXo.m4a
+: 1397334833:0;vlc ../test/obV-OL3TwXo.m4a
+: 1397334860:0;vlc youtube2png/song/obV-OL3TwXo.m4a
+: 1397334885:0;feh ../test/obV-OL3TwXo.png
+: 1397334903:0;feh uturn/uturn/youtube2png/png/obV-OL3TwXo.png
+: 1397334949:0;vim uturn/uturn/youtube2png/peaks/obV-OL3TwXo.txt
+: 1397334962:0;vim ../test/obV-OL3TwXo.txt
+: 1397335038:0;vim uturn/uturn/youtube2png/wave.jl
+: 1397335058:0;julia
+: 1397335384:0;ls
+: 1397335397:0;diff ../test/obV-OL3TwXo.png youtube2png/png/obV-OL3TwXo.png
+: 1397335419:0;ls -la ../test/obV-OL3TwXo.png youtube2png/png/obV-OL3TwXo.png
+: 1397336314:0;ssh spock@18.93.14.181
+: 1397336883:0;ls
+: 1397336886:0;./server.py
+: 1397339688:0;ls
+: 1397339690:0;cd uturn/uturn
+: 1397339691:0;ls
+: 1397339694:0;vim index.html
+: 1397339923:0;cd ..
+: 1397339924:0;ls
+: 1397339926:0;cd ..
+: 1397339935:0;mkdir 6.813
+: 1397339937:0;cd 6.813
+: 1397339948:0;git clone https://github.com/kemus/uturn.git
+: 1397339952:0;l;s
+: 1397339952:0;ls
+: 1397339954:0;cd uturn
+: 1397339955:0;ls
+: 1397339958:0;vim main.js
+: 1397341058:0;git add .
+: 1397341072:0;git commit -m 'addAmplify created'
+: 1397341074:0;git push
+: 1397341083:0;git pull
+: 1397341093:0;git push
+: 1397341138:0;git add .
+: 1397341139:0;git commit -m 'addAmplify created'
+: 1397341142:0;vim main.js
+: 1397341222:0;ssh spock@18.93.14.181
+: 1397341412:0;git add .
+: 1397341420:0;git commit -m 'added initial debug\
+'
+: 1397341423:0;git push
+: 1397341483:0;ls
+: 1397341484:0;cd ..
+: 1397341532:0;ls
+: 1397341536:0;vim main.js
+: 1397341658:0;git add .
+: 1397341673:0;git commit -m 'addAmplify call'\
+
+: 1397341675:0;git push
+: 1397341691:0;vim main.js
+: 1397341707:0;git add .
+: 1397341740:0;git commit -m 'fixed addAmplify declaration'\
+
+: 1397341743:0;git push
+: 1397341785:0;vim main.js
+: 1397341804:0;git add -A
+: 1397341816:0;git commit -m 'fixed addAmplify debug'
+: 1397341817:0;git push
+: 1397341869:0;vim main.js
+: 1397341898:0;git add -A
+: 1397341917:0;git commit -m 'fixed onMouseUp ordering to preserve selectStart and selectStop'
+: 1397341922:0;git push
+: 1397342019:0;vim main.js
+: 1397342230:0;git add -A
+: 1397342241:0;git commit -m 'created global actions'
+: 1397342242:0;git push
+: 1397342336:0;vim main.js
+: 1397342353:0;git add -A
+: 1397342361:0;git commit -m 'stringify before debugging'
+: 1397342364:0;git push
+: 1397342453:0;vim main.js
+: 1397345523:0;git pull
+: 1397345530:0;vim style.css
+: 1397345630:0;git add -A
+: 1397345644:0;git commit -m 'div search box'
+: 1397345648:0;git push
+: 1397347094:0;git pull
+: 1397347095:0;ls
+: 1397347100:0;vim main.js
+: 1397347126:0;vim search.js
+: 1397347379:0;git add .
+: 1397347385:0;git commit -m 'search results'
+: 1397347390:0;git push
+: 1397347604:0;vim main.js
+: 1397347614:0;ls
+: 1397347619:0;vim index.html
+: 1397347633:0;vim main.js
+: 1397347641:0;vim search.js
+: 1397347674:0;git add .
+: 1397347687:0;git commit -m 'search images'
+: 1397347689:0;vim search.js
+: 1397347703:0;git add .
+: 1397347704:0;git commit -m 'search images'
+: 1397347708:0;git push
+: 1397349588:0;git pull
+: 1397349592:0;vim main.js
+: 1397350125:0;vim search.js
+: 1397350173:0;git add .
+: 1397350179:0;git commit -m 'Player object'
+: 1397350182:0;git push
+: 1397350229:0;vim main.js
+: 1397350346:0;git add main.js
+: 1397350352:0;git commit -m 'testign'
+: 1397350354:0;git push
+: 1397350410:0;vim main.js
+: 1397350463:0;git add main.js
+: 1397350465:0;git commit -m 'testign'
+: 1397350466:0;git push
+: 1397350486:0;vim main.js
+: 1397350507:0;git add main.js
+: 1397350509:0;git commit -m 'testign'
+: 1397350511:0;git push
+: 1397350543:0;vim main.js
+: 1397350551:0;git commit -m 'Player object'
+: 1397350554:0;git add main.js
+: 1397350556:0;git commit -m 'Player object'
+: 1397350557:0;git push
+: 1397350619:0;vim main.js
+: 1397351000:0;gedit main.js
+: 1397351171:0;vim main.js
+: 1397351600:0;git add main.js
+: 1397351619:0;git commit -m 'simplification part 1'
+: 1397351623:0;git push
+: 1397351670:0;vim main.js
+: 1397351738:0;git add main.js
+: 1397351741:0;git commit -m 'simplification part 2'
+: 1397351744:0;git push
+: 1397351772:0;vim main.js
+: 1397351922:0;git add main.js
+: 1397351924:0;git commit -m 'simplification part 3'
+: 1397351927:0;git push
+: 1397351949:0;vim main.js
+: 1397353173:0;git add main.js
+: 1397353176:0;git commit -m 'simplification part 4'
+: 1397353179:0;git push
+: 1397353200:0;vim main.js
+: 1397353261:0;git commit -m 'simplification part 5'
+: 1397353265:0;git add main.js
+: 1397353267:0;git commit -m 'simplification part 5'
+: 1397353269:0;git push
+: 1397353366:0;vim search.js
+: 1397353417:0;vim main.js
+: 1397353446:0;vim search.js
+: 1397353457:0;git add .
+: 1397353464:0;git commit -m 'testing research'
+: 1397353468:0;git push
+: 1397353509:0;vim search.js
+: 1397353518:0;vim style.css
+: 1397353540:0;git add .
+: 1397353542:0;git commit -m 'testing research2'
+: 1397353544:0;git push
+: 1397353567:0;vim search.js
+: 1397353599:0;vim main.js
+: 1397353608:0;vim search.js
+: 1397353616:0;git add .
+: 1397353618:0;git commit -m 'testing research2'
+: 1397353641:0;vim main.js
+: 1397353661:0;vim search.js
+: 1397353693:0;git add .
+: 1397353695:0;git commit -m 'testing research2'
+: 1397353703:0;git push
+: 1397406811:0;sudo wifi-menu
+: 1397453774:0;vim
+: 1397456863:0;cd Downloads3
+: 1397456864:0;ls
+: 1397456871:0;unzip kmap-04-source.zip
+: 1397456872:0;ls
+: 1397456876:0;mkdir kmap
+: 1397456882:0;mv kmap-04-source.zip kmap
+: 1397456884:0;cd kmap
+: 1397456884:0;ls
+: 1397456887:0;unzip kmap-04-source.zip
+: 1397456890:0;ls
+: 1397456895:0;make
+: 1397456899:0;./make
+: 1397456900:0;ls
+: 1397456928:0;cd ..
+: 1397456928:0;ls
+: 1397456932:0;mkdir kmap2
+: 1397456963:0;mv kmap-04-linux.tar.gz kmap2
+: 1397456965:0;cd kmap2
+: 1397456965:0;ls
+: 1397456972:0;tar -xvf
+: 1397456973:0;tar -xvf kmap-04-linux.tar.gz
+: 1397456974:0;ls
+: 1397456977:0;cd kmap
+: 1397456977:0;ls
+: 1397456981:0;make
+: 1397456995:0;./kmm
+: 1397457003:0;yaourt -Ss libwx
+: 1397457009:0;yaourt -Ss wxwid
+: 1397457029:0;yaourt -Ss kernaugh
+: 1397457036:0;yaourt -Ss karnaugh
+: 1397457046:0;yaourt -S k-map
+: 1397457059:0;yaourt -S k-izer
+: 1397457081:0;man k-izer
+: 1397457082:0;ls
+: 1397457088:0;yaourt -S k-izer
+: 1397457146:0;sudo updatedb
+: 1397457153:0;locate k-izer
+: 1397457160:0;yaourt -S mlocate
+: 1397457162:0;locate k-izer
+: 1397457165:0;sudo updatedb
+: 1397457209:0;yaourt -S k-map
+: 1397457238:0;k-map
+: 1397457248:0;locate k-izer
+: 1397457256:0;./usr/bin/k-izer
+: 1397457262:0;cd usr/bin
+: 1397457266:0;cd /usr/bin
+: 1397457267:0;ls
+: 1397457272:0;./k-izer
+: 1397457615:0;./k-map
+: 1397457621:0;sudo updatedb
+: 1397457632:0;locate k-map
+: 1397457639:0;k-map
+: 1397457657:0;./k-izer
+: 1397457786:0;cd Downloads3
+: 1397457802:0;ls
+: 1397457809:0;mkdir bexpred
+: 1397457816:0;mv BExpred_v0.8.zip bexpred
+: 1397457820:0;cd bexpred
+: 1397457820:0;ls
+: 1397457825:0;unzip BExpred_v0.8.zip
+: 1397457826:0;ls
+: 1397457829:0;cd BExpred_v0.8
+: 1397457829:0;ls
+: 1397457834:0;cat README.txt
+: 1397457842:0;cd jar
+: 1397457850:0;java -jar BExpred.jar
+: 1397459522:0;cd ../../..
+: 1397459527:0;git clone https://github.com/ysangkok/py-kmap
+: 1397459530:0;cd py-kmap
+: 1397459531:0;ls
+: 1397459533:0;vim README.md
+: 1397459694:0;cd ..
+: 1397459700:0;git clone https://github.com/trilomix/kmappy
+: 1397459704:0;cd kmappy
+: 1397459706:0;ls
+: 1397459712:0;cat README.md
+: 1397459718:0;python blam.py
+: 1397459723:0;yaourt -Ss wx
+: 1397459739:0;yaourt -Ss python-wx
+: 1397459741:0;yaourt -Ss pythonwx
+: 1397459757:0;yaourt -Ss wxpython
+: 1397459761:0;yaourt -S wxpython
+: 1397459796:0;python blam.py
+: 1397459803:0;sudo pip install wx
+: 1397459806:0;sudo pip2 install wx
+: 1397459817:0;python2 blam.py
+: 1397460226:0;vim blam.py
+: 1397460240:0;vim blamframe.py
+: 1397460267:0;python2 blam.py
+: 1397460394:0;vim a.kmap
+: 1397460406:0;python2 blam.py
+: 1397460543:0;blam
+: 1397460549:0;yaourt -Ss blam
+: 1397460565:0;ls -la -sort
+: 1397460568:0;ls -la -sort=d
+: 1397460573:0;ls -la --date
+: 1397460578:0;man ls
+: 1397460582:0;man ls | cat
+: 1397460598:0;ls -lat
+: 1397460621:0;ls -lat | head
+: 1397460624:0;kmm
+: 1397462946:0;vim
+: 1397470454:0;kmm
+: 1397533077:0;ls
+: 1397533091:0;vim santip
+: 1397533100:0;ssh 18.93.14.181
+: 1397533106:0;ssh spock@18.93.14.181
+: 1397533274:0;cd uturn/
+: 1397533274:0;ls
+: 1397533280:0;cd ..
+: 1397533282:0;ls
+: 1397533293:0;cd uturn/uturn
+: 1397533293:0;ls
+: 1397533296:0;git pull
+: 1397533328:0;cd ..
+: 1397533329:0;ls
+: 1397533332:0;la
+: 1397533337:0;ls --color=none
+: 1397533342:0;cd ..
+: 1397533343:0;ls --color=none
+: 1397533363:0;find .|grep search.js
+: 1397533370:0;cd 6.813
+: 1397533372:0;cd uturn
+: 1397533373:0;ls
+: 1397533375:0;git pull
+: 1397533387:0;vim search.js
+: 1397533409:0;vim main.js
+: 1397533449:0;git commit -m 'trying a fix to disappearing search'
+: 1397533456:0;git add .
+: 1397533457:0;git commit -m 'trying a fix to disappearing search'
+: 1397533460:0;git push
+: 1397533489:0;ssh spock@18.93.14.181
+: 1397533608:0;cd 6.813
+: 1397533608:0;ls
+: 1397533609:0;cd uturn
+: 1397533610:0;ls
+: 1397533613:0;vim search.js
+: 1397533625:0;vim main.js
+: 1397533782:0;git add .
+: 1397533792:0;git commit -m 'fixed disappearing search'
+: 1397533794:0;git push
+: 1397533921:0;vim style.css
+: 1397533947:0;git commit -m 'really fixed disappearing search'
+: 1397533952:0;git add style.css
+: 1397533952:0;git commit -m 'really fixed disappearing search'
+: 1397533954:0;git push
+: 1397543326:0;vim player.js
+: 1397543510:0;git add player.js
+: 1397543521:0;git commit -m 'debug player.js'
+: 1397543533:0;git push
+: 1397543542:0;git pull
+: 1397543554:0;git push
+: 1397567589:0;ssh kemus@athena.dialup
+: 1397569802:0;sudo wifi-menu
+: 1397635346:0;redshift &&
+: 1397635348:0;redshift &
+: 1397635350:0;redshift
+: 1397664423:0;sudo wifi-menu
+: 1397669026:0;ssh 18.93.14.181
+: 1397669036:0;ssh spock@18.93.14.181
+: 1397671117:0;sudo wifi-menu
+: 1397671764:0;cd Downloads3
+: 1397671764:0;ls
+: 1397671769:0;cd assignment_3
+: 1397671769:0;ls
+: 1397671771:0;vim isaacg_pset3.pdf
+: 1397671776:0;evince isaacg_pset3.pdf
+: 1397671791:0;evince epopova_pset3.pdf
+: 1397675688:0;ssh 18.93.14.181
+: 1397675697:0;\
+ssh spock@18.93.14.181
+: 1397675872:0;ls
+: 1397675874:0;mkdir bkup
+: 1397675876:0;cd bkup
+: 1397675879:0;git clone https://github.com/kemus/uturn.git
+: 1397676751:0;ssh spock@18.93.14.181
+: 1397678872:0;sudo wifi-menu
+: 1397695622:0;\
+ssh spock@18.93.14.181
+: 1397698764:0;sudo wifi-menu
+: 1397699119:0;cd 6.813
+: 1397699120:0;cd uturn
+: 1397699120:0;ls
+: 1397699123:0;git pull
+: 1397699131:0;git log
+: 1397699141:0;vim index.html
+: 1397699160:0;git add index.html
+: 1397699192:0;git commit -m 'fixed canvas size, if canvas size is increased, then the selection code will break'
+: 1397699194:0;git push
+: 1397699206:0;ls
+: 1397699210:0;vim style.css
+: 1397699224:0;vim index.html
+: 1397699342:0;git commit -m 'made undo button look like other buttons'
+: 1397699348:0;git add index.html
+: 1397699350:0;git commit -m 'made undo button look like other buttons'
+: 1397699352:0;git push
+: 1397699424:0;ssh 18.93.14.181
+: 1397699428:0;ssh spock@18.93.14.181
+: 1397699483:0;vim index.html
+: 1397699499:0;git add index.html
+: 1397699507:0;git commit -m 'fixed undo'
+: 1397699508:0;git push
+: 1397699532:0;vim index.html
+: 1397699563:0;vim main.js
+: 1397699580:0;git add index.html
+: 1397699594:0;git commit -m 'made edit have a popup saying unimplemented feature'
+: 1397699596:0;git push
+: 1397699625:0;vim main.js
+: 1397699653:0;git add index.html
+: 1397699661:0;git add main.js
+: 1397699679:0;git commit -m 'actually made edit button say unimplemented feature'
+: 1397699681:0;git push
+: 1397708707:0;sudo wifi-menu
+: 1397760810:0;ssh kemus@athena.dialup
+: 1397762872:0;sudo wifi-menu
+: 1397974472:0;ls
+: 1397974496:0;cd writing
+: 1397974496:0;ls
+: 1397974499:0;cd curated
+: 1397974499:0;ls
+: 1397974527:0;vim doll
+: 1397974961:0;cat angels
+: 1397974969:0;cat kill-god
+: 1397974980:0;cat briefly
+: 1397974982:0;cat kill-god
+: 1397974994:0;cat briefly
+: 1397974998:0;cat kill-god
+: 1397975001:0;clear
+: 1397975003:0;cat briefly
+: 1397976620:0;clear
+: 1397976622:0;ls
+: 1397976627:0;cat sleep
+: 1397976631:0;cat sho
+: 1397976633:0;cat who
+: 1397976638:0;cat hello-self
+: 1398030152:0;sudo wifi-menu
+: 1398101857:0;vim 6.033
+: 1398111397:0;sudo wifi-menu
+: 1398209207:0;lsof snd
+: 1398209211:0;lsof | grep snd
+: 1398209215:0;kill 8175
+: 1398209220:0;kill 8157
+: 1398209221:0;lsof | grep snd
+: 1398209226:0;kill 4435
+: 1398209228:0;lsof | grep snd
+: 1398209232:0;kill 8151
+: 1398209233:0;lsof | grep snd
+: 1398209236:0;kill 8172
+: 1398209237:0;lsof | grep snd
+: 1398211217:0;gedit
+: 1398236692:0;ls
+: 1398236697:0;cd proj
+: 1398236698:0;ls
+: 1398236704:0;mkdir rsh
+: 1398236706:0;cd rsh
+: 1398236719:0;cd ..
+: 1398236719:0;ls
+: 1398236733:0;mv rsh rbsh
+: 1398236735:0;cd rbsh
+: 1398236736:0;ls
+: 1398236742:0;yaourt -S irb
+: 1398236748:0;yaourt -S ruby
+: 1398236752:0;irb
+: 1398236767:0;vim ls.rb
+: 1398236798:0;which ruby
+: 1398236799:0;vim ls.rb
+: 1398236904:0;chmod a+x ls.rb
+: 1398236906:0;./ls.rb
+: 1398236909:0;vim ls.rb
+: 1398236956:0;./ls.rb
+: 1398236959:0;vim ls.rb
+: 1398237051:0;./ls.rb
+: 1398237107:0;vim ls.rb
+: 1398237169:0;./ls.rb
+: 1398237202:0;vim ls.rb
+: 1398237255:0;./ls.rb
+: 1398237257:0;vim ls.rb
+: 1398237265:0;./ls.rb
+: 1398237267:0;vim ls.rb
+: 1398237276:0;./ls.rb
+: 1398237280:0;vim ls.rb
+: 1398237311:0;./ls.rb
+: 1398237313:0;vim ls.rb
+: 1398237318:0;./ls.rb a
+: 1398237319:0;./ls.rb a f
+: 1398237320:0;vim ls.rb
+: 1398237342:0;./ls.rb a f
+: 1398237344:0;vim ls.rb
+: 1398237355:0;./ls.rb a f
+: 1398237358:0;./ls.rb .
+: 1398237362:0;vim ls.rb
+: 1398237389:0;./ls.rb 
+: 1398237391:0;./ls.rb
+: 1398237393:0;vim ls.rb
+: 1398237399:0;./ls.rb
+: 1398237401:0;vim ls.rb
+: 1398237492:0;./ls.rb
+: 1398237496:0;./ls.rb /home
+: 1398237501:0;vim ls.rb
+: 1398237518:0;man ls
+: 1398237537:0;chmod 777 /usr/share/man/output
+: 1398237544:0;mkdir /usr/share/man/output
+: 1398237550:0;man ls
+: 1398237558:0;chmod 777 /usr/share/man/output
+: 1398237561:0;mkdir /usr/share/man/output
+: 1398237565:0;sudo mkdir /usr/share/man/output
+: 1398237570:0;man ls
+: 1398237581:0;chmod 666 /usr/share/man/output
+: 1398237586:0;sudo chmod 666 /usr/share/man/output
+: 1398237588:0;man ls
+: 1398237594:0;sudo chmod 777 /usr/share/man/output
+: 1398237595:0;man ls
+: 1398237609:0;vim ~/.zsh/aliases.zsh
+: 1398237617:0;vim ~/.zsh
+: 1398237627:0;vim ~/.zshrc
+: 1398237638:0;run-help ls
+: 1398237652:0;which ls
+: 1398237687:0;grep ~/.z*
+: 1398237690:0;grep /home/kemus/.zcompdump /home/kemus/.zlogin /home/kemus/.zlogout /home/kemus/.zprofile /home/kemus/.zsh /home/kemus/.zshenv /home/kemus/.zshrc 
+: 1398237704:0;man grep | cat
+: 1398237729:0;grep alias ~/.z*
+: 1398237746:0;grep alias /home/kemus/.bash_history /home/kemus/.bash_logout /home/kemus/.bash_profile /home/kemus/.bashrc 
+: 1398237756:0;grep alias ~/.*
+: 1398237795:0;grep alias ~/.dotfiles/*
+: 1398237802:0;grep alias ~/.dotfiles/zsh/*
+: 1398237816:0;grep 'alias' ~/.dotfiles/zsh/*
+: 1398237821:0;grep 'alias man' ~/.dotfiles/zsh/*
+: 1398237828:0;which man
+: 1398237834:0;which run-help
+: 1398237844:0;man man
+: 1398237849:0;locate man
+: 1398237860:0;/usr/bin/man ls
+: 1398237867:0;yaourt -R foremost
+: 1398237870:0;/usr/bin/man ls
+: 1398237878:0;which /usr/bin/man
+: 1398237883:0;file /usr/bin/man
+: 1398237888:0;ls /usr/bin/man
+: 1398237891:0;cat /usr/bin/man
+: 1398237902:0;yaourt -S man
+: 1398237907:0;cat /usr/bin/man
+: 1398237910:0;file /usr/bin/man
+: 1398237934:0;man ls
+: 1398237952:0;foremost
+: 1398237958:0;yaourt -S foremost
+: 1398238077:0;for f in `pacman -Ql packagename | grep "/bin/" | cut -d" " -f2`; do file $f 2>|/dev/null | grep -q executable && basename $f; done
+: 1398238110:0;for f in `pacman -Ql man-db | grep "/bin/" | cut -d" " -f2`; do file $f 2>|/dev/null | grep -q executable && basename $f; done
+: 1398238128:0;man man
+: 1398238145:0;grep 'LESS=' ~/.dotfiles/zsh/*
+: 1398238150:0;grep 'LESS=' ~/.*
+: 1398238154:0;grep 'LESS=' ~/.z*
+: 1398238157:0;grep 'LESS' ~/.z*
+: 1398238165:0;LESS
+: 1398238169:0;echo LESS
+: 1398238173:0;echo $LESS
+: 1398238178:0;man man
+: 1398238199:0;yaourt -S foremost
+: 1398238254:0;readelf -a /usr/bin/man
+: 1398238280:0;readelf -a /usr/bin/man | grep interp
+: 1398238318:0;strace -eopen man
+: 1398238332:0;man
+: 1398238334:0;man ls
+: 1398238337:0;strace -eopen man ls
+: 1398238404:0;man -Tutf8 ls
+: 1398238413:0;man -Tutf8 ls |less
+: 1398238424:0;which less
+: 1398238446:0;grep less .z(
+: 1398238448:0;grep less .z*
+: 1398238456:0;grep less ~/.z*
+: 1398238465:0;grep less ~/.zsh/*
+: 1398238484:0;\
+vim ~/.zsh/aliases.zsh
+: 1398238499:0;which less
+: 1398238502:0;rezsh
+: 1398238504:0;less
+: 1398238507:0;man ls
+: 1398238516:0;man which
+: 1398238528:0;vim ~/.zsh/aliases.zsh
+: 1398238536:0;man which
+: 1398238539:0;rezsh
+: 1398238546:0;vim ls.rb
+: 1398238840:0;rezsh
+: 1398238844:0;./ls.rb
+: 1398238846:0;vim ls.rb
+: 1398238853:0;man echo
+: 1398238889:0;ls
+: 1398238892:0;cd proj/rbsh
+: 1398238893:0;ls
+: 1398238897:0;vim echo.rb
+: 1398239187:0;ls
+: 1398239191:0;chmod a+x .
+: 1398239193:0;chmod a+x . -r
+: 1398239197:0;chmod -r a+x .
+: 1398239203:0;chmod a+x -r .
+: 1398239206:0;man chmod
+: 1398239214:0;chmod a+x -R .
+: 1398239224:0;chmod -R a+x .
+: 1398239230:0;ls
+: 1398239238:0;sudo chmod 666 .
+: 1398239242:0;ls
+: 1398239249:0;cd ..
+: 1398239249:0;ls
+: 1398239251:0;ls -la
+: 1398239265:0;ls rbsh
+: 1398239279:0;sudo chmod 644 rbsh
+: 1398239280:0;ls
+: 1398239283:0;cd rbsh
+: 1398239284:0;ls
+: 1398239287:0;la
+: 1398239297:0;cd ..
+: 1398239298:0;ls
+: 1398239299:0;la
+: 1398239302:0;cd proj
+: 1398239303:0;ls
+: 1398239307:0;sudo chmod 655 rbsh
+: 1398239310:0;cd rbsh
+: 1398239311:0;ls
+: 1398239318:0;sudo chmod 755 rbsh
+: 1398239319:0;ls
+: 1398239321:0;cd rbsh
+: 1398239321:0;ls
+: 1398239338:0;sudo chmod a+x -R .
+: 1398239338:0;ls
+: 1398239342:0;vim echo.rb
+: 1398239345:0;./echo.rb
+: 1398239349:0;vim echo.rb
+: 1398239372:0;./echo.rb
+: 1398239376:0;./echo.rb -d
+: 1398239380:0;vim echo.rb
+: 1398239414:0;./echo.rb -d
+: 1398239415:0;./echo.rb 
+: 1398239417:0;vim echo.rb
+: 1398239509:0;ls
+: 1398239514:0;echo -e \n
+: 1398239521:0;echo -e '\n'
+: 1398239526:0;echo -en '\n'
+: 1398239534:0;./echo.rb -di
+: 1398239536:0;./echo.rb -dh
+: 1398239541:0;vim echo.rb
+: 1398239643:0;./echo.rb -dh
+: 1398239651:0;vim echo.rb
+: 1398239663:0;./echo.rb -dh
+: 1398239665:0;vim echo.rb
+: 1398239687:0;./echo.rb -dh
+: 1398239688:0;vim echo.rb
+: 1398239694:0;./echo.rb -dh
+: 1398239695:0;vim echo.rb
+: 1398239732:0;./echo.rb -dh
+: 1398239734:0;vim echo.rb
+: 1398239737:0;./echo.rb -di
+: 1398239738:0;vim echo.rb
+: 1398239761:0;./echo.rb -di
+: 1398239763:0;./echo.rb -e
+: 1398239767:0;vim echo.rb
+: 1398239772:0;./echo.rb -e
+: 1398239774:0;vim echo.rb
+: 1398239780:0;./echo.rb -e
+: 1398239782:0;vim echo.rb
+: 1398239793:0;./echo.rb -e
+: 1398239794:0;./echo.rb -eE
+: 1398239795:0;./echo.rb -eEe
+: 1398239796:0;./echo.rb -eEeE
+: 1398239799:0;vim echo.rb
+: 1398239865:0;./echo.rb -eEeE
+: 1398239867:0;./echo.rb -eEeEn
+: 1398239869:0;./echo.rb -eEeEne
+: 1398239874:0;./echo.rb -eEeE -e
+: 1398239877:0;vim echo.rb
+: 1398240476:0;info
+: 1398240480:0;info coreutils
+: 1398240488:0;info coreutils 'echo invocation'
+: 1398240615:0;yes --help
+: 1398240623:0;yes --version
+: 1398240643:0;gcc --version
+: 1398240645:0;ls
+: 1398240650:0;vim ls.rb
+: 1398240747:0;./ls.rb
+: 1398240751:0;./ls.rb ls
+: 1398240755:0;./ls.rb pwd
+: 1398240759:0;vim ls.rb
+: 1398240779:0;./ls.rb cd
+: 1398240781:0;ls
+: 1398240784:0;cd
+: 1398240784:0;ls
+: 1398240787:0;cd -
+: 1398240788:0;ls
+: 1398241722:0;echo >| echo
+: 1398241724:0;ls
+: 1398241727:0;cat echo
+: 1398241743:0;cd ..
+: 1398241744:0;ls
+: 1398241759:0;mkdir pydh
+: 1398241761:0;cd pydh
+: 1398241761:0;ls
+: 1398241763:0;cd ..
+: 1398241770:0;mv pydh pysh
+: 1398241771:0;cd pysh
+: 1398241786:0;vim pysh.py
+: 1398241854:0;./pysh.py
+: 1398241858:0;chmod a+x pysh.py
+: 1398241859:0;./pysh.py
+: 1398241862:0;vim pysh.py
+: 1398241872:0;./pysh.py
+: 1398241875:0;vim pysh.py
+: 1398241893:0;./pysh.py
+: 1398241894:0;vim pysh.py
+: 1398241915:0;./pysh.py
+: 1398241924:0;vim pysh.py
+: 1398242086:0;./pysh.py
+: 1398242088:0;vim pysh.py
+: 1398242099:0;./pysh.py
+: 1398242100:0;vim pysh.py
+: 1398242156:0;./pysh.py
+: 1398242162:0;vim pysh.py
+: 1398242171:0;python2
+: 1398242191:0;vim pysh.py
+: 1398242235:0;man uniq
+: 1398242382:0;cat lol
+: 1398242390:0;cat <lol
+: 1398242400:0;cat <sort lol
+: 1398242473:0;man which
+: 1398242622:0;man bash
+: 1398243023:0;bashbug
+: 1398243065:0;man zsh
+: 1398243168:0;man zshall
+: 1398243311:0;autoload -U tetris
+: 1398243319:0;zle -N tetris
+: 1398243326:0;bindkeys q tetris
+: 1398243333:0;bindkey q tetris
+: 1398243430:0;aaaaaaaaaaaaaaaaaaaaaaaasddddddddddddddddrez
+: 1398243433:0;rezsh
+: 1398272864:0;sudo wifi-menu
+: 1398279603:0;cd proj
+: 1398279603:0;ls
+: 1398279610:0;vim dp2sim.py
+: 1398279736:0;chmod a+x dp2sim.py
+: 1398279783:0;./dp2sim.py
+: 1398279790:0;vim dp2sim.py
+: 1398279863:0;./dp2sim.py
+: 1398279869:0;vim dp2sim.py
+: 1398279945:0;./dp2sim.py
+: 1398279949:0;vim dp2sim.py
+: 1398285440:0;ks
+: 1398285441:0;ls
+: 1398285444:0;cd rbsh
+: 1398285444:0;ls
+: 1398285469:0;./ls.rb
+: 1398285472:0;./ls.rb .
+: 1398285475:0;./ls.rb s
+: 1398285476:0;./ls.rb e
+: 1398285478:0;./ls.rb -e
+: 1398285480:0;./ls.rb 
+: 1398289042:0;irb
+: 1398304323:0;ls
+: 1398304927:0;sudo wifi-menu
+: 1398306658:0;sudo gem install rubygame
+: 1398306701:0;PATH
+: 1398306705:0;echo $PATH
+: 1398306717:0;vim ~/.zshrc
+: 1398306743:0;ls /root/.gem/ruby/2.1.0/bin
+: 1398306751:0;sudo ls /root/.gem/ruby/2.1.0/bin
+: 1398306761:0;gem install rubygame
+: 1398306815:0;vim ~/.zshrc
+: 1398306857:0;rezsh
+: 1398306865:0;gem install rubygame
+: 1398306882:0;echo $PATH
+: 1398306888:0;vim ~/.zshrc
+: 1398306897:0;rezsh
+: 1398306899:0;gem install rubygame
+: 1398306926:0;cd proj
+: 1398306926:0;ls
+: 1398306936:0;mkdir game
+: 1398306938:0;cd game
+: 1398306938:0;ls
+: 1398307003:0;vim game.rb
+: 1398307021:0;chmod a+x game.rb
+: 1398307023:0;./game.rb
+: 1398307025:0;vim game.rb
+: 1398307037:0;./game.rb
+: 1398307038:0;vim game.rb
+: 1398307680:0;./game.rb
+: 1398307731:0;gem install SDL_gfx
+: 1398307825:0;yaourt -Ss libsdl
+: 1398307844:0;yaourt -Ss sdl
+: 1398307859:0;yaourt -Ss sdl2
+: 1398310096:0;sudo pacman -Ss sdl2
+: 1398310101:0;sudo pacman -Ssq sdl2
+: 1398310138:0;yaourt -S sdl2 sdl2_gfx sdl2_image sdl2_mixer sdl2_net sdl2_ttf smpeg2
+: 1398310154:0;yaourt -S alsa-lib
+: 1398310158:0;ls
+: 1398310162:0;yaourt -Ss ruby
+: 1398310224:0;yaourt -Ss ruby | less
+: 1398310261:0;yaourt -S ruby-docs 
+: 1398318586:0;vim beta9
+: 1398318597:0;gedit beta9
+: 1398321142:0;vim beta9-3
+: 1398321342:0;gedit beta9-3
+: 1398369037:0;lsof |grep snd
+: 1398369041:0;kill 2070
+: 1398369047:0;kill 9237
+: 1398369050:0;kill 9253
+: 1398369053:0;lsof |grep snd
+: 1398371729:0;sudo wifi-menu
+: 1398377161:0;vim dp
+: 1398377237:0;gedit dp &
+: 1398387723:0;sudo wifi-menu
+: 1398400683:0;evince Downloads3/resume.pdf
+: 1398408818:0;vim scott
+: 1398408863:0;vim kevin
+: 1398408870:0;diff scott kevin
+: 1398408879:0;man diff
+: 1398408894:0;diff -w scott kevin
+: 1398408904:0;vim kevin
+: 1398408921:0;vim scott
+: 1398408931:0;diff -w scott kevin
+: 1398411124:0;vim scott
+: 1398415361:0;mkdir rsm
+: 1398415368:0;mv Downloads3/rsm.tgz rsm
+: 1398415370:0;cd rsm
+: 1398415370:0;ls
+: 1398415375:0;tar -xvf rsm.tgz
+: 1398415394:0;cd rsm
+: 1398415403:0;ls
+: 1398415405:0;cd rsm
+: 1398415406:0;ls
+: 1398415408:0;cd rsm
+: 1398415408:0;ls
+: 1398415416:0;./srv.py ./tmp/a
+: 1398415426:0;python2 srv.py ./tmp/a
+: 1398415437:0;python2 clnt.py 58116
+: 1398415445:0;cat /tmp/a
+: 1398415447:0;python2 clnt.py 58116
+: 1398415477:0;cat /tmp/a
+: 1398415485:0;cat tmp/a
+: 1398415500:0;rm tmp/a
+: 1398415513:0;python2 srv.py tmp/a &
+: 1398415516:0;python2 srv.py tmp/b &
+: 1398415541:0;python2 clnt.py 47674 60679
+: 1398415559:0;cat tmp/a
+: 1398415561:0;cat tmp/b
+: 1398415572:0;vim rsm
+: 1398415576:0;;q:
+: 1398415580:0;vim rsm.txt
+: 1398415611:0;killall python2
+: 1398415615:0;python2 srv.py tmp/a &
+: 1398415620:0;python2 srv.py tmp/b &
+: 1398415633:0;python2 clnt.py 47132 41243 &
+: 1398415655:0;fg
+: 1398415659:0;ls
+: 1398415668:0;vim clnt.py
+: 1398415737:0;killall python2
+: 1398415788:0;vim coord.py
+: 1398420447:0;cd rsm/rsm
+: 1398420448:0;ls
+: 1398420449:0;vim coord.py
+: 1398420517:0;python2 srv.py tmp/a&
+: 1398420522:0;python2 srv.py tmp/b&
+: 1398420547:0;python2 coord.py 45562 45898
+: 1398420552:0;cd rsm/rsm
+: 1398420565:0;python2 clnt.py 33164&
+: 1398420578:0;vim coord.py
+: 1398420617:0;vim clnt.py
+: 1398420870:0;killall python2
+: 1398420874:0;python2 srv.py tmp/a&
+: 1398420882:0;python2 clnt.py 35403&
+: 1398420888:0;sudo killall python2
+: 1398420896:0;vim coord.py
+: 1398421074:0;python2 srv.py tmp/a& python2 srv.py tmp/b&
+: 1398421089:0;python2 coord.py 43849 35327
+: 1398421104:0;cd rsm/rsm
+: 1398421104:0;ls
+: 1398421119:0;python2 clnt.py 59436&
+: 1398421136:0;vim coord.py
+: 1398421148:0;python2 coord.py 43849 35327
+: 1398421151:0;python2 clnt.py 59436&
+: 1398421173:0;python2 clnt.py 39729
+: 1398421187:0;vim coord.py
+: 1398421203:0;python2 coord.py 43849 35327
+: 1398421208:0;python2 clnt.py 49407
+: 1398421215:0;cat tmp/a
+: 1398421219:0;cat tmp/b 
+: 1398421232:0;vim coord.py
+: 1398421312:0;python2 coord.py 43849 35327
+: 1398421316:0;vim coord.py
+: 1398421324:0;python2 coord.py 43849 35327
+: 1398421331:0;python2 clnt.py 45772
+: 1398421337:0;cat tmp/a
+: 1398421339:0;cat tmp/b
+: 1398421365:0;vim coord.py
+: 1398421405:0;python2 clnt.py 45772
+: 1398421409:0;python2 coord.py 43849 35327
+: 1398421417:0;python2 clnt.py 32950
+: 1398421423:0;cat tmp/a
+: 1398421425:0;cat tmp/b
+: 1398421469:0;vim coord.py
+: 1398421607:0;vim srv.py
+: 1398421798:0;killall python
+: 1398421799:0;killall python2
+: 1398421803:0;python2 srv.py tmp/a& python2 srv.py tmp/b&
+: 1398421820:0;python2 coord.py 54610 37316
+: 1398421831:0;python2 clnt.py 60954
+: 1398421855:0;ls
+: 1398421859:0;cat tmp/a
+: 1398421861:0;cat tmp/b
+: 1398421880:0;cat coord.py srv.py
+: 1398421906:0;vim ../../rsm.txt
+: 1398447801:0;evince Downloads3/resume.pdf
+: 1398456652:0;cd Downloads3
+: 1398456653:0;ls
+: 1398456663:0;cd ../Downloads2
+: 1398456663:0;ls
+: 1398456670:0;cd MC\ Theater
+: 1398456670:0;ls
+: 1398456693:0;vlc Act\ Now.mp4 
+: 1398457208:0;vlc scentlure-big-qt.mov
+: 1398459182:0;lsof | grep snd
+: 1398459187:0;lsof | grep snd |cut -f2
+: 1398459205:0;lsof | grep snd |cut -d' ' -f2
+: 1398459213:0;lsof | grep snd
+: 1398459220:0;lsof | grep snd |cut -d' *' -f2
+: 1398459260:0;lsof | grep snd |awk '{print $2}'
+: 1398459266:0;lsof | grep snd |awk '{print $2}' |sort -u
+: 1398459270:0;lsof | grep snd |awk '{print $2}' |sort -u | kill
+: 1398459277:0;lsof | grep snd |awk '{print $2}' |sort -u
+: 1398459294:0;for id in `lsof | grep snd |awk '{print $2}' |sort -u`; do print $id; done
+: 1398459299:0;for id in `lsof | grep snd |awk '{print $2}' |sort -u`; do kill $id; done
+: 1398470761:0;vim todo.txt
+: 1398471399:0;vim notes
+: 1398481094:0;scrot
+: 1398481099:0;man scrot
+: 1398481121:0;scrot -s add-customer.png
+: 1398481320:0;ls
+: 1398481322:0;ls add-customer.png
+: 1398481447:0;scrot -s searched.png
+: 1398493702:0;sudo wifi-menu 
+: 1398546229:0;gimp Downloads3/IMAG0349.jpg
+: 1398546290:0;yaourt -Ss paint
+: 1398546374:0;gimp Downloads3/IMAG0349.jpg
+: 1398547582:0;feh Downloads3/IMAG0349.jpg Downloads3/IMAG0350.jpg
+: 1398547589:0;feh Downloads3/IMAG0349.jpg 
+: 1398547592:0;feh Downloads3/IMAG0349.jpg &
+: 1398547598:0;feh Downloads3/IMAG0350.jpg &
+: 1398580409:0;ls
+: 1398580413:0;cd Downloads3
+: 1398580413:0;ls
+: 1398580633:0;mkdir ps4
+: 1398580641:0;mv ps4_submissions.zip ps4
+: 1398580645:0;cd ps4/
+: 1398580646:0;ls
+: 1398580660:0;unzip ps4_submissions.zip
+: 1398580662:0;ls
+: 1398580664:0;cd ps4_submissions
+: 1398580665:0;ls
+: 1398580723:0;cp ../../rubric\ \(1\).tex .
+: 1398580724:0;ls
+: 1398580732:0;pdflatex rubric\ \(1\).tex
+: 1398580765:0;vim rubric\ \(1\).tex
+: 1398581046:0;cd Downloads3/ps4
+: 1398581047:0;ls
+: 1398581049:0;cd ps4_submissions
+: 1398581049:0;ls
+: 1398581066:0;evince ps4_zlily.pdf
+: 1398581132:0;cd Downloads3
+: 1398581132:0;ls
+: 1398581137:0;unzip pset4_solution.zip
+: 1398581142:0;cd pset4_solution
+: 1398581143:0;ls
+: 1398581147:0;evince pset4_solution.pdf
+: 1398582301:0;evince ps4_zengty.pdf
+: 1398583094:0;evince ps4_zaidw.pdf
+: 1398583264:0;evince ps4_zacnel.pdf
+: 1398583515:0;evince ps4_zacku.pdf
+: 1398583642:0;evince ps4_yuyupuu.pdf
+: 1398583984:0;evince ps4_youpeng.pdf
+: 1398584194:0;evince ps4_yonadav.pdf
+: 1398584370:0;evince ps4_ycoroneo.pdf
+: 1398584524:0;evince ps4_yangdai.pdf
+: 1398584709:0;evince ps4_xmwangi.pdf
+: 1398584875:0;evince ps4_xinzhao.pdf
+: 1398585190:0;sudo wifi-menu
+: 1398586706:0;evince ps4_xbliang.pdf
+: 1398586818:0;evince ps4_weienlee.pdf
+: 1398587046:0;evince ps4_wange.pdf
+: 1398587346:0;evince ps4_vye16.pdf
+: 1398587771:0;evince ps4_vtjeng.pdf
+: 1398587876:0;evince ps4_vkee.pdf
+: 1398588009:0;evince ps4_victorz.pdf
+: 1398588147:0;evince ps4_vdean.pdf
+: 1398588204:0;evince ps4_vcjones.pdf
+: 1398588346:0;evince ps4_ulloac.pdf
+: 1398588409:0;evince ps4_uayyaz.pdf
+: 1398588491:0;evince ps4_tyyan.pdf
+: 1398588564:0;evince ps4_tsoejima.pdf
+: 1398588639:0;evince ps4_tsitkov.pdf
+: 1398588698:0;evince ps4_tjtalkar.pdf
+: 1398588776:0;evince ps4_tjgray.pdf
+: 1398588840:0;evince ps4_timwu.pdf
+: 1398588877:0;evince ps4_tiffanyl.pdf ps4_
+: 1398588942:0;evince ps4_thipok16.pdf
+: 1398589005:0;evince ps4_tejassun.pdf
+: 1398589068:0;evince ps4_tdgreen.pdf
+: 1398589203:0;evince ps4_tbwong.pdf
+: 1398589271:0;evince ps4_tashas.pdf
+: 1398589328:0;evince ps4_szheng17.pdf
+: 1398589422:0;evince ps4_syeom.pdf
+: 1398589501:0;evince ps4_surya.pdf
+: 1398589613:0;evince ps4_suniyya.pdf
+: 1398589754:0;evince ps4_suarez.pdf
+: 1398589799:0;evince ps4_sturlag.pdf
+: 1398589848:0;evince ps4_stuartsf.pdf
+: 1398589915:0;evince ps4_stevenjj.pdf
+: 1398590041:0;evince ps4_stanclik.pdf
+: 1398590116:0;evince ps4_stahdirk.pdf
+: 1398590196:0;evince ps4_snp.pdf
+: 1398590703:0;evince ps4_skoppula.pdf
+: 1398590800:0;evince ps4_simanta.pdf
+: 1398638250:0;sudo wifi-menu
+: 1398664423:0;sudo redshift
+: 1398679946:0;man sudoers
+: 1398689970:0;vim
+: 1398690870:0;vim nightmare
+: 1398707337:0;sudo wifi-menu
+: 1398732269:0;vim nightmare
+: 1398746822:0;sudo wifi-menu
+: 1398792979:0;evince Downloads3/resume.pdf
+: 1398820581:0;sudo wifi-menu
+: 1398820720:0;wget http://web.mit.edu/6.033/www/assignments/stack.tgz
+: 1398820726:0;mkdir hobo
+: 1398820730:0;mv stack.tgz hobo
+: 1398820731:0;ls
+: 1398820732:0;cd hobo
+: 1398820733:0;ls
+: 1398820738:0;tar -xvz stack.tgz
+: 1398820745:0;tar -xvfz stack.tgz
+: 1398820750:0;tar -xvf stack.tgz
+: 1398820751:0;ls
+: 1398820753:0;cd stack
+: 1398820753:0;ls
+: 1398820761:0;cd hobo
+: 1398820761:0;ls
+: 1398820764:0;cd stack
+: 1398820765:0;ls
+: 1398820774:0;make
+: 1398820798:0;ssh kemus@athena.dialup
+: 1398821392:0;vim hobo
+: 1398821401:0;vim bufferoverflow.txt
+: 1398852690:0;history | grep redsh
+: 1398852700:0;redshift
+: 1398856478:0;sudo wifi-menu
+: 1398856515:0;sudo wifi
+: 1398856555:0;sudo dhcpcd
+: 1398856628:0;sudo wifi-menu
+: 1398929607:0;vim stories
+: 1398932513:0;gedit stories.txt
+: 1399004348:0;vim ctl1
+: 1399004356:0;vim ctl2
+: 1399004386:0;diff ctl1 ctl2
+: 1399004420:0;vim ctl2
+: 1399004508:0;vim ctl1
+: 1399004523:0;vim ctl2
+: 1399004551:0;diff ctl1 ctl2
+: 1399007067:0;sudo wifi-menu
+: 1399007112:0;cal
+: 1399007116:0;dc
+: 1399007118:0;perl
+: 1399007131:0;python2
+: 1399007242:0;vim betterbeta
+: 1399007258:0;sudo killall wifi-menu
+: 1399007263:0;sudo killall dhcpcd
+: 1399007268:0;sudo dhcpcd
+: 1399007307:0;sudo wifi-menu
+: 1399048152:0;lsof | grep snd
+: 1399048156:0;kill 9445
+: 1399048159:0;kill 9426
+: 1399048163:0;kill 9420
+: 1399048168:0;kill 1536
+: 1399048171:0;lsof | grep snd
+: 1399048176:0;kill 9441
+: 1399054813:0;sudo wifi-menu
+: 1399098950:0;j
+: 1399098962:0;vim ~/.Xresources
+: 1399099017:0;vim ~/.Xdefaults
+: 1399099068:0;gedit ~/.Xdefaults
+: 1399099209:0;vim ~/.Xdefaults
+: 1399099334:0;vim ~/.Xresources
+: 1399099356:0;grep urxvt ~/.*
+: 1399099364:0;grep urxvt ~/.* -r
+: 1399100398:0;ruby
+: 1399100401:0;irb
+: 1399100656:0;ls
+: 1399100662:0;cat ~/.Xresources
+: 1399100864:0;derivative of (50.0 * (1.0 + sin((x / 23.0 - ((x / 23)-x%23)) * 360.0 * pi / 180.0)))
+: 1399100867:0;(50.0 * (1.0 + sin((x / 23.0 - (x / 23)) * 360.0 * pi / 180.0)))
+: 1399100869:0;derivative of (50.0 * (1.0 + sin((x / 23.0 - ((x / 23)-x%23)) * 360.0 * pi / 180.0)))
+: 1399100871:0;(50.0 * (1.0 + sin((x / 23.0 - (x / 23)) * 360.0 * pi / 180.0)))
+: 1399100873:0;derivative of (50.0 * (1.0 + sin((x / 23.0 - ((x / 23)-x%23)) * 360.0 * pi / 180.0)))
+: 1399101281:0;yaourt -Syu
+: 1399101620:0;pacman -Qqo /bin /sbin /usr/sbin | pacman -Qm -
+: 1399101629:0;pacman -Qqo /bin /sbin /usr/sbin | pacman -Qm 
+: 1399101686:0;sudo mv /etc/fonts/conf.d/75-yes-terminus.conf /etc/fonts/conf.d/75-yes-terminus.conf.old
+: 1399101691:0;yaourt -Syu
+: 1399101810:0;yaourt -Syua
+: 1399103073:0;sudo wifi-menu
+: 1399103096:0;sudo wifi
+: 1399103116:0;q\
+
+: 1399103118:0;ifconfig
+: 1399103152:0;lspci -k
+: 1399103222:0;sudo modprobe wl
+: 1399103231:0;sudo modprobe bcma
+: 1399103234:0;lspci -k
+: 1399103240:0;ifconfig
+: 1399103490:0;MAST>|  \
+\
+sudo modprobe bcma
+: 1399103501:0;\
+\
+sudo modprobe broadcom-wl
+: 1399103503:0;\
+\
+sudo modprobe broadcom-wl-ck
+: 1399103507:0;\
+\
+
+: 1399103532:0;sudo modprobe broadcom-wl-dkms 
+: 1399103579:0;sudo dhcpcd
+: 1399103586:0;sudo killall dhcpcd
+: 1399103587:0;sudo dhcpcd
+: 1399103608:0;yaourt -Ss broadcom-wl-dkms
+: 1399103615:0;yaourt -S broadcom-wl-dkms
+: 1399103632:0;sudo modprobe broadcom-wl
+: 1399103672:0;rmmod bcma
+: 1399103675:0;sudo rmmod bcma
+: 1399103681:0;lspci -k
+: 1399103734:0;dkms add -m broadcom-wl -v 6.30.223.141
+: 1399103740:0;sudo dkms add -m broadcom-wl -v 6.30.223.141
+: 1399103968:0;dkms status -m broadcom-wl
+: 1399103974:0;sudo modprobe broadcom-wl
+: 1399103984:0;yaourt -Rs broadcom-wl
+: 1399103991:0;yaourt -S broadcom-wl
+: 1399104017:0;yaourt -S broadcom-wl-dkms
+: 1399104054:0;rmmod b43 2>|/dev/null
+: 1399104054:0;rmmod b43legacy 2>|/dev/null
+: 1399104054:0;rmmod ssb 2>|/dev/null
+: 1399104054:0;rmmod bcm43xx 2>|/dev/null
+: 1399104054:0;rmmod brcm80211 2>|/dev/null
+: 1399104054:0;rmmod brcmfmac 2>|/dev/null
+: 1399104054:0;rmmod brcmsmac 2>|/dev/null
+: 1399104054:0;rmmod bcma 2>|/dev/null
+: 1399104054:0;modprobe wl
+: 1399104068:0;sudo rmmod b43 
+: 1399104072:0;sudo rmmod b43legacy
+: 1399104076:0;sudo rmmod ssb
+: 1399104081:0;sudo rmmod bcm43xx
+: 1399104088:0;sudo rmmod brcm80211
+: 1399104092:0;sudo rmmod brcmfmac
+: 1399104095:0;sudo rmmod brcmsmac
+: 1399104098:0;sudo rmmod bcma
+: 1399104104:0;sudo modprobe wl
+: 1399104109:0;iwconfig
+: 1399104116:0;ifconfig
+: 1399104123:0;wifi-menu
+: 1399104126:0;sudo wifi-menu
+: 1399104163:0;sudo dhcpcd
+: 1399104170:0;sudo killall dhcpcd
+: 1399104171:0;sudo dhcpcd
+: 1399104183:0;systemctl status netctl@eth0\x2dMIT.service
+: 1399104195:0;journalctl -xn
+: 1399104352:0;sudo vim /etc/netctl/eth0-MIT
+: 1399104372:0;sudo diff /etc/netctl/eth0-MIT /etc/netctl/wlp2s0-MIT
+: 1399104379:0;iwconfig
+: 1399104393:0;netctl -v
+: 1399104397:0;netctl --version
+: 1399104452:0;sudo mv /etc/netctl/eth0-MIT /etc/netctl/eth0mit
+: 1399104461:0;netctl enable eth0mit
+: 1399104465:0;sudo netctl enable eth0mit
+: 1399104471:0;sudo netctl start eth0mit
+: 1399104489:0;sudo netctl disable eth0mit
+: 1399104541:0;sudo wifi-menu
+: 1399104651:0;sudo systemctl restart netctl-auto@wlan0.service
+: 1399104658:0;sudo systemctl restart netctl-auto@eth0.service
+: 1399104666:0;sudo systemctl restart netctl@eth0.service
+: 1399104675:0;sudo systemctl status netctl@eth0.service
+: 1399104683:0;iwconfig
+: 1399104790:0;journalctl -xn
+: 1399104818:0;yaourt -S netctl-git
+: 1399104837:0;sudo systemctl restart netctl@eth0.service
+: 1399104845:0;systemctl daemon-reload
+: 1399104848:0;sudo systemctl daemon-reload
+: 1399104851:0;sudo systemctl restart netctl@eth0.service
+: 1399104857:0;sudo systemctl status netctl@eth0.service
+: 1399104969:0;cat sudo netcfg eth0
+: 1399104973:0;sudo netcfg eth0
+: 1399104978:0;yaourt -S netcfg
+: 1399104996:0;cat sudo netcfg eth0
+: 1399104999:0;sudo netcfg eth0
+: 1399105005:0;sudo netcfg 
+: 1399105010:0;sudo netcfg current
+: 1399105016:0;sudo netcfg -l
+: 1399105020:0;sudo netcfg list
+: 1399105025:0;iwconfig
+: 1399105073:0;wicd
+: 1399105074:0;sudo wicd
+: 1399105084:0;sudo wicd-curses
+: 1399105094:0;iwconfig
+: 1399105118:0;sudo killall wicd
+: 1399105125:0;sudo killall dhcpcd
+: 1399105133:0;iwconfig
+: 1399105149:0;iwlist
+: 1399105152:0;iwlist eth0 list
+: 1399105156:0;iwlist eth0 scan
+: 1399105160:0;iwlist 
+: 1399105163:0;iwlist eth0
+: 1399105168:0;iwlist eth0 rate
+: 1399105172:0;iwconfig
+: 1399105182:0;lspci -k
+: 1399105195:0;rmmod bcma
+: 1399105198:0;sudo rmmod bcma
+: 1399105207:0;sudo rmmod wl
+: 1399105214:0;sudo modprobe bcma
+: 1399105217:0;iwconfig
+: 1399105222:0;sudo rmmod bcma
+: 1399105228:0;sudo rmmod wl-dkms
+: 1399105253:0;sudo dhcpcd
+: 1399105257:0;sudo killall dhcpcd
+: 1399105260:0;sudo dhcpcd
+: 1399105327:0;yaourt -R broadcom-wl-dkms
+: 1399105335:0;yaourt -R broadcom-wl
+: 1399105339:0;yaourt -S broadcom-wl
+: 1399105415:0;gcc --version
+: 1399105427:0;uname -a
+: 1399105483:0;wget https://aur.archlinux.org/packages/br/broadcom-wl/broadcom-wl.tar.gz
+: 1399105488:0;mkdir broadcom
+: 1399105492:0;mv broadcom
+: 1399105496:0;mv broadcom-wl.tar.gz broadcom
+: 1399105497:0;ls
+: 1399105499:0;cd broadcom
+: 1399105500:0;ls
+: 1399105508:0;tar -xvzf broadcom-wl.tar.gz
+: 1399105529:0;cd broadcom-wl
+: 1399105530:0;ls
+: 1399105537:0;vim PKGBUILD
+: 1399105576:0;vim gcc.patch
+: 1399105590:0;vim PKGBUILD
+: 1399105598:0;makepkg -s
+: 1399105626:0;vim gcc.patch
+: 1399105668:0;makepkg -s
+: 1399105818:0;ls
+: 1399105823:0;vim PKGBUILD
+: 1399105830:0;vim gcc.patch
+: 1399105836:0;cat src
+: 1399105841:0;ls src
+: 1399105851:0;cat install
+: 1399105897:0;cd ..
+: 1399105898:0;ls
+: 1399105904:0;wget https://aur.archlinux.org/packages/br/broadcom-wl/broadcom-wl.tar.gz
+: 1399105918:0;sudo killall dhcpcd
+: 1399105921:0;wget https://aur.archlinux.org/packages/br/broadcom-wl/broadcom-wl.tar.gz
+: 1399105923:0;ld
+: 1399105924:0;ls
+: 1399105935:0;tar -xvzf broadcom-wl.tar.gz.1
+: 1399105941:0;cd broadcom-wl
+: 1399105942:0;ls
+: 1399105945:0;cd ..
+: 1399105946:0;ls
+: 1399105950:0;rm -r broadcom-wl
+: 1399105957:0;tar -xvzf broadcom-wl.tar.gz.1
+: 1399105959:0;cd broadcom-wl
+: 1399105959:0;ls
+: 1399105973:0;vim PKGBUILD
+: 1399106037:0;vim gcc.patch
+: 1399106062:0;makepkg -s
+: 1399106077:0;vim gcc.patch
+: 1399106101:0;makepkg -s
+: 1399106105:0;vim PKGBUILD
+: 1399106125:0;sha1
+: 1399106132:0;yaourt -S hashcash
+: 1399106141:0;sha1 gcc.patch
+: 1399106152:0;vim PKGBUILD
+: 1399106170:0;makepkg -s
+: 1399106208:0;vim src/src/wl/sys/wl_linux.c
+: 1399106235:0;vim gcc.patch
+: 1399106252:0;sha1 gcc.patch
+: 1399106264:0;vim gcc.patch
+: 1399106304:0;rm gcc.patch
+: 1399106307:0;vim PKGBUILD
+: 1399106341:0;makepkg -s
+: 1399106367:0;vim src/src/wl/sys/wl_linux.c
+: 1399106481:0;diff -Naur src/src/wl/sys/wl_linux.c src/src/wl/sys/wl_linux.c2 
+: 1399106514:0;gedit src/src/wl/sys/wl_linux.c
+: 1399106595:0;diff -Naur src/src/wl/sys/wl_linux.c src/src/wl/sys/wl_linux.c2 
+: 1399106611:0;diff -Naur src/src/wl/sys/wl_linux.c src/src/wl/sys/wl_linux.c2 >| gcc.patch
+: 1399106613:0;ls
+: 1399106616:0;cat gcc.patch
+: 1399106623:0;sha1 gcc.patch
+: 1399106644:0;vim PKGBUILD
+: 1399106656:0;makepkg -s
+: 1399106678:0;vim PKGBUILD
+: 1399106689:0;makepkg -s
+: 1399106736:0;pacman -U broadcom-wl-6.30.223.141-7-x86_64.pkg.tar.gz
+: 1399106739:0;sudo pacman -U broadcom-wl-6.30.223.141-7-x86_64.pkg.tar.gz
+: 1399106748:0;lspci -k
+: 1399106755:0;modprobe wl
+: 1399106758:0;sudo modprobe wl
+: 1399106762:0;iwconfig
+: 1399106774:0;wifi-menu
+: 1399106776:0;sudo wifi-menu
+: 1399106834:0;vim ~/.i3/config
+: 1399106848:0;vim ~/bin/status.sh
+: 1399106856:0;vim ~/.conkyrc
+: 1399106899:0;wifi-menu
+: 1399106901:0;sudo wifi-menu
+: 1399107093:0;iw
+: 1399107096:0;yaourt -S iw
+: 1399107104:0;iw dev wlan0 scan | less
+: 1399107108:0;iw dev wlan0 scan 
+: 1399107110:0;sudo iw dev wlan0 scan
+: 1399107131:0;sudo iw dev wlan0 scan | less
+: 1399107232:0;wpa_passphrase
+: 1399107245:0;wpa_passphrase 'MIT Secure'
+: 1399107386:0;wpa-config
+: 1399107400:0;netcfg
+: 1399107403:0;sudo netcfg
+: 1399107408:0;sudo netcfg wlan0
+: 1399107414:0;sudo netcfg current
+: 1399107445:0;vim /etc/wpa_supplicant/wpa_supplicant.conf
+: 1399107578:0;cat /usr/share/ca-certificates/mozilla/GeoTrust_Global_CA.crt
+: 1399107586:0;sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
+: 1399107743:0;sudo wifi-menu
+: 1399107784:0;sudo vim /etc/netctl/wlp2s0-MIT\ SECURE
+: 1399107798:0;vim /etc/wpa_supplicant/wpa_supplicant.conf
+: 1399107812:0;sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
+: 1399107825:0;sudo wifi-menu
+: 1399107893:0;sudo vim /usr/bin/wifi-menu
+: 1399107906:0;yaourt -S dialog
+: 1399107948:0;wpa_passphrase
+: 1399107954:0;wpa_passphrase MIT Secure
+: 1399107958:0;wpa_passphrase "MIT Secure"
+: 1399107963:0;wpa_passphrase "MIT Secure" ke5inisme
+: 1399107979:0;sudo vim /etc/netctl/wlp2s0-MIT\ SECURE
+: 1399107998:0;sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
+: 1399108009:0;sudo wifi-menu
+: 1399108043:0;man wpa_passphrase
+: 1399108062:0;sudo wifi-menu
+: 1399108250:0;sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
+: 1399108289:0;sudo wifi-menu
+: 1399108319:0;sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
+: 1399108332:0;sudo wifi-menu
+: 1399108357:0;wpa_supplicant -iwlan0 -Dmadwifi -c/etc/wpa_supplicant/wpa_supplicant.conf 
+: 1399108367:0;wpa_supplicant -iwlan0  -c/etc/wpa_supplicant/wpa_supplicant.conf 
+: 1399108372:0;sudo wpa_supplicant -iwlan0  -c/etc/wpa_supplicant/wpa_supplicant.conf
+: 1399108394:0;sudo wifi-menu
+: 1399108493:0;ls
+: 1399108496:0;cd 
+: 1399108497:0;ls
+: 1399108502:0;rm -rf broadcom
+: 1399108547:0;sudo vim /etc/modprobe.d/10_wl.conf
+: 1399108585:0;sudo wifi-menu
+: 1399108592:0;iwconfig
+: 1399108601:0;lspci
+: 1399108603:0;lspci -k
+: 1399108620:0;man wifi-menu
+: 1399108627:0;wifi-menu
+: 1399108629:0;wifi-menu --help
+: 1399108641:0;sudo vim /etc/conf.d/netcfg 
+: 1399108662:0;wifi-menu
+: 1399108667:0;sudo wifi-menu
+: 1399108697:0;vim ~/.conkyrc
+: 1399109333:0;sudo wifi-menu
+: 1399110012:0;vim stopwatch-vegas
+: 1399136894:0;sudo wifi-menu
+: 1399158369:0;sudo killall dhcpcd
+: 1399158371:0;sudo dhcpcd
+: 1399158435:0;sudo wifi-menu
+: 1399181196:0;ls
+: 1399181200:0;yaourt -Syu
+: 1399181985:0;lolcow
+: 1399181987:0;lolcat
+: 1399182013:0;man cowsay
+: 1399182057:0;cowsay -t lol
+: 1399182061:0;cowsay -w lol
+: 1399182072:0;cowsay -eFU lol
+: 1399182076:0;cowsay -e<> lol
+: 1399182093:0;cowsay -e\<\> lol
+: 1399182115:0;xcowsay
+: 1399182119:0;cowthink
+: 1399182145:0;cowthink lol
+: 1399182439:0;dog
+: 1399182446:0;cat
+: 1399182449:0;man
+: 1399182453:0;man --help
+: 1399182480:0;man man
+: 1399182492:0;man woman
+: 1399182494:0;man man
+: 1399185214:0;vim aaa
+: 1399185744:0;yaourt -Ss vim
+: 1399185754:0;yaourt -Ss vim | grep clipboard
+: 1399185765:0;yaourt -Ss vim | grep -B1 clipboard
+: 1399185787:0;vim --version
+: 1399185814:0;yaourt -S cvim
+: 1399185888:0;gvim
+: 1399185891:0;yaourt -S gvim
+: 1399185904:0;vim
+: 1399185956:0;gvim
+: 1399186147:0;vim
+: 1399186427:0;vim ~/.Xdefaults
+: 1399186449:0;vim
+: 1399186626:0;vim ~/.zshrc
+: 1399186852:0;ls;5D;5D;5D;5C;5C;5C;5D;5C;5D;5C;5D;5B;5A;5D;5C;5D;5C;5D;5A;5C;5D;5B;5D;5D;5A;5Da
+: 1399186856:0;ls;5D;5D;5D;5C;5C;5C;5D;5C;5D;5C;5D;5B;5A;5D;5C;5D;5C;5D;5A;5C;5D;5B;5D;5D;5A;5Daaa
+: 1399186967:0;vim ~/.Xdefaults
+: 1399186978:0;vim ~/.Xresources
+: 1399186992:0;vim ~/.Xdefaults
+: 1399187053:0;vim ~/.zshrc
+: 1399187096:0;rezsh
+: 1399187104:0;ls
+: 1399187108:0;vim ~/.zshrc
+: 1399187119:0;man bindkey
+: 1399187513:0;vim ~/.zshrc
+: 1399188212:0;ls
+: 1399188227:0;vim ~/.i3/config
+: 1399188278:0;vim ~/bin/windows.py
+: 1399242325:0;yaourt -Syu
+: 1399242369:0;yaourt -Syua
+: 1399242609:0;yaourt -Syu --git
+: 1399242611:0;yaourt -Syu -git
+: 1399242614:0;yaourt -Sy -git
+: 1399242619:0;yaourt -git
+: 1399242631:0;yaourt --devel
+: 1399242638:0;yaourt -Syu --devel
+: 1399244868:0;sudo wifi-menu
+: 1399247796:0;man scrot
+: 1399247804:0;scrot -s graph.png
+: 1399258499:0;sudo wifi-menu
+: 1399258528:0;yaourt -Syu 
+: 1399258535:0;sudo wifi-menu
+: 1399258755:0;vlc Downloads3/post-roast.ogg
+: 1399258770:0;lsof | grep snd
+: 1399258776:0;lsof | grep snd | cut -f2
+: 1399258793:0;lsof | grep snd | awk '{print $2}'
+: 1399258799:0;lsof | grep snd | awk '{print $2}' | sort -u
+: 1399258821:0;for id in `lsof | grep snd | awk '{print $2}' | sort -u`; do kill $id; done
+: 1399258846:0;vim ~/.zsh/aliases.zsh
+: 1399258893:0;rezsh
+: 1399258896:0;ksnd
+: 1399258901:0;ksnds
+: 1399258903:0;ksnd
+: 1399258906:0;vim ~/.zsh/aliases.zsh
+: 1399258972:0;myip
+: 1399258975:0;vim ~/.zsh/aliases.zsh
+: 1399259002:0;random 1
+: 1399259003:0;random 12
+: 1399259013:0;random 12999
+: 1399259016:0;random 1299999999999999999999999999999999999
+: 1399259022:0;random 129999999999999999999999999999
+: 1399259024:0;random 1299999999999999999999999
+: 1399259025:0;random 1299999999999999999999
+: 1399259027:0;random 1299999999999999999
+: 1399259029:0;random 12999999999999999999
+: 1399259030:0;random 1299999999999999999
+: 1399259041:0;vim ~/.zsh/aliases.zsh
+: 1399259236:0;lz
+: 1399259239:0;ls
+: 1399259245:0;cd bin
+: 1399259245:0;ls
+: 1399259250:0;vim fehbg
+: 1399259271:0;vim windows.py
+: 1399259282:0;chmod a+x windows.py
+: 1399259283:0;cd ..
+: 1399259284:0;ls
+: 1399259306:0;git init
+: 1399259315:0;cd bin
+: 1399259316:0;ls
+: 1399259321:0;rm mb MediaBitch
+: 1399259324:0;rm mb MediaBitch -r
+: 1399259329:0;ls
+: 1399259333:0;cat *
+: 1399259351:0;git add fehbg
+: 1399259360:0;vim fehbg
+: 1399259383:0;git commit -m 'added fehbg'
+: 1399259975:0;vim status.sh
+: 1399260204:0;ls
+: 1399260205:0;cd ..
+: 1399260205:0;ls
+: 1399260209:0;rm -r .git
+: 1399260215:0;ls
+: 1399260218:0;cd .dotfiles
+: 1399260219:0;ls
+: 1399260224:0;git init
+: 1399260225:0;ls
+: 1399260226:0;la
+: 1399260229:0;cd gi
+: 1399260235:0;cd .git
+: 1399260237:0;ls
+: 1399260241:0;cd ..
+: 1399260244:0;rm .git -r
+: 1399260248:0;git init
+: 1399260249:0;ls
+: 1399260262:0;git add .

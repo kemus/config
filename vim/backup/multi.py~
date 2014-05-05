@@ -1,0 +1,5 @@
+for x in range(0,8,2):
+    y=31-x
+    #print "xpartial%d and2 A[%d:0] B[%d]#%d PP[%d][31:%d]"%(x,y,x,y,x,x)
+    #print "xdummy%d constant0 PP[%d][%d:0]"%(x,x,x-1)
+    print "xadder%d adder32 PP3[%d][31:0] PP3[%d][31:0] gnd PP4[%d][31:0]"%(x+48,x,x+1,x/2)

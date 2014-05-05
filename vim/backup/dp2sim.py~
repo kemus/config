@@ -1,0 +1,7 @@
+#!/usr/bin/python2
+import random
+NUM_MACHINES=1152
+connections = NUM_MACHINES * (NUM_MACHINES-1)
+
+print [random.gauss(5,1) for i in range(connections)]
+

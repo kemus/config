@@ -1,0 +1,36 @@
+﻿#navigation{
+    width:140px
+}
+
+#navigation table{
+    width:100%
+}
+
+#navigation input{
+    width:100%
+}
+
+#content{
+    background-color:black;
+}
+#myCanvas{
+    position: absolute;
+    top: 15px;
+    left: 200px;
+    z-index:10;
+    display:block;
+}
+#arrowCanvas{
+    position: absolute;
+    top:15px;
+    left:200px;
+    z-index:50;
+    pointer-events: none;
+}
+.blackchecker{
+    position: absolute;
+    z-index:25;
+}.redchecker{
+    position: absolute;
+    z-index:25;
+}

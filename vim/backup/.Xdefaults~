@@ -1,0 +1,30 @@
+URxvt.internalBorder:   0
+URxvt.borderless:       true
+
+URxvt*saveLines: 1000000
+URxvt.font: xft:terminus:size=9
+urxvt*depth:32
+urxvt*foreground: rgba:ffff/ffff/ffff/ffff
+URxvt.background:    rgba:0000/0000/0000/aaaa
+URxvt.keysym.Shift-Control-Plus: command:\33]50;terminus%4\007
+URxvt.keysym.Control-Minus: command:\33]50;terminus%1\007
+URxvt.iso14755: False
+
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
+
+URxvt.scrollBar: false
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+
+

