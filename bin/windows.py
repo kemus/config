@@ -1,6 +1,8 @@
 #! /usr/bin/python2
 import sys
 import subprocess
+
+# WIN+LEFT/RIGHT changes volume, WIN+SHIFT+LEFT/RIGHT makes volume 0 or 100
 if sys.argv[1] == 'left':
     subprocess.Popen("/usr/bin/amixer -c 0 sset Master 5-", shell=True)
 if sys.argv[1] == 'Left':
@@ -18,6 +20,7 @@ if sys.argv[1] == 'down':
     else:
         subprocess.Popen("/usr/bin/xbacklight -set 3", shell=True)
 
+# WIN+UP/DOWN changes brightness, WIN+SHIFT+UP/DOWN makes brightness very low or very high
 if sys.argv[1] == 'Down':
     subprocess.Popen("/usr/bin/xbacklight -set 3", shell=True)
 

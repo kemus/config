@@ -1,2 +1,3 @@
 #!/usr/bin/bash
+# Chooses a random wallpaper from ~/wallpapers to display with feh
 feh --randomize --bg-fill ~/wallpapers/*

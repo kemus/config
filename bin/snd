@@ -1,2 +1,7 @@
 #!/bin/bash
-for id in `lsof | grep snd | awk  '{print $2}' | sort | uniq`; do kill $id;done
+
+#fixes 'sound card currently in use'
+for id in `lsof | grep snd | awk  '{print $2}' | sort -u`;
+    do kill $id;
+    echo "Killed $id";
+done

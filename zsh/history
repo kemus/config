@@ -5645,3 +5645,76 @@ sudo modprobe broadcom-wl-ck
 : 1399260651:0;la
 : 1399260672:0;cd .dotfiles
 : 1399260675:0;git add .
+: 1399260688:0;git commit -m 'added bin files'
+: 1399260692:0;git push
+: 1399260700:0;cd bin
+: 1399260701:0;ls
+: 1399260703:0;cat fehbg
+: 1399260706:0;cat getvol.sh
+: 1399260711:0;cat magnet.sh
+: 1399260717:0;cat mail.sh
+: 1399260727:0;rm mail.sh
+: 1399260731:0;cat passit.py
+: 1399260746:0;vim passit.py
+: 1399260782:0;./passit.py
+: 1399260826:0;mkdir ~/.pashash
+: 1399260838:0;mv ~/.pashash ../
+: 1399260872:0;ln -s ~/.dotfiles/pashash ~/.pashash
+: 1399260873:0;ls
+: 1399260876:0;cd ..
+: 1399260880:0;mv .pashash pashash
+: 1399260886:0;./bin/passit.py
+: 1399260905:0;cd pashash
+: 1399260906:0;ls
+: 1399260908:0;cat gmail-kemus.py
+: 1399260924:0;python2 gmail-kemus.py
+: 1399260947:0;vim gmail-kemus.py
+: 1399260997:0;python2 gmail-kemus.py
+: 1399260999:0;vim gmail-kemus.py
+: 1399261018:0;python2 gmail-kemus.py
+: 1399261032:0;cd ..
+: 1399261032:0;ls
+: 1399261045:0;rm ~/.pashash
+: 1399261054:0;mv pashash  ~/.pashash
+: 1399261055:0;ls
+: 1399261070:0;./pashash
+: 1399261072:0;pashash
+: 1399261074:0;pashash.py
+: 1399261078:0;passit.py
+: 1399261149:0;../.pashash/gmail.com-kevinmustelier.py
+: 1399261154:0;python2 ../.pashash/gmail.com-kevinmustelier.py
+: 1399261165:0;vim passit.py
+: 1399261168:0;cd bin
+: 1399261169:0;ls
+: 1399261170:0;vim passit.py
+: 1399261204:0;passit.py
+: 1399261218:0;python2 ../.pashash/gmail.com-kevinmustelier.py
+: 1399261229:0;python2 /.pashash/gmail.com-kevinmustelier.py
+: 1399261233:0;python2 ~/.pashash/gmail.com-kevinmustelier.py
+: 1399261244:0;ls
+: 1399261257:0;cat snd
+: 1399261266:0;vim snd
+: 1399261338:0;rm passit.py
+: 1399261342:0;cat status.sh
+: 1399261345:0;vim status.sh
+: 1399261387:0;vim wifi
+: 1399261404:0;rm wifi
+: 1399261412:0;vim ~/.zsh/aliases.zsh
+: 1399261426:0;ls
+: 1399261428:0;cd ..
+: 1399261431:0;cd bin
+: 1399261433:0;vim fehbg
+: 1399261458:0;ls
+: 1399261458:0;sl
+: 1399261459:0;ls
+: 1399261464:0;vim getvol.sh
+: 1399261484:0;vim magnet.sh
+: 1399261505:0;vim windows.py
+: 1399261623:0;cd ..
+: 1399261623:0;ls
+: 1399261626:0;git add .
+: 1399261641:0;git status
+: 1399261648:0;git add --all
+: 1399261650:0;git status
+: 1399261671:0;vim .gitignore
+: 1399261684:0;git add --all

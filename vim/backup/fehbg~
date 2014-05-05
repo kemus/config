@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-feh --randomize --bg-scale ~/wallpapers/*
+feh --randomize --bg-fill ~/wallpapers/*
