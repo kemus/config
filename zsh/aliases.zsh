@@ -1,16 +1,16 @@
-# Aliases and such that I find useful.
-
+# Aliases and functions that I find useful
+# ls aliases ########################################################
 # make ls pretty
 alias ls='pwd;ls --classify --color=auto --escape'
 
 # typos become slightly amusing, while still useful
 alias sl='ls --reverse'
 
-# lists all
+# lists all (no group information)
 alias la='ls -o --all --human-readable'
 
 # lists less info, but still long-form
-alias l='ls -gG --all --human-readable --group-directories-first'
+alias l='ls -g --no-group --all --human-readable --group-directories-first'
 
 # lists sorted by time
 alias lt="ls -l \
@@ -27,16 +27,22 @@ alias lt="ls -l \
 function lz()
 {
     if [[ -z $1 ]]; then
-        find . -type f -a -size +1c -a -writable -a -readable;
+        find . -type f -a -size +1M -a -writable -a -readable;
     else
-        find . -type f -a -size +$1M -a -writable -a -readable;
+        find . -type f -a -size +$1 -a -writable -a -readable;
     fi
 }
 
-# cd aliases
+# cd aliases ##########################################################
+# - goes to last directory
 alias -- -='cd -'
 
-# suffix aliases:
+# global aliases
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+
+# suffix aliases ######################################################
 alias -s tex=vim
 alias -s html=chromium
 alias -s gif=feh
@@ -44,10 +50,6 @@ alias -s png=feh
 alias -s jpg=feh
 alias -s jpeg=feh
 
-# global aliases
-alias -g ...='../..'
-alias -g ....='../../..'
-alias -g .....='../../../..'
 
 # yay random numbers
 function random()
@@ -71,27 +73,51 @@ function random()
         fi
     fi
 }
+
+# always use my pager to page
+alias less=$PAGER
+alias more=$PAGER
+
+# give redshift my location
 alias redshift='redshift -l 42.360026:-71.088179 &'
+
+# colorful grep
 alias grep='grep --color=auto'
 
-export PAGER='less'
-alias less=$PAGER
-eval $(dircolors -b)
-alias mkdir='mkdir -p -v'
-alias diff='colordiff'
-alias more=$PAGER
-alias du='du -c -h'
-alias df='df -h'
-alias nano='nano -w'
-alias ping='ping -c 5'
-alias dmesg='dmesg -HL'
-alias rm=' timeout 3 rm -Iv --one-file-system'
-alias mv='mv -i'
-alias cp='cp -i'
+# mkdir makes recursively and is verbose
+alias mkdir='mkdir --parents --verbose'
 
-alias chown='chown --preserve-root'
-alias chmod='chmod --preserve-root'
-alias chgrp='chgrp --preserve-root'
+# colorful diff
+alias diff='colordiff'
+
+# useful du defaults
+alias du='du --total --human-readable --depth 1 --one-file-system'
+
+# useful df defaults
+alias df='df --total --human-readable'
+
+# nowrap on nano
+alias nano='nano --nowrap'
+
+# not infinite pings
+alias ping='ping -c 5'
+
+# readable dmesg
+alias dmesg='dmesg --human --color'
+
+# safer rm prompts when removing recursively or many files, preserves root, with a timeout
+alias rm=' timeout 3 rm -Iv --one-file-system --preserve-root'
+
+# safer mv prompts before overwrite and is verbose
+alias mv='mv --interactive --verbose'
+
+# safer cp prompts before overwrite and is verbose
+alias cp='cp --interactive --verbose'
+
+# safer ch* preserves root
+alias chown='chown --preserve-root --verbose'
+alias chmod='chmod --preserve-root --verbose'
+alias chgrp='chgrp --preserve-root --verbose'
 
 
 # reverse a word
@@ -110,7 +136,7 @@ function numeric()
 alias rmclean='rm -i *(.L0);find . -maxdepth 1 -not -name . -type d -ok rmdir --ignore-fail-on-non-empty {} \;'
 
 # Show only the ip-address from ``ifconfig device''
-alias myip="ifconfig | grep wlp2s0 -A8 | grep 'inet ' | awk '{print \$2}'"
+alias myip="ifconfig | grep $WIRELESS -A8 | grep 'inet ' | awk '{print \$2}'"
 
 # get a "ls -l" on all the files in the tree that are younger than a
 # specified age (e.g "ls -l" all the files in the tree that where
@@ -126,5 +152,5 @@ alias rt='tmux attach -t rt'
 # push/pop
 alias pu='pushd'
 alias po='popd'
-alias ksnd='for id in `lsof | grep snd | awk "{print $2}" | sort -u`; do kill $id; done'
+alias fixsnd='for id in `lsof | grep snd | awk "{print $2}" | sort -u`; do kill $id; done'
 alias wifi='sudo wifi-menu'

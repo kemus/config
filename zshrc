@@ -50,6 +50,8 @@ fi
 [ -r /etc/profile.d/cnf.sh ] && . /etc/profile.d/cnf.sh
 
 # This will set the default prompt to the walters theme
+autoload -Uz promptinit
+promptinit
 prompt walters
 
 # add ~/bin to my path
@@ -82,7 +84,6 @@ setopt IGNORE_EOF
 
 # beeps are annoying
 setopt NO_BEEP
-
 # globbing
 setopt NO_CASE_GLOB
 setopt NUMERIC_GLOB_SORT
@@ -105,8 +106,10 @@ alias dialup='ssh kemus@athena.dialup'
 alias rezsh='source ~/.zshrc'
 cowfortune
 
+# fix CTRL + arrow key
 bindkey ';5D' emacs-backward-word
 bindkey ';5C' emacs-forward-word
 bindkey ';5A' history-beginning-search-backward
 bindkey ';5B' history-beginning-search-forward
 
+eval $(dircolors -b)

@@ -18,6 +18,6 @@ export CLICOLOR="YES"
 export EDITOR="vim"
 export VISUAL="gedit"
 export SVN_EDITOR="vim"
-export BROWSER="firefox"
+export BROWSER="chromium"
 export PAGER="less"
-
+export WIRELESS="wlp2s0"

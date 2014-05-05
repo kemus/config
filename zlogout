@@ -10,3 +10,4 @@
 ################
 
 # This file is used for automatic execution of user's scripts upon logout
+clear
