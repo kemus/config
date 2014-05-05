@@ -1,8 +1,0 @@
-#!/usr/bin/python2
-import subprocess
-import random
-import os
-walls = os.listdir('/home/kemus/wallpapers')
-wall = random.choice(walls)
-print wall
-subprocess.Popen('/usr/bin/feh -b /home/kemus/wallpapers/%s'%wall, shell=True)

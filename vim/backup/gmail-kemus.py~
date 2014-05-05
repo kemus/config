@@ -1,5 +1,0 @@
-#!/usr/bin/python
-from hashlib import *
-from getpass import getpass
-print c
-print(''.join(["""abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""[int(c)%94]           for c in b''.join([sha512(s.encode("utf8")).digest()               for s in ((getpass("password: ")), "gmail","kemus") ])])[16:24])

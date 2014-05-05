@@ -1,9 +1,0 @@
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
-[[ -f ~/.xprofile ]] && source ~/.xprofile
-[[ -f /usr/share/fonts/local ]] && xset +fp /usr/share/fonts/local && xset fp rehash
-compton -b &
-(sleep 6s && xautolock -time 10 -locker '/usr/bin/locker' -corners +--+  -cornerdelay 4 -cornerredelay 4) &
-xbacklight -set 20
-
-xmodmap ~/.Xmodmap
-exec i3
