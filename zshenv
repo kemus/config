@@ -16,6 +16,7 @@
 
 export CLICOLOR="YES"
 export EDITOR="vim"
+export editor="vim"
 export VISUAL="gedit"
 export SVN_EDITOR="vim"
 export BROWSER="chromium"

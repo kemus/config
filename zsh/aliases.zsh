@@ -152,5 +152,12 @@ alias rt='tmux attach -t rt'
 # push/pop
 alias pu='pushd'
 alias po='popd'
+
+# fix 'sound card used more than once' issue, by closing all things using sound card
 alias fixsnd='for id in `lsof | grep snd | awk "{print $2}" | sort -u`; do kill $id; done'
+
+# because I'm lazy
 alias wifi='sudo wifi-menu'
+
+# reload zshrc
+alias rezsh='source ~/.zshrc'
