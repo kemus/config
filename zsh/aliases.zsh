@@ -91,7 +91,7 @@ alias mkdir='mkdir --parents --verbose'
 alias diff='colordiff'
 
 # useful du defaults
-alias du='du --total --human-readable --depth 1 --one-file-system'
+alias du='du --total --human-readable --max-depth 1 --one-file-system'
 
 # useful df defaults
 alias df='df --total --human-readable'
@@ -154,7 +154,7 @@ alias pu='pushd'
 alias po='popd'
 
 # fix 'sound card used more than once' issue, by closing all things using sound card
-alias fixsnd='for id in `lsof | grep snd | awk "{print $2}" | sort -u`; do kill $id; done'
+alias fixsnd="for id in \$(lsof | grep snd | awk '{print \$2}' | sort -u); do kill \$id; done; pulseaudio -k"
 
 # because I'm lazy
 alias wifi='sudo wifi-menu'

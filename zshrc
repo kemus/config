@@ -11,6 +11,7 @@
 
 # This is Zsh's main configuration file
 
+fpath=( $HOME/.zsh/functions $fpath )
 
 # completions
 if [[ -e ~/.zsh/completions.zsh ]];then
@@ -94,6 +95,13 @@ autoload run-help-svn
 autoload run-help-svk
 export HELPDIR=~/.zsh/help
 alias man='run-help'
+export CLASSPATH=".:/usr/local/lib/antlr-3.5.2-complete.jar:$CLASSPATH"
+export CLASSPATH=".:/usr/local/lib/antlr-4.5-complete.jar:$CLASSPATH"
+alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.5-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
+alias antlr3='java -Xmx500M -cp "/usr/local/lib/antlr-3.5.2-complete.jar:$CLASSPATH" org.antlr.Tool'
+
+alias grun4='java org.antlr.v4.runtime.misc.TestRig'
+alias grun3='java org.antlr.v3.runtime.misc.TestRig'
 
 # reload zshrc
 alias rezsh='source ~/.zshrc'
@@ -106,6 +114,10 @@ bindkey ';5B' history-beginning-search-forward
 
 # directory colors
 eval $(dircolors -b)
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/bin/virtualenvwrapper.sh
 
 # say my cowfortune
 cowfortune

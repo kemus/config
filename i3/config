@@ -125,4 +125,5 @@ bindsym $alt+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # finds out, if available)
 bar {
         status_command ~/bin/status.sh
+        tray_output primary
 }

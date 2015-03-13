@@ -4,4 +4,4 @@
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 compton -b &
 xbacklight -set 20
-exec i3
+exec gnome-session

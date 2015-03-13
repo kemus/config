@@ -38,8 +38,11 @@
         set backupdir=~/.vim/backup
         set directory=~/.vim/tmp
         set viminfo=%100,'100,/100,h,\"500,:100,n~/.viminfo
+    "
     "}}} EndBackups
 
+
+    "}}} EndVundle
     "{{{ Syntax highlighting and indenting
         filetype on
         filetype plugin on
